@@ -1,0 +1,84 @@
+---
+title: "Scrape ClinicalTrials.Gov "
+author: "Faith E. Parsons"
+date: "November 3, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(rvest)
+library(httr)
+library(XML)
+library(readr)
+library(janitor)
+library(httr)
+library(rvest)
+
+```
+
+```{r read_file}
+# Create a temporary file (temp) and temporary directory (tdir)
+temp = tempfile(fileext = ".zip")
+tdir = tempdir()
+
+# This is the URL that searches for "Alzheimer" which produces a zip file
+url = "https://clinicaltrials.gov/ct2/download_studies?term=Alzheimer"
+
+# Download zipped file to temporary file
+ download.file(url, temp, mode="wb")
+
+# Unzip to temp folder
+xml_files = unzip(temp, exdir = tdir)
+
+# Read first file
+xml1 = xmlInternalTreeParse(xml_files[1])
+
+xml1
+
+# Create a LIST with all the files inside the zipped file
+list_files = unzip(temp, list = TRUE) %>%
+  clean_names()
+# Convert to a vector
+filenames = pull(list_files, name)
+nfiles = length(filenames)
+
+# Process the first xml file
+rct =  xmlParse(xml_files[1])
+
+# How many nodes in this xml file?
+num_nodes = xmlRoot(rct) %>%
+  xmlSize() # Number of nodes
+
+# List all node names
+nodes = names(xmlRoot(rct)[1:num_nodes])
+nodes
+
+# Convert each node of interest into a dataframe
+# At a later step, we can create one main dataframe that merges these individual data frames, organized by rct_id
+rct_id_info = xmlToDataFrame(getNodeSet(rct, '//id_info' )) 
+rct_btitle = xmlToDataFrame(getNodeSet(rct, '//brief_title' )) %>%
+  rename(brief_title = text)
+rct_num_arms = xmlToDataFrame(getNodeSet(rct, '//number_of_arms' )) %>%
+  rename(number_or_arms = text)
+rct_sponsors = xmlToDataFrame(getNodeSet(rct, '//sponsors')) 
+rct_status = xmlToDataFrame(getNodeSet(rct, '//overall_status')) %>%
+  rename(overall_status = text)
+rct_study_type = xmlToDataFrame(getNodeSet(rct, '//study_type')) %>%
+  rename(study_type = text)
+rct_source = xmlToDataFrame(getNodeSet(rct, '//source')) %>%
+  rename(source = text)
+rct_elig = xmlToDataFrame(getNodeSet(rct, '//eligibility'))
+
+# The prior dataframes have length 1; The "arm_group" will vary from study to study, most   
+# will be > 1
+rct_arms = xmlToDataFrame(getNodeSet(rct, '//arm_group'))
+
+# Delete temp file and directory
+unlink(temp)
+unlink(tdir)
+
+```
+
+
