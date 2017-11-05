@@ -5,6 +5,12 @@ date: "November 3, 2017"
 output: html_document
 ---
 
+It probably does not make sense to download and analyze the entire clinicaltrials.gov database. This is a VERY complex process and people have spent lots of time working to make the database more readily accessible for aggregate analysis. AACT is an SQL-based relational database that was designed to improve aggregate analysis of the clinicaltrials.gov database. Extensive instructions on how to use the AACT database are available online including source code available on github and several publication describing the development of the data base.
+
+-https://aact-prod.herokuapp.com/
+-https://github.com/ctti-clinicaltrials/aact 
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
