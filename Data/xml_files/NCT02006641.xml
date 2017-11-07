@@ -1,0 +1,1757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="408">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT02006641</url>
+  </required_header>
+  <id_info>
+    <org_study_id>14862A</org_study_id>
+    <secondary_id>2012-004764-22</secondary_id>
+    <nct_id>NCT02006641</nct_id>
+  </id_info>
+  <brief_title>Lu AE58054 in Patients With Mild-moderate Alzheimer's Disease Treated With Donepezil</brief_title>
+  <acronym>STARBEAM</acronym>
+  <official_title>Randomised, Double-blind, Parallel-group, Placebo-controlled, Fixed-dose Study of Lu AE58054 in Patients With Mild-moderate Alzheimer's Disease Treated With Donepezil</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>H. Lundbeck A/S</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+    <collaborator>
+      <agency>Otsuka Pharmaceutical Co., Ltd.</agency>
+      <agency_class>Industry</agency_class>
+    </collaborator>
+  </sponsors>
+  <source>H. Lundbeck A/S</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      To establish efficacy of Lu AE58054 as adjunctive therapy to donepezil for symptomatic
+      treatment of patients with mild-to-moderate Alzheimer's disease (AD).
+    </textblock>
+  </brief_summary>
+  <overall_status>Completed</overall_status>
+  <start_date>February 2014</start_date>
+  <completion_date type="Actual">December 2016</completion_date>
+  <primary_completion_date type="Actual">December 2016</primary_completion_date>
+  <phase>Phase 3</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Double (Participant, Investigator)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Change in cognition</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in Alzheimer's Disease Assessment Scale-cognitive subscale (ADAS-Cog) total score</description>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Change in global impression</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Alzheimer's Disease Cooperative Study - Clinical Global Impression of Change (ADCS-CGIC) score</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in functioning</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in Alzheimer's Disease Cooperative Study - Activities of Daily Living Inventory (ADCS-ADL23) total score</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in behavioural disturbance</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in Neuropsychiatric Inventory (NPI) total score</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in individual behavioural disturbance items</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in single NPI item scores</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in anxiety</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in NPI Anxiety item score based on a pre-specified NPI Anxiety score at Baseline</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Clinical response</measure>
+    <time_frame>Week 24</time_frame>
+    <description>Based on pre-specified ADAS-Cog, ADCS-ADL23, and ADCS-CGIC changes</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Clinical worsening</measure>
+    <time_frame>Week 24</time_frame>
+    <description>Based on pre-specified ADAS-Cog, ADCS-ADL23, and ADCS-CGIC changes</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in cognitive aspects of mental function</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in Mini Mental State Examination (MMSE)</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in health-related quality of life (EQ-5D-3L)</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in EuroQol 5-dimensional 3-layer (EQ-5D-3L), a measure of health-related quality of life</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in health-related quality of (EQ-5D-3L VAS)</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in EQ-5D-3L Visual Analogue Scale (EQ-5D-3L VAS)</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Number of patients with adverse events (AEs)</measure>
+    <time_frame>Up to 24 weeks and a 4-week safety follow up</time_frame>
+    <description>Overview of AEs</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Proportion of patients who withdrew due to intolerance to treatment</measure>
+    <time_frame>Baseline to Week 24</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Risk of suicidality</measure>
+    <time_frame>Up to 24 weeks</time_frame>
+    <description>Columbia Suicide Severity Rating Scale (C-SSRS)</description>
+  </secondary_outcome>
+  <number_of_arms>3</number_of_arms>
+  <enrollment type="Actual">858</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>Placebo</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+    <description>Placebo adjunct to 10 mg Donepezil</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Lu AE58054 10 mg</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Lu AE58054 adjunct to 10 mg Donepezil</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Lu AE58054 30 mg</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Lu AE58054 adjunct to 10 mg Donepezil</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Placebo</intervention_name>
+    <description>Once daily, matching placebo capsules, orally</description>
+    <arm_group_label>Placebo</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Lu AE58054</intervention_name>
+    <description>Once daily, encapsulated tablets, orally</description>
+    <arm_group_label>Lu AE58054 10 mg</arm_group_label>
+    <arm_group_label>Lu AE58054 30 mg</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  The patient has a knowledgeable and reliable caregiver.
+
+          -  The patient is an outpatient.
+
+          -  The patient has probable AD.
+
+          -  The patient has mild to moderate AD.
+
+          -  Stable treatment with donepezil.
+
+          -  The patient, if a woman, must have had her last natural menstruation ≥24 months prior
+             to baseline, OR be surgically sterile.
+
+          -  The patient, if a man, agrees to protocol-defined use of effective contraception if
+             his female partner is of childbearing potential, OR must have been surgically
+             sterilised prior to the screening visit.
+
+        Exclusion Criteria:
+
+          -  The patient has evidence of any clinically significant neurodegenerative disease, or
+             other serious neurological disorders other than AD.
+
+          -  The patient has a Diagnostic and Statistical Manual of Mental Disorders, 4th edition,
+             Text Revision (DSM-IV-TR) Axis I disorder other than AD.
+
+          -  The patient has evidence of clinically significant disease.
+
+          -  The patient's donepezil therapy is likely to be interrupted or discontinued during the
+             study.
+
+          -  The patient is currently receiving memantine or has taken memantine within 2 months
+             prior to screening.
+
+        Other inclusion and exclusion criteria may apply.
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>50 Years</minimum_age>
+    <maximum_age>N/A</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Email contact via H. Lundbeck A/S</last_name>
+    <role>Study Director</role>
+    <affiliation>LundbeckClinicalTrials@lundbeck.com</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>US338</name>
+      <address>
+        <city>Phoenix</city>
+        <state>Arizona</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US342</name>
+      <address>
+        <city>Fayetteville</city>
+        <state>Arkansas</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US322</name>
+      <address>
+        <city>Anaheim</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US305</name>
+      <address>
+        <city>Carson</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US346</name>
+      <address>
+        <city>Costa Mesa</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US327</name>
+      <address>
+        <city>Fullerton</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US315</name>
+      <address>
+        <city>Lomita</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US351</name>
+      <address>
+        <city>Oceanside</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US307</name>
+      <address>
+        <city>Redlands</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US301</name>
+      <address>
+        <city>Santa Rosa</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US337</name>
+      <address>
+        <city>New London</city>
+        <state>Connecticut</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US332</name>
+      <address>
+        <city>Stamford</city>
+        <state>Connecticut</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US308</name>
+      <address>
+        <city>Delray Beach</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US320</name>
+      <address>
+        <city>Hallandale Beach</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US347</name>
+      <address>
+        <city>Hialeah</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US340</name>
+      <address>
+        <city>Lake Worth</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US303</name>
+      <address>
+        <city>Miami</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US313</name>
+      <address>
+        <city>Miami</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US335</name>
+      <address>
+        <city>Naples</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US345</name>
+      <address>
+        <city>Orange City</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US309</name>
+      <address>
+        <city>Palm Beach Gardens</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US302</name>
+      <address>
+        <city>Sunrise</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US304</name>
+      <address>
+        <city>Atlanta</city>
+        <state>Georgia</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US360</name>
+      <address>
+        <city>Augusta</city>
+        <state>Georgia</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US318</name>
+      <address>
+        <city>Decatur</city>
+        <state>Georgia</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US334</name>
+      <address>
+        <city>Lake Charles</city>
+        <state>Louisiana</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US350</name>
+      <address>
+        <city>Belmont</city>
+        <state>Massachusetts</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US344</name>
+      <address>
+        <city>Boston</city>
+        <state>Massachusetts</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US310</name>
+      <address>
+        <city>Saint Paul</city>
+        <state>Minnesota</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US321</name>
+      <address>
+        <city>Hattiesburg</city>
+        <state>Mississippi</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US330</name>
+      <address>
+        <city>Creve Coeur</city>
+        <state>Missouri</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US339</name>
+      <address>
+        <city>Manchester Township</city>
+        <state>New Jersey</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US312</name>
+      <address>
+        <city>Staten Island</city>
+        <state>New York</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US316</name>
+      <address>
+        <city>Charlotte</city>
+        <state>North Carolina</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US336</name>
+      <address>
+        <city>Winston-Salem</city>
+        <state>North Carolina</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US323</name>
+      <address>
+        <city>Cincinnati</city>
+        <state>Ohio</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US349</name>
+      <address>
+        <city>Cleveland</city>
+        <state>Ohio</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US306</name>
+      <address>
+        <city>Columbus</city>
+        <state>Ohio</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US352</name>
+      <address>
+        <city>Lakewood</city>
+        <state>Ohio</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US333</name>
+      <address>
+        <city>Oklahoma City</city>
+        <state>Oklahoma</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US314</name>
+      <address>
+        <city>Allentown</city>
+        <state>Pennsylvania</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US324</name>
+      <address>
+        <city>Pittsburgh</city>
+        <state>Pennsylvania</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US341</name>
+      <address>
+        <city>Pittsburgh</city>
+        <state>Pennsylvania</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US325</name>
+      <address>
+        <city>Reading</city>
+        <state>Pennsylvania</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US319</name>
+      <address>
+        <city>Port Royal</city>
+        <state>South Carolina</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US356</name>
+      <address>
+        <city>Cordova</city>
+        <state>Tennessee</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US343</name>
+      <address>
+        <city>Fort Worth</city>
+        <state>Texas</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US354</name>
+      <address>
+        <city>Houston</city>
+        <state>Texas</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR303</name>
+      <address>
+        <city>Banfield</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR301</name>
+      <address>
+        <city>Ciudad Autonoma Buenos Aires</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR304</name>
+      <address>
+        <city>Ciudad Autonoma Buenos Aires</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR308</name>
+      <address>
+        <city>Ciudad Autonoma Buenos Aires</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR311</name>
+      <address>
+        <city>Ciudad Autonoma Buenos Aires</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR313</name>
+      <address>
+        <city>Ciudad Autonoma Buenos Aires</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR314</name>
+      <address>
+        <city>Ciudad Autonoma Buenos Aires</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR315</name>
+      <address>
+        <city>Ciudad Autonoma Buenos Aires</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR312</name>
+      <address>
+        <city>Ciudad Autonoma de Buenos Aires</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR309</name>
+      <address>
+        <city>Cordoba</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR307</name>
+      <address>
+        <city>Crdoba</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR305</name>
+      <address>
+        <city>Godoy Cruz</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR310</name>
+      <address>
+        <city>Guaymallen</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR302</name>
+      <address>
+        <city>Santa Fe</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AR306</name>
+      <address>
+        <city>Santiago del Estero</city>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>BR307</name>
+      <address>
+        <city>Curitiba</city>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>BR309</name>
+      <address>
+        <city>Curitiba</city>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>BR301</name>
+      <address>
+        <city>Rio de Janeiro</city>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>BR306</name>
+      <address>
+        <city>Rio de Janeiro</city>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>BR308</name>
+      <address>
+        <city>So Paulo</city>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CA301</name>
+      <address>
+        <city>Halifax</city>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CA302</name>
+      <address>
+        <city>Kelowna</city>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CA306</name>
+      <address>
+        <city>Montreal</city>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CA304</name>
+      <address>
+        <city>Qubec</city>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CA303</name>
+      <address>
+        <city>Sherbrooke</city>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CA305</name>
+      <address>
+        <city>Toronto</city>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HR304</name>
+      <address>
+        <city>Zabok</city>
+        <country>Croatia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HR301</name>
+      <address>
+        <city>Zagreb</city>
+        <country>Croatia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HR302</name>
+      <address>
+        <city>Zagreb</city>
+        <country>Croatia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HR303</name>
+      <address>
+        <city>Zagreb</city>
+        <country>Croatia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ305</name>
+      <address>
+        <city>Brno</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ306</name>
+      <address>
+        <city>Chocen</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ309</name>
+      <address>
+        <city>Chocen</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ308</name>
+      <address>
+        <city>Pardubice</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ310</name>
+      <address>
+        <city>Praha 10 - Strasnice</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ304</name>
+      <address>
+        <city>Praha 10</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ307</name>
+      <address>
+        <city>Praha 2</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ301</name>
+      <address>
+        <city>Praha 6</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ303</name>
+      <address>
+        <city>Praha 6</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ302</name>
+      <address>
+        <city>Rychnov nad Kneznou</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>EE301</name>
+      <address>
+        <city>Tallinn</city>
+        <country>Estonia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>EE303</name>
+      <address>
+        <city>Tallin</city>
+        <country>Estonia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>EE302</name>
+      <address>
+        <city>Tartu</city>
+        <country>Estonia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FI302</name>
+      <address>
+        <city>Kuopio</city>
+        <country>Finland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FI303</name>
+      <address>
+        <city>Oulu</city>
+        <country>Finland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FI301</name>
+      <address>
+        <city>Turku</city>
+        <country>Finland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR301</name>
+      <address>
+        <city>Bordeaux</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR308</name>
+      <address>
+        <city>Bron</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR307</name>
+      <address>
+        <city>Colmar cedex</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR304</name>
+      <address>
+        <city>Dijon</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR309</name>
+      <address>
+        <city>Elancourt</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR302</name>
+      <address>
+        <city>Marseille cedex 5</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR303</name>
+      <address>
+        <city>Nice Cedex 1</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR306</name>
+      <address>
+        <city>Reims</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>FR305</name>
+      <address>
+        <city>Rouen</city>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HU304</name>
+      <address>
+        <city>Budapest</city>
+        <country>Hungary</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HU305</name>
+      <address>
+        <city>Budapest</city>
+        <country>Hungary</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HU301</name>
+      <address>
+        <city>Esztergom</city>
+        <country>Hungary</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HU303</name>
+      <address>
+        <city>Gyor</city>
+        <country>Hungary</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>HU302</name>
+      <address>
+        <city>Szeged</city>
+        <country>Hungary</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IE301</name>
+      <address>
+        <city>Cork</city>
+        <country>Ireland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IL302</name>
+      <address>
+        <city>Haifa</city>
+        <country>Israel</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IL303</name>
+      <address>
+        <city>Holon</city>
+        <country>Israel</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IL304</name>
+      <address>
+        <city>Ramat Gan</city>
+        <country>Israel</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT306</name>
+      <address>
+        <city>Brescia</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT309</name>
+      <address>
+        <city>Brescia</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT311</name>
+      <address>
+        <city>Genova</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT312</name>
+      <address>
+        <city>Monza</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT302</name>
+      <address>
+        <city>Naples</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT313</name>
+      <address>
+        <city>Palermo</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT307</name>
+      <address>
+        <city>Perugia</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT301</name>
+      <address>
+        <city>Pisa</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT305</name>
+      <address>
+        <city>Roma</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT308</name>
+      <address>
+        <city>Roma</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT304</name>
+      <address>
+        <city>Torino</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IT310</name>
+      <address>
+        <city>Torrette di Ancona</city>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR303</name>
+      <address>
+        <city>Busan</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR301</name>
+      <address>
+        <city>Incheon</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR308</name>
+      <address>
+        <city>Seongnam-si</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR302</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR304</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR305</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR306</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR307</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR309</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>LT302</name>
+      <address>
+        <city>Kaunas</city>
+        <country>Lithuania</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>LT303</name>
+      <address>
+        <city>Kaunas</city>
+        <country>Lithuania</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>LT301</name>
+      <address>
+        <city>Vilnius</city>
+        <country>Lithuania</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>LT304</name>
+      <address>
+        <city>Vilnius</city>
+        <country>Lithuania</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL301</name>
+      <address>
+        <city>Bialystok</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL304</name>
+      <address>
+        <city>Bydgoszcz</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL308</name>
+      <address>
+        <city>Gdynia</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL309</name>
+      <address>
+        <city>Krakow</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL302</name>
+      <address>
+        <city>Lodz</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL310</name>
+      <address>
+        <city>Lubin</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL306</name>
+      <address>
+        <city>Lublin</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL307</name>
+      <address>
+        <city>Oswiecim</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PL303</name>
+      <address>
+        <city>Poznan</city>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PT301</name>
+      <address>
+        <city>Amadora</city>
+        <country>Portugal</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>PT302</name>
+      <address>
+        <city>Coimbra</city>
+        <country>Portugal</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TW301</name>
+      <address>
+        <city>Kaohsiung</city>
+        <country>Taiwan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TW302</name>
+      <address>
+        <city>Kaohsiung</city>
+        <country>Taiwan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TW303</name>
+      <address>
+        <city>Taichung</city>
+        <country>Taiwan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TW304</name>
+      <address>
+        <city>Taipei</city>
+        <country>Taiwan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TW305</name>
+      <address>
+        <city>Taipei</city>
+        <country>Taiwan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB307</name>
+      <address>
+        <city>Amersham</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB301</name>
+      <address>
+        <city>Glasgow</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB303</name>
+      <address>
+        <city>London</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB308</name>
+      <address>
+        <city>London</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB306</name>
+      <address>
+        <city>Plymouth</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB305</name>
+      <address>
+        <city>Preston</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB304</name>
+      <address>
+        <city>Southampton</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB302</name>
+      <address>
+        <city>Swindon</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB309</name>
+      <address>
+        <city>Warrington</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>Argentina</country>
+    <country>Brazil</country>
+    <country>Canada</country>
+    <country>Croatia</country>
+    <country>Czechia</country>
+    <country>Estonia</country>
+    <country>Finland</country>
+    <country>France</country>
+    <country>Hungary</country>
+    <country>Ireland</country>
+    <country>Israel</country>
+    <country>Italy</country>
+    <country>Korea, Republic of</country>
+    <country>Lithuania</country>
+    <country>Poland</country>
+    <country>Portugal</country>
+    <country>Taiwan</country>
+    <country>United Kingdom</country>
+    <country>United States</country>
+  </location_countries>
+  <removed_countries>
+    <country>Czech Republic</country>
+  </removed_countries>
+  <verification_date>May 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>May 30, 2017</lastchanged_date>
+  <firstreceived_date>December 5, 2013</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>December 5, 2013</study_first_submitted>
+  <study_first_submitted_qc>December 5, 2013</study_first_submitted_qc>
+  <study_first_posted type="Estimate">December 10, 2013</study_first_posted>
+  <last_update_submitted>May 30, 2017</last_update_submitted>
+  <last_update_submitted_qc>May 30, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">May 31, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Donepezil</mesh_term>
+  </intervention_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

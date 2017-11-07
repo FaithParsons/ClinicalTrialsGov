@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="575">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01561430</url>
+  </required_header>
+  <id_info>
+    <org_study_id>13735</org_study_id>
+    <secondary_id>I4O-MC-BACC</secondary_id>
+    <secondary_id>2011-005217-37</secondary_id>
+    <nct_id>NCT01561430</nct_id>
+  </id_info>
+  <brief_title>Study of LY2886721 in Mild Cognitive Impairment Due to Alzheimer's Disease or Mild Alzheimer's Disease</brief_title>
+  <official_title>Assessment of Safety, Tolerability, and Pharmacodynamic Effects of LY2886721 in Patients With Mild Cognitive Impairment Due to Alzheimer's Disease or Mild Alzheimer's Disease</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>Eli Lilly and Company</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>Eli Lilly and Company</source>
+  <oversight_info>
+    <has_dmc>No</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      The purpose of this Phase 2 study is to evaluate how the body handles the drug and the drug's
+      effect on the body of participants with mild cognitive impairment (MCI) due to Alzheimer's
+      Disease (AD) or mild AD who test positive for amyloid plaque.
+    </textblock>
+  </brief_summary>
+  <overall_status>Terminated</overall_status>
+  <why_stopped>
+    Study terminated due to abnormal liver biochemical tests in some participants.
+  </why_stopped>
+  <start_date>March 2012</start_date>
+  <completion_date type="Actual">August 2013</completion_date>
+  <primary_completion_date type="Actual">August 2013</primary_completion_date>
+  <phase>Phase 1/Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Basic Science</primary_purpose>
+    <masking>Triple (Participant, Care Provider, Investigator)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Change from baseline to 12 weeks in cerebrospinal fluid (CSF) amyloid beta (Aβ)1-40 and Aβ1-42 concentrations</measure>
+    <time_frame>Baseline, 12 weeks</time_frame>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Change from baseline to 26 weeks in cerebrospinal fluid (CSF) amyloid beta (Aβ)1-40 and Aβ1-42 concentrations</measure>
+    <time_frame>Baseline, 26 weeks</time_frame>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in plasma amyloid beta (Aβ)1-40 and Aβ1-42 concentrations</measure>
+    <time_frame>Baseline, 12 weeks, 26 weeks</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 26 weeks in Neuropsychological Test Battery (NTB)</measure>
+    <time_frame>Baseline, 26 weeks</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 26 weeks in Alzheimer's Disease Assessment Scale - Cognitive Subscale (ADAS-Cog)</measure>
+    <time_frame>Baseline, 26 weeks</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 26 weeks in the Clinical Dementia Rating Scale - Sum of Boxes (CDR-SB)</measure>
+    <time_frame>Baseline, 26 weeks</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 26 weeks in Mini Mental State Examination (MMSE)</measure>
+    <time_frame>Baseline, 26 weeks</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in cerebrospinal fluid (CSF) tau and phosphorylated tau (ptau) 181 concentrations</measure>
+    <time_frame>Baseline, 12 weeks, 26 weeks</time_frame>
+  </secondary_outcome>
+  <number_of_arms>4</number_of_arms>
+  <enrollment type="Anticipated">128</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>15 mg LY2886721</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>15 mg capsules orally once daily for 26 weeks. This dose will not be administered to new subjects once the site has approval for the protocol amendment.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>35 mg LY2886721</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>35 mg capsules orally once daily for 26 weeks</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Placebo</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+    <description>1 placebo capsule orally once daily for 26 weeks</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>70 mg LY2886721</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>70 mg capsules orally once daily for 26 weeks</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>LY2886721</intervention_name>
+    <description>One capsule administered orally once daily</description>
+    <arm_group_label>15 mg LY2886721</arm_group_label>
+    <arm_group_label>35 mg LY2886721</arm_group_label>
+    <arm_group_label>70 mg LY2886721</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Placebo</intervention_name>
+    <description>One capsule administered orally once daily</description>
+    <arm_group_label>Placebo</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+        Meets criteria for MCI due to AD or Mild AD
+
+        All participants will be required to undergo assessment via the Mini Mental State
+        Examination (MMSE) scale at screening
+
+          -  Participants with MMSE scores of 20 to 26, inclusive, may be enrolled provided they
+             meet the criteria for mild AD, as follows:
+
+               -  Participant meets the National Institute of Neurological and Communicative
+                  Disorders and Stroke/Alzheimer's Disease and Related Disorders Association
+                  (NINCDS/ADRDA) criteria for probable AD;
+
+               -  Clinical Dementia Rating Scale (CDR) score of 0.5 or 1
+
+               -  Positive scan for the presence of amyloid beta
+
+          -  Participants with MMSE of 27 to 30, inclusive, may be enrolled as participants with
+             MCI due to AD provided they meet the following criteria:
+
+               -  Gradual and progressive change in memory function as reported by the participant
+                  or a caregiver during a period of more than 6 months;
+
+               -  Free and Cued Selective Reminding Test with Immediate Recall (FCSRT-IR): free
+                  recall ≤22 and total recall ≤46;
+
+               -  Absence of dementia;
+
+               -  Preservation of functional independence;
+
+               -  Exclusion of other potential (vascular, traumatic, or medical) causes of
+                  cognitive decline, where possible;
+
+               -  Positive scan for the presence of amyloid beta
+
+          -  Women must be postmenopausal
+
+          -  Men are required to use an approved barrier method of contraception if their partners
+             are pregnant, or of childbearing potential and not using approved contraceptive
+             methods
+
+        Exclusion Criteria:
+
+          -  Participant in another drug or device study
+
+          -  Have a history of frontotemporal dementia, Lewy body disease, vascular dementia,
+             Huntington's disease or Parkinson's disease, progressive supranuclear palsy (PSNP) or
+             other movement disorder
+
+          -  Participants are not on a stable standard of care (acetylcholinesterase inhibitors,
+             memantine) initiated less than two months prior to entry or have less than 4 weeks of
+             stable therapy. Note: Stable standard of care is allowed
+
+          -  Have had a serious infectious disease affecting the brain in the past 5 years
+
+          -  Have had a serious or repeat head injury
+
+          -  Have significant retinal impairment or disease
+
+          -  Have had a stroke or other circulation problems that are affecting your current health
+
+          -  Have had a seizure
+
+          -  Have major depressive disorder and are not on a stable dose of medication.
+             Participants who no longer meet the Diagnostic and Statistical Manual of Mental
+             Disorders, Fourth Edition-Text Revision (DSM-IV) criteria for major depression may be
+             included
+
+          -  History of schizophrenia, bipolar disorder or severe mental illness.
+
+          -  History of alcohol or drug abuse
+
+          -  Have asthma, chronic obstructive pulmonary disease (COPD) or other breathing disease
+             that is not controlled with medicine
+
+          -  Have human immunodeficiency virus (HIV) or syphilis
+
+          -  Are taking blood thinners
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>55 Years</minimum_age>
+    <maximum_age>N/A</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Call 1-877-CTLILLY (1-877-285-4559) or 1-317-615-4559 Mon - Fri 9 AM - 5 PM Eastern time (UTC/GMT - 5 hours, EST)</last_name>
+    <role>Study Director</role>
+    <affiliation>Eli Lilly and Company</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Phoenix</city>
+        <state>Arizona</state>
+        <zip>85006</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Sun City</city>
+        <state>Arizona</state>
+        <zip>85351</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Tucson</city>
+        <state>Arizona</state>
+        <zip>85741</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Long Beach</city>
+        <state>California</state>
+        <zip>90806</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>San Francisco</city>
+        <state>California</state>
+        <zip>94109</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Denver</city>
+        <state>Colorado</state>
+        <zip>80239</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>New Haven</city>
+        <state>Connecticut</state>
+        <zip>06510</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Boca Raton</city>
+        <state>Florida</state>
+        <zip>33486</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Delray Beach</city>
+        <state>Florida</state>
+        <zip>33445</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Fort Myers</city>
+        <state>Florida</state>
+        <zip>33912</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Ocala</city>
+        <state>Florida</state>
+        <zip>34471</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Orlando</city>
+        <state>Florida</state>
+        <zip>32806</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>West Palm Beach</city>
+        <state>Florida</state>
+        <zip>33407</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Decatur</city>
+        <state>Georgia</state>
+        <zip>30033</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Chicago</city>
+        <state>Illinois</state>
+        <zip>60612</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Lexington</city>
+        <state>Kentucky</state>
+        <zip>40504</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Plymouth</city>
+        <state>Massachusetts</state>
+        <zip>02360</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Qunicy</city>
+        <state>Massachusetts</state>
+        <zip>02169</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Monroe Township</city>
+        <state>New Jersey</state>
+        <zip>08831</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Albany</city>
+        <state>New York</state>
+        <zip>12206</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Durham</city>
+        <state>North Carolina</state>
+        <zip>27705</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Dayton</city>
+        <state>Ohio</state>
+        <zip>45408</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Portland</city>
+        <state>Oregon</state>
+        <zip>97210</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Salt Lake City</city>
+        <state>Utah</state>
+        <zip>84106</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Biella</city>
+        <zip>13900</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Pisa</city>
+        <zip>56126</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Rome</city>
+        <zip>00179</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Osaka</city>
+        <zip>545-8586</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Tokyo</city>
+        <zip>113</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Amsterdam</city>
+        <zip>1081 GM</zip>
+        <country>Netherlands</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Barcelona</city>
+        <zip>08014</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Getafe</city>
+        <zip>28905</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Madrid</city>
+        <zip>28040</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Sant Cugal Del Valles</city>
+        <zip>08195</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>Italy</country>
+    <country>Japan</country>
+    <country>Netherlands</country>
+    <country>Spain</country>
+    <country>United States</country>
+  </location_countries>
+  <verification_date>January 2014</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>January 7, 2014</lastchanged_date>
+  <firstreceived_date>March 21, 2012</firstreceived_date>
+  <firstreceived_results_disposition_date>January 7, 2014</firstreceived_results_disposition_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>March 21, 2012</study_first_submitted>
+  <study_first_submitted_qc>March 21, 2012</study_first_submitted_qc>
+  <study_first_posted type="Estimate">March 23, 2012</study_first_posted>
+  <disposition_first_submitted>January 7, 2014</disposition_first_submitted>
+  <disposition_first_submitted_qc>January 7, 2014</disposition_first_submitted_qc>
+  <disposition_first_posted type="Estimate">February 6, 2014</disposition_first_posted>
+  <last_update_submitted>January 7, 2014</last_update_submitted>
+  <last_update_submitted_qc>January 7, 2014</last_update_submitted_qc>
+  <last_update_posted type="Estimate">February 6, 2014</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <keyword>beta-secretase inhibitor</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+    <mesh_term>Cognitive Dysfunction</mesh_term>
+  </condition_browse>
+  <!-- Results have not yet been posted, but a results disposition has been submitted           -->
+</clinical_study>
+

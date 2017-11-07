@@ -1,0 +1,78 @@
+---
+title: "create_dataset"
+author: "Imaani Easthausen"
+date: "November 7, 2017"
+output: html_document
+---
+
+Make sure to install the package `XML` before running the script. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(XML)
+library(methods)
+library(haven)
+library(janitor)
+library(readxl)
+library(tidyverse)
+library(knitr)
+library(ggridges)
+library(hexbin)
+library(forcats)
+library(httr)
+library(rvest)
+library(stringr)
+library(forcats)
+library(viridis)
+library(tidytext)
+library(broom)
+```
+
+A search for Alzheimer's related studies returns 1771 studies related to Alzheimer's disease on clinicaltrials.gov. The contents of the table that is returned when searching "Alzheimer" can be easily downloaded as a clean .csv file. I have provided the .csv associated with my search on github.
+
+The internal elements of each study is also available for download as a zip file of .xml documents where each .xml document corresponds to one study in the clinicaltrials.gov database. 
+
+We will use the first study `NCT00000171.xml` as an example of the data that is available for each study. 
+
+Below we download and read the file related to the first study (`NCT00000171.xml`). We print a list of nodes contained in this file. Each node is a leaf (meaning that the node is terminal and there are no additional children branching from that node). The node titles are examples of data that is likely to be readily available for all clinical trials in the database. 
+```{r}
+node_names = read_xml("data/xml_files/NCT00000171.xml") %>%
+  xmlTreeParse(useInternal = TRUE) %>%
+  xmlRoot() %>%
+  names()
+
+node_names
+```
+
+To better understand the content of each node, you can print the contents of the entire xml document and scroll through to where you observe the node title and read through the related information. If you compare the nodes in the xml document to the data available in the .csv file of the search results table, you will observe that much of this data is overlapping. This means that we can discard much of the xml file. This is good! Data processing will be easier. 
+
+```{r}
+raw_xml_data = read_xml("data/xml_files/NCT00000171.xml") %>%
+  xmlTreeParse(useInternal = TRUE) %>%
+  xmlRoot()
+
+raw_xml_data
+```
+
+Below is an example of a method for extracting text data associated with a specifically identified node. This method can be generalized and applied to all of the xml files for all study search results without too much trouble. But before going through all of that let's decide what we actually want to exctract and what we'd rather discard. 
+```{r}
+text_data = read_xml("data/xml_files/NCT00000171.xml") %>%
+  xmlTreeParse(useInternal = TRUE) %>%
+  xmlRoot() %>%
+  xpathSApply("brief_summary", xmlValue)
+text_data
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="623">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01609348</url>
+  </required_header>
+  <id_info>
+    <org_study_id>NA_00066043</org_study_id>
+    <nct_id>NCT01609348</nct_id>
+  </id_info>
+  <brief_title>Venlafaxine for Depression in Alzheimer's Disease (DIADs-3)</brief_title>
+  <acronym>DIADs-3</acronym>
+  <official_title>Venlafaxine for Depression in Alzheimer's Disease</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>Johns Hopkins University</agency>
+      <agency_class>Other</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>Johns Hopkins University</source>
+  <oversight_info>
+    <has_dmc>No</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      This study will test the use of venlafaxine to treat the depression in Alzheimer's Disease.
+      Venlafaxine works by increasing natural substances in the brain (serotonin and
+      norepinephrine) that help maintain mental balance. Alzheimer's disease (AD) is the commonest
+      neurodegenerative disease of aging and the cause of major financial and emotional burden to
+      patients, families and caregivers, and society. Depression is a very common symptom of AD,
+      affecting as many as 50% of patients over their illness. Depression in AD (Alzheimer's
+      disease) contributes greatly to patient disability and caregiver distress. Neither
+      psychosocial interventions nor psychotropic medications have proven effective to date for the
+      treatment of depression in AD.Venlafaxine is approved by the U.S. Food and Drug
+      Administration (FDA) for the treatment of major depression but it is not known whether or not
+      it can help depression in Alzheimer's Disease.
+    </textblock>
+  </brief_summary>
+  <overall_status>Completed</overall_status>
+  <start_date>April 2012</start_date>
+  <completion_date type="Actual">January 2017</completion_date>
+  <primary_completion_date type="Actual">December 2016</primary_completion_date>
+  <phase>N/A</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Triple (Participant, Care Provider, Investigator)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>225 mg daily dose of venlafaxine over 12 weeks will produce changes in response on the modified AD Cooperative Study-Clinical Global Impression of Change and the Cornell Scale for Depression in Dementia.</measure>
+    <time_frame>12 weeks</time_frame>
+    <description>Treatment will be considered efficacious if the proportion of worse categories is lower under treatment than under control on the Alzheimer's Disease Cooperative Study-Clinical Global Impression of Change and improvements on the Cornell Scale for Depression in Dementia.</description>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Examine in a proof of concept, 12-week randomized controlled trial, the safety of venlafaxine at a target dose of 225 mg daily for the treatment of Depression in patients with AD.</measure>
+    <time_frame>12 weeks</time_frame>
+    <description>Proportions of individuals in each treatment group with adverse events and serious adverse events will be compared using logistic regression.</description>
+  </secondary_outcome>
+  <number_of_arms>2</number_of_arms>
+  <enrollment type="Actual">5</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <condition>Depression</condition>
+  <arm_group>
+    <arm_group_label>Venlafaxine</arm_group_label>
+    <arm_group_type>Active Comparator</arm_group_type>
+    <description>225 mg daily over 12 weeks</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Sugar pill</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Placebo</intervention_name>
+    <description>Capsule matching active drug to be taken once a day for 12 weeks</description>
+    <arm_group_label>Sugar pill</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Venlafaxine</intervention_name>
+    <description>225 mg daily for 12 weeks</description>
+    <arm_group_label>Venlafaxine</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Dementia due to Alzheimer's disease by Diagnostic and Statistical Manual Diploma in
+             Social Medicine (DSM)-IV (TR) criteria (90), with a Mini-Mental State Exam (MMSE) (82)
+             score of 10-26 inclusive;
+
+          -  Depression as defined by the National Institute of Mental Health (NIMH) Consensus
+             Criteria,
+
+          -  Clinical Dementia Rating Scale of 1 &quot;mild&quot; or 2 &quot;moderate&quot;. Ratings of 3 &quot;severe&quot; will
+             be excluded because many of the instruments lack validity in the presence of severe
+             cognitive impairment, particularly language deficits.
+
+          -  Sufficiently good health to be treated using the study protocol in usual care
+             circumstances;
+
+          -  Patient or surrogate and caregiver provides informed consent for participation in the
+             study;
+
+          -  A caregiver is available who spends at least 10 hours per week with the patient,
+             supervises her care, and is willing to accompany the patient to study visits and to
+             provide information about the patient.
+
+          -  Female participants must be at least 2 years post menopause or surgically sterilized.
+             Exclusion Criteria
+
+          -  Presence of a brain disease that might otherwise fully explain the presence of
+             dementia, such as stroke, Parkinson's disease, traumatic brain injury, multiple
+             sclerosis, and similar neurologic diseases;
+
+          -  Clinically significant psychosis that requires antipsychotic treatment; -Treatment
+             with venlafaxine is contraindicated in the opinion of the attending psychiatrist, for
+             example if there is a prior history of dangerous or -unacceptable side effects when
+             treated with venlafaxine;
+
+          -  Failure of treatment with venlafaxine in the past for depression after convincing
+             evidence of a &quot;good trial,&quot; for example 8 weeks at the highest tolerated dose;
+
+          -  Treatment for a condition or with a medication that would prohibit the safe concurrent
+             use of venlafaxine (specifically including systolic blood pressure &gt; 180 mm Hg or
+             diastolic blood pressure &gt; 100 mm Hg);
+
+          -  Diagnosis of congenital long Q-T syndrome
+
+          -  The patient requires psychiatric hospitalization for depression or is suicidal;
+
+          -  Initiation, discontinuation or dose changes in cholinesterase inhibitor or memantine
+             use within the 4 weeks prior to screening.
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>N/A</minimum_age>
+    <maximum_age>N/A</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <location>
+    <facility>
+      <name>Johns Hopkins at Bayview</name>
+      <address>
+        <city>Baltimore</city>
+        <state>Maryland</state>
+        <zip>21225</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>Reading Hospital</name>
+      <address>
+        <city>West Reading</city>
+        <state>Pennsylvania</state>
+        <zip>19611</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <verification_date>October 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>October 10, 2017</lastchanged_date>
+  <firstreceived_date>April 27, 2012</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>April 27, 2012</study_first_submitted>
+  <study_first_submitted_qc>May 29, 2012</study_first_submitted_qc>
+  <study_first_posted type="Estimate">June 1, 2012</study_first_posted>
+  <last_update_submitted>October 10, 2017</last_update_submitted>
+  <last_update_submitted_qc>October 10, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">October 17, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <keyword>Depression</keyword>
+  <keyword>Alzheimer's Disease</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Depression</mesh_term>
+    <mesh_term>Depressive Disorder</mesh_term>
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Venlafaxine Hydrochloride</mesh_term>
+  </intervention_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

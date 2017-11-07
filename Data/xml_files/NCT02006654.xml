@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="472">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT02006654</url>
+  </required_header>
+  <id_info>
+    <org_study_id>14863A</org_study_id>
+    <secondary_id>2012-004765-40</secondary_id>
+    <nct_id>NCT02006654</nct_id>
+  </id_info>
+  <brief_title>Lu AE58054 in Patients With Mild to Moderate Alzheimer's Disease Treated With an Acetylcholinesterase Inhibitor</brief_title>
+  <acronym>STARBRIGHT</acronym>
+  <official_title>Randomised, Double-blind, Parallel-group, Placebo-controlled Study of Lu AE58054 in Patients With Mild to Moderate Alzheimer's Disease Treated With an Acetylcholinesterase Inhibitor</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>H. Lundbeck A/S</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+    <collaborator>
+      <agency>Otsuka Pharmaceutical Co., Ltd.</agency>
+      <agency_class>Industry</agency_class>
+    </collaborator>
+  </sponsors>
+  <source>H. Lundbeck A/S</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      To establish efficacy of Lu AE58054 as adjunctive therapy to acetylcholinesterase inhibitors
+      (AChEIs) for symptomatic treatment of patients with mild-moderate Alzheimer's disease (AD).
+    </textblock>
+  </brief_summary>
+  <overall_status>Completed</overall_status>
+  <start_date>March 2014</start_date>
+  <completion_date type="Actual">January 2017</completion_date>
+  <primary_completion_date type="Actual">January 2017</primary_completion_date>
+  <phase>Phase 3</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Double (Participant, Investigator)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Change in cognition</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in Alzheimer's Disease Assessment Scale-cognitive subscale (ADAS-cog) total score</description>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Change in global impression</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Alzheimer's Disease Cooperative Study - Clinical Global Impression of Change (ADCS-CGIC) score</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in functioning</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in Alzheimer's Disease Cooperative Study - Activities of Daily Living Inventory (ADCS-ADL23) total score</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in behavioural disturbance</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in Neuropsychiatric Inventory (NPI) total score</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in individual behavioural disturbance items</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in single NPI item scores</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in anxiety</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in NPI Anxiety item score based on a pre-specified NPI Anxiety score at Baseline</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Clinical response</measure>
+    <time_frame>Week 24</time_frame>
+    <description>Based on pre-specified ADAS-cog, ADCS-ADL23, and ADCS-CGIC changes</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Clinical worsening</measure>
+    <time_frame>Week 24</time_frame>
+    <description>Based on pre-specified ADAS-cog, ADCS-ADL23, and ADCS-CGIC changes</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in cognitive aspects of mental function</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in Mini Mental State Examination (MMSE)</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in health-related quality of life (EQ-5D)</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in EuroQol 5-dimensional (EQ-5D) utility score</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in health-related quality of (EQ-5D VAS)</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+    <description>Change in EQ-5D Visual Analogue Scale (EQ-5D VAS)</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Number of patients with adverse events (AEs)</measure>
+    <time_frame>Up to 24 weeks and a 4-week safety follow up</time_frame>
+    <description>Overview of AEs</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Proportion of patients who withdrew due to intolerance to treatment</measure>
+    <time_frame>Baseline to Week 24</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Risk of suicidality</measure>
+    <time_frame>Up to 24 weeks</time_frame>
+    <description>Columbia Suicide Severity Rating Scale (C-SSRS)</description>
+  </secondary_outcome>
+  <number_of_arms>2</number_of_arms>
+  <enrollment type="Actual">734</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>Placebo</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+    <description>Placebo adjunct to base treatment with an AChEI</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Lu AE58054 60 mg (or 30 mg)</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Lu AE58054 adjunct to base treatment with an ACHEI</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Placebo</intervention_name>
+    <description>Once daily, matching placebo capsules, orally</description>
+    <arm_group_label>Placebo</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Lu AE58054</intervention_name>
+    <description>Once daily, encapsulated tablets, orally</description>
+    <arm_group_label>Lu AE58054 60 mg (or 30 mg)</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  The patient has a knowledgeable and reliable caregiver.
+
+          -  The patient is an outpatient.
+
+          -  The patient has probable AD.
+
+          -  The patient has mild to moderate AD.
+
+          -  Stable treatment with an AChEI.
+
+          -  The patient, if a woman, must have had her last natural menstruation ≥24 months prior
+             to baseline, OR be surgically sterile.
+
+          -  The patient, if a man, agrees to protocol-defined use of effective contraception if
+             his female partner is of childbearing potential, OR must have been surgically
+             sterilised prior to the screening visit.
+
+        Exclusion Criteria:
+
+          -  The patient has evidence of any clinically significant neurodegenerative disease, or
+             other serious neurological disorders other than AD.
+
+          -  The patient has a Diagnostic and Statistical Manual of Mental Disorders, 4th edition,
+             Text Revision (DSM-IV-TR) Axis I disorder other than AD.
+
+          -  The patient has evidence of clinically significant disease.
+
+          -  The patient's current AChEI therapy is likely to be interrupted or discontinued during
+             the study.
+
+          -  The patient is currently receiving memantine or has taken memantine within 2 months
+             prior to screening.
+
+        Other inclusion and exclusion criteria may apply.
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>50 Years</minimum_age>
+    <maximum_age>N/A</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Email contact via H. Lundbeck A/S</last_name>
+    <role>Study Director</role>
+    <affiliation>LundbeckClinicalTrials@lundbeck.com</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>US612</name>
+      <address>
+        <city>Mesa</city>
+        <state>Arizona</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US625</name>
+      <address>
+        <city>Bellflower</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US626</name>
+      <address>
+        <city>Costa Mesa</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US604</name>
+      <address>
+        <city>Oxnard</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US627</name>
+      <address>
+        <city>Santa Ana</city>
+        <state>California</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US609</name>
+      <address>
+        <city>Danbury</city>
+        <state>Connecticut</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US614</name>
+      <address>
+        <city>Norwalk</city>
+        <state>Connecticut</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US608</name>
+      <address>
+        <city>Deerfield Beach</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US616</name>
+      <address>
+        <city>Hialeah</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US620</name>
+      <address>
+        <city>Miami</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US603</name>
+      <address>
+        <city>North Palm Beach</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US631</name>
+      <address>
+        <city>Port Charlotte</city>
+        <state>Florida</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US622</name>
+      <address>
+        <city>Elk Grove Village</city>
+        <state>Illinois</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US611</name>
+      <address>
+        <city>Elkhart</city>
+        <state>Indiana</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US606</name>
+      <address>
+        <city>Prairie Village</city>
+        <state>Kansas</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US601</name>
+      <address>
+        <city>Farmington Hills</city>
+        <state>Michigan</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US607</name>
+      <address>
+        <city>Saint Louis</city>
+        <state>Missouri</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US613</name>
+      <address>
+        <city>Lawrenceville</city>
+        <state>New Jersey</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US635</name>
+      <address>
+        <city>Manchester Township</city>
+        <state>New Jersey</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US630</name>
+      <address>
+        <city>Toms River</city>
+        <state>New Jersey</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US621</name>
+      <address>
+        <city>Albany</city>
+        <state>New York</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US632</name>
+      <address>
+        <city>Staten Island</city>
+        <state>New York</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US633</name>
+      <address>
+        <city>Charlotte</city>
+        <state>North Carolina</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US623</name>
+      <address>
+        <city>Oklahoma City</city>
+        <state>Oklahoma</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US618</name>
+      <address>
+        <city>Norristown</city>
+        <state>Pennsylvania</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>US619</name>
+      <address>
+        <city>Houston</city>
+        <state>Texas</state>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AU603</name>
+      <address>
+        <city>Caulfield</city>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AU609</name>
+      <address>
+        <city>Glen Iris</city>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AU602</name>
+      <address>
+        <city>Heidelberg West</city>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AU604</name>
+      <address>
+        <city>Kanwal</city>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AU606</name>
+      <address>
+        <city>Newcastle</city>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AU601</name>
+      <address>
+        <city>West Perth</city>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>AU610</name>
+      <address>
+        <city>Woodville south</city>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>BR608</name>
+      <address>
+        <city>Belo Horizonte</city>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>BR609</name>
+      <address>
+        <city>Itapira</city>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>BR607</name>
+      <address>
+        <city>Rio de Janeiro</city>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ602</name>
+      <address>
+        <city>Chocen</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ608</name>
+      <address>
+        <city>Chocen</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ605</name>
+      <address>
+        <city>Havlickuv Brod</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ606</name>
+      <address>
+        <city>Kladno</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ603</name>
+      <address>
+        <city>Plzen</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ601</name>
+      <address>
+        <city>Prague</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ607</name>
+      <address>
+        <city>Praha 10 - Strasnice</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CZ604</name>
+      <address>
+        <city>Praha 6</city>
+        <country>Czechia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE612</name>
+      <address>
+        <city>Bad Homburg</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE610</name>
+      <address>
+        <city>Bad Honnef</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE609</name>
+      <address>
+        <city>Berlin</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE617</name>
+      <address>
+        <city>Berlin</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE604</name>
+      <address>
+        <city>Erbach</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE611</name>
+      <address>
+        <city>Freiburg</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE607</name>
+      <address>
+        <city>Gelsenkirchen</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE605</name>
+      <address>
+        <city>Homburg</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE608</name>
+      <address>
+        <city>Karlstadt</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE602</name>
+      <address>
+        <city>Mittweida</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE601</name>
+      <address>
+        <city>Munich</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE606</name>
+      <address>
+        <city>Rostock</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE603</name>
+      <address>
+        <city>Ulm</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>DE616</name>
+      <address>
+        <city>Unterhaching</city>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IL605</name>
+      <address>
+        <city>Bat Yam</city>
+        <country>Israel</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IL601</name>
+      <address>
+        <city>Haifa</city>
+        <country>Israel</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IL604</name>
+      <address>
+        <city>Holon</city>
+        <country>Israel</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IL602</name>
+      <address>
+        <city>Ramat Gan</city>
+        <country>Israel</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>IL603</name>
+      <address>
+        <city>Tel Aviv</city>
+        <country>Israel</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR601</name>
+      <address>
+        <city>Seongnam-si</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR602</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR603</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>KR604</name>
+      <address>
+        <city>Seoul</city>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>MX602</name>
+      <address>
+        <city>Mexico</city>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>MX601</name>
+      <address>
+        <city>Monterrey</city>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>MX603</name>
+      <address>
+        <city>Monterrey</city>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>MX604</name>
+      <address>
+        <city>Monterrey</city>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>MX605</name>
+      <address>
+        <city>Monterrey</city>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>MX606</name>
+      <address>
+        <city>Saltillo</city>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>RS602</name>
+      <address>
+        <city>Belgrade</city>
+        <country>Serbia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>RS603</name>
+      <address>
+        <city>Kragujevac</city>
+        <country>Serbia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>RS601</name>
+      <address>
+        <city>Novi Sad</city>
+        <country>Serbia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>SG601</name>
+      <address>
+        <city>Singapore</city>
+        <country>Singapore</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>SG602</name>
+      <address>
+        <city>Singapore</city>
+        <country>Singapore</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>SK601</name>
+      <address>
+        <city>Banska Bystrica</city>
+        <country>Slovakia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>SK603</name>
+      <address>
+        <city>Bratislava</city>
+        <country>Slovakia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>SK605</name>
+      <address>
+        <city>Bratislava</city>
+        <country>Slovakia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>SK604</name>
+      <address>
+        <city>Rimavska Sobota</city>
+        <country>Slovakia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>SK602</name>
+      <address>
+        <city>Svidnik</city>
+        <country>Slovakia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES601</name>
+      <address>
+        <city>Barcelona</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES604</name>
+      <address>
+        <city>Barcelona</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES608</name>
+      <address>
+        <city>Barcelona</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES603</name>
+      <address>
+        <city>Barcelon</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES611</name>
+      <address>
+        <city>Bilbao</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES612</name>
+      <address>
+        <city>Burgos</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES613</name>
+      <address>
+        <city>Getafe. Madrid</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES602</name>
+      <address>
+        <city>Lleida</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES610</name>
+      <address>
+        <city>Sant Cugat del Valls</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES606</name>
+      <address>
+        <city>Sevilla</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES605</name>
+      <address>
+        <city>Terrassa</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>ES607</name>
+      <address>
+        <city>Valencia</city>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CH603</name>
+      <address>
+        <city>Biel</city>
+        <country>Switzerland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CH605</name>
+      <address>
+        <city>Lausanne</city>
+        <country>Switzerland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CH602</name>
+      <address>
+        <city>Les Acacias</city>
+        <country>Switzerland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>CH601</name>
+      <address>
+        <city>Schlieren</city>
+        <country>Switzerland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TR602</name>
+      <address>
+        <city>Balova</city>
+        <country>Turkey</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TR601</name>
+      <address>
+        <city>Istanbul</city>
+        <country>Turkey</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TR605</name>
+      <address>
+        <city>Istanbul</city>
+        <country>Turkey</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TR606</name>
+      <address>
+        <city>Izmir</city>
+        <country>Turkey</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TR607</name>
+      <address>
+        <city>Samsum</city>
+        <country>Turkey</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>TR603</name>
+      <address>
+        <city>Sisli - Istanbul</city>
+        <country>Turkey</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB601</name>
+      <address>
+        <city>Brentford</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GB603</name>
+      <address>
+        <city>Northampton</city>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>Australia</country>
+    <country>Brazil</country>
+    <country>Czechia</country>
+    <country>Germany</country>
+    <country>Israel</country>
+    <country>Korea, Republic of</country>
+    <country>Mexico</country>
+    <country>Serbia</country>
+    <country>Singapore</country>
+    <country>Slovakia</country>
+    <country>Spain</country>
+    <country>Switzerland</country>
+    <country>Turkey</country>
+    <country>United Kingdom</country>
+    <country>United States</country>
+  </location_countries>
+  <removed_countries>
+    <country>Czech Republic</country>
+    <country>Japan</country>
+    <country>Netherlands</country>
+  </removed_countries>
+  <verification_date>May 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>May 30, 2017</lastchanged_date>
+  <firstreceived_date>December 5, 2013</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>December 5, 2013</study_first_submitted>
+  <study_first_submitted_qc>December 9, 2013</study_first_submitted_qc>
+  <study_first_posted type="Estimate">December 10, 2013</study_first_posted>
+  <last_update_submitted>May 30, 2017</last_update_submitted>
+  <last_update_submitted_qc>May 30, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">May 31, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Cholinesterase Inhibitors</mesh_term>
+  </intervention_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="193">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT03289143</url>
+  </required_header>
+  <id_info>
+    <org_study_id>GN39763</org_study_id>
+    <secondary_id>2017-001800-31</secondary_id>
+    <nct_id>NCT03289143</nct_id>
+  </id_info>
+  <brief_title>A Study to Evaluate the Efficacy and Safety of RO7105705 in Patients With Prodromal to Mild Alzheimer's Disease</brief_title>
+  <official_title>A Phase II, Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel-Group, Efficacy, and Safety Study of RO7105705 in Patients With Prodromal to Mild Alzheimer's Disease</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>Genentech, Inc.</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>Genentech, Inc.</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+    <is_fda_regulated_drug>Yes</is_fda_regulated_drug>
+    <is_fda_regulated_device>No</is_fda_regulated_device>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      This is a phase II, randomized, placebo-controlled, double-blind study to evaluate the
+      efficacy and safety of RO7105705 in participants with prodromal to mild Alzheimer's disease.
+      An optional 96-week open-label extension period will be available to participants who
+      complete the double-blind treatment period and who, in the judgment of the investigator,
+      would potentially benefit from open-label RO7105705 treatment.
+    </textblock>
+  </brief_summary>
+  <overall_status>Recruiting</overall_status>
+  <start_date type="Actual">October 17, 2017</start_date>
+  <completion_date type="Anticipated">September 20, 2022</completion_date>
+  <primary_completion_date type="Anticipated">September 30, 2020</primary_completion_date>
+  <phase>Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Triple (Participant, Investigator, Outcomes Assessor)</masking>
+    <masking_description>Additional blinded personnel will include study site personnel who will evaluate participant status, contract research organization (CRO) personnel who will review case report forms (CRFs), and other sponsor agents (with the exception of the interactive voice or web-based response system [IxRS] vendor).</masking_description>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Change from baseline on the CDR-Sum of Boxes</measure>
+    <time_frame>72 Weeks</time_frame>
+    <description>A scale used to quantify the severity of symptoms of dementia.</description>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Nature, frequency, severity, and timing of adverse events and serious adverse events</measure>
+    <time_frame>Up to 180 weeks</time_frame>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline on the Repeatable Battery for Assessment of Neuropsychological Status (RBANS)</measure>
+    <time_frame>72 weeks</time_frame>
+    <description>A scale used to quantify cognitive function across multiple domains.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline on the Alzheimer's Disease Assessment Scale−Cognitive Subscale 13</measure>
+    <time_frame>72 weeks</time_frame>
+    <description>A scale used to quantify the areas of cognitive function most often affected in Alzheimer's disease.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline on the Amsterdam Instrumental Activity of Daily Living questionnaire</measure>
+    <time_frame>72 weeks</time_frame>
+    <description>A scale used to quantify performance of activities of daily living.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline on the Alzheimer's Disease Cooperative Study Group−Activities of Daily Living Inventory</measure>
+    <time_frame>72 weeks</time_frame>
+    <description>A scale used to quantify performance of activities of daily living.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Serum concentrations of RO7105705 at specified timepoints</measure>
+    <time_frame>Up to 180 weeks</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Presence of anti-drug antibodies during the study relative to their presence at baseline</measure>
+    <time_frame>Up to 180 weeks</time_frame>
+  </secondary_outcome>
+  <other_outcome>
+    <measure>Change from baseline in brain tau burden as measured by [18F]GTP1-PET</measure>
+    <time_frame>72 weeks</time_frame>
+    <description>[18F]GTP1-PET is a brain imaging technology that allows visualization of the location and extent of tau pathology in the brain.</description>
+  </other_outcome>
+  <number_of_arms>4</number_of_arms>
+  <enrollment type="Anticipated">360</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>Dose 1 RO7105705</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Dose 2 RO7105705</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Dose 3 RO7105705</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Placebo</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>RO7105705</intervention_name>
+    <description>Participants will receive RO7105705 intravenously (IV).</description>
+    <arm_group_label>Dose 1 RO7105705</arm_group_label>
+    <arm_group_label>Dose 2 RO7105705</arm_group_label>
+    <arm_group_label>Dose 3 RO7105705</arm_group_label>
+    <other_name>RG6100</other_name>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Placebo</intervention_name>
+    <description>Matching placebo doses of RO7105705 given intravenously (IV).</description>
+    <arm_group_label>Placebo</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>[18F]GTP1</intervention_name>
+    <description>[18F]GTP1 will be administered as a solution for intravenous (IV) use, as part of positron emission tomography (PET) imaging.</description>
+    <arm_group_label>Dose 1 RO7105705</arm_group_label>
+    <arm_group_label>Dose 2 RO7105705</arm_group_label>
+    <arm_group_label>Dose 3 RO7105705</arm_group_label>
+    <arm_group_label>Placebo</arm_group_label>
+    <other_name>RO6880276</other_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion criteria
+
+          -  Age between 50 and 80 years
+
+          -  National Institute on Aging/Alzheimer's Association core clinical criteria for
+             probable Alzheimer's disease (AD) dementia or mild cognitive impairment (prodromal AD)
+
+          -  Evidence of the AD pathological process, by a positive amyloid assessment either on
+             cerebrospinal fluid Aβ1−42 OR amyloid positron emission tomography (PET) scan.
+             Historical amyloid PET scans may be accepted in some cases
+
+          -  Mild AD symptomatology, as defined by a screening Mini-Mental State Examination score
+             of &gt;= 20 points and Clinical Dementia Rating (CDR) −Global Score of 0.5 or 1
+
+          -  Abnormal memory function at screening
+
+          -  Availability of a person with sufficient contact with the participant to be able to
+             provide accurate information on the participant's cognitive and functional ability
+
+        Exclusion criteria
+
+          -  Pregnant or breastfeeding
+
+          -  Inability to tolerate magnetic resonance imaging (MRI) procedures or contraindication
+             to MRI
+
+          -  Contraindications to both PET imaging and lumbar dural puncture (must be able to
+             undergo at least one of these procedures to be eligible)
+
+          -  Residence in a skilled nursing facility
+
+          -  Any serious medical condition or abnormality in clinical laboratory tests that remains
+             abnormal on retest and, in the investigator's judgment, precludes the patient's safe
+             participation in and completion of the study, or bias the assessment of the clinical
+             or mental status of the participant to a significant degree
+
+          -  Any evidence of a condition other than AD that may affect cognition
+
+          -  Alcohol or substance abuse within the past 2 years
+
+          -  Use of any experimental therapy within 90 days or 5 half-lives prior to screening,
+             whichever is greater and any passive immunotherapy (immunoglobulin) against tau,
+             except use of RO7105705 in Genentech Study GN39058, as long as the last dose was at
+             least 90 days prior to screening
+
+          -  Use of any passive immunotherapy (immunoglobulin) against Aβ, unless the last dose was
+             at least 1 year prior to screening and any active immunotherapy (vaccine) that is
+             under evaluation to prevent or postpone cognitive decline
+
+          -  Any previous treatment with medications specifically intended to treat Parkinsonian
+             symptoms or any other neurodegenerative disorder within 1 year of screening
+
+          -  Systemic immunosuppressive therapy within 12 months of screening through the entire
+             study period
+
+          -  Typical antipsychotic or neuroleptic medication within 6 months of screening
+
+          -  Daily treatment with any of the following classes of medication, except for
+             intermittent short-term use, which is permitted except within 2 days or 5 half-lives
+             (whichever is longer) prior to any COA: atypical antipsychotics, opiates or opioids,
+             benzodiazepines, barbiturates, hypnotics, or any medication with centrally-acting
+             antihistamine or anticholinergic activity
+
+          -  Stimulant medications, unless the dose has been stable within the 6 months prior to
+             screening and is expected to be stable throughout the study
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>50 Years</minimum_age>
+    <maximum_age>80 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Clinical Trials</last_name>
+    <role>Study Director</role>
+    <affiliation>Genentech, Inc.</affiliation>
+  </overall_official>
+  <overall_contact>
+    <last_name>Reference Study ID: GN39763 www.roche.com/about_roche/roche_worldwide.htm</last_name>
+    <phone>888-662-6728 (U.S. only)</phone>
+    <email>global-roche-genentech-trials@gene.com</email>
+  </overall_contact>
+  <location>
+    <facility>
+      <name>JEM Research LLC</name>
+      <address>
+        <city>Atlantis</city>
+        <state>Florida</state>
+        <zip>33462</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+    <status>Recruiting</status>
+  </location>
+  <location>
+    <facility>
+      <name>Brain Matters Research, Inc.</name>
+      <address>
+        <city>Delray Beach</city>
+        <state>Florida</state>
+        <zip>33445</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+    <status>Recruiting</status>
+  </location>
+  <location>
+    <facility>
+      <name>Compass Research East, LLC</name>
+      <address>
+        <city>Orlando</city>
+        <state>Florida</state>
+        <zip>32806</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+    <status>Recruiting</status>
+  </location>
+  <location>
+    <facility>
+      <name>Empire Neurology PC; MS Center of Northeastern NY</name>
+      <address>
+        <city>Latham</city>
+        <state>New York</state>
+        <zip>12110</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+    <status>Not yet recruiting</status>
+  </location>
+  <location>
+    <facility>
+      <name>New Orleans Center For Clinical Research</name>
+      <address>
+        <city>Knoxville</city>
+        <state>Tennessee</state>
+        <zip>37920</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+    <status>Recruiting</status>
+  </location>
+  <location>
+    <facility>
+      <name>Clinical Neuroscience Research Associates, Inc.</name>
+      <address>
+        <city>Bennington</city>
+        <state>Vermont</state>
+        <zip>05201</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+    <status>Recruiting</status>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <verification_date>October 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>October 31, 2017</lastchanged_date>
+  <firstreceived_date>September 18, 2017</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>September 18, 2017</study_first_submitted>
+  <study_first_submitted_qc>September 18, 2017</study_first_submitted_qc>
+  <study_first_posted type="Actual">September 20, 2017</study_first_posted>
+  <last_update_submitted>October 31, 2017</last_update_submitted>
+  <last_update_submitted_qc>October 31, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">November 1, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <keyword>Alzheimer Disease</keyword>
+  <keyword>Brain Diseases</keyword>
+  <keyword>Dementia</keyword>
+  <keyword>Neurodegenerative Diseases</keyword>
+  <keyword>Neurocognitive Disorders</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

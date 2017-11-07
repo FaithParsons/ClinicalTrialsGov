@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="1720">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01845636</url>
+  </required_header>
+  <id_info>
+    <org_study_id>6577</org_study_id>
+    <secondary_id>W81XWH-12-0142</secondary_id>
+    <nct_id>NCT01845636</nct_id>
+  </id_info>
+  <brief_title>Olfactory Deficits in MCI as Predictor of Improved Cognition on Donepezil</brief_title>
+  <official_title>Olfactory Deficits in Mild Cognitive Impairment as a Predictor of Improved Cognition on Donepezil</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>New York State Psychiatric Institute</agency>
+      <agency_class>Other</agency_class>
+    </lead_sponsor>
+    <collaborator>
+      <agency>United States Department of Defense</agency>
+      <agency_class>U.S. Fed</agency_class>
+    </collaborator>
+  </sponsors>
+  <source>New York State Psychiatric Institute</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      Odor identification deficits, which are a result of early Alzheimer's Disease (AD) pathology
+      in the olfactory bulb and tract as well as olfactory projection areas in the medial temporal
+      lobe (entorhinal and piriform cortex and hippocampus), lateral and central orbitofrontal
+      cortex and several other regions, occur in AD and strongly predict mild cognitive impairment
+      (MCI) conversion to AD. Our pilot data, along with converging findings in the literature,
+      suggests that odor identification deficits, both incremental change over time and change in
+      response to an anticholinergic challenge, may be clinically simple, relatively inexpensive,
+      predictors of cognitive improvement with acetylcholinesterase inhibitor (ACheI) treatment
+      with potential clinical implications for predicting improvement and monitoring ACheI therapy.
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      In this clinical trial, the investigators will evaluate, treat and follow a broad sample of
+      60 adult patients with amnestic MCI at New York State Psychiatric Institute/Columbia
+      University Medical Center. Recruitment will be from clinics and/or advertisements. In the
+      protocol, all 60 amnestic MCI patients will receive baseline memory and olfactory assessments
+      and begin treatment with donepezil. Patients will be followed for a total of 1 year. During
+      this time, patients will be monitored closely by the study physician and will receive memory
+      and olfactory assessments at weeks 8, 26, and 52. In addition, an olfactory challenge test
+      will be done at baseline.
+
+      This project will be of value in the selection of patients with mild cognitive impairment for
+      treatment based on the evaluation of olfaction tests to predict response to donepezil and
+      other ACheI. Since mild cognitive impairment is widespread and Alzheimer's disease represents
+      a major public health problem, this study has considerable public purpose and significance.
+    </textblock>
+  </detailed_description>
+  <overall_status>Completed</overall_status>
+  <start_date>August 2012</start_date>
+  <completion_date type="Actual">March 2016</completion_date>
+  <primary_completion_date type="Actual">March 2016</primary_completion_date>
+  <phase>Phase 4</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <intervention_model>Single Group Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>None (Open Label)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Selective Reminding Test (SRT)</measure>
+    <time_frame>Week 0, Week 8, Week 26, Week 52</time_frame>
+    <description>The 12-item, 6-trial SRT is a memory measure used to assess verbal list learning and memory. The total number of words learned over six trials (total immediate recall), and delayed recall (after a 15-minute delay) will be obtained.</description>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Alzheimer's Disease Assessment Scale - Cognitive (ADAS-Cog)</measure>
+    <time_frame>Week 0, Week 8, Week 26, Week 52</time_frame>
+    <description>The modified ADAS-Cog is a cognitive battery that assesses learning, memory, language production, language comprehension, constructional praxis, ideational praxis, and orientation.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Pfeffer Functional Activities Questionnaire (FAQ)</measure>
+    <time_frame>Week 0, Week 4, Week 8, Week 26, Week 52</time_frame>
+    <description>FAQ is a widely used 10-item instrument that takes 3 minutes to administer and focuses on instrumental, social and cognitive functioning.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Measurement of Everyday Cognition (Ecog)</measure>
+    <time_frame>Week 0, Week 4, Week 8, Week 26, Week 52</time_frame>
+    <description>This instrument has 40 items, takes 20 minutes to administer, and focuses on functional correlates of cognitive deficits.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Clinician's Interview Based Impression of Change plus Caregiver Input (CIBIC-plus)</measure>
+    <time_frame>Week 0, Week 2, Week 4, Week 8, Week 26, Week 52</time_frame>
+    <description>The CIBIC-plus is a well-validated, reliable and widely used measure (range 1-7) of global improvement used in AD and MCI trials.</description>
+  </secondary_outcome>
+  <other_outcome>
+    <measure>Mini-Mental State Examination - MMSE</measure>
+    <time_frame>Week 0, Week 26, Week 52</time_frame>
+  </other_outcome>
+  <other_outcome>
+    <measure>Trail Making Test (Parts A and B)</measure>
+    <time_frame>Week 0, Week 52</time_frame>
+    <description>Parts A and B are composed of 25 circles. Patients are asked to scan the entire page and identify the next number or letter in a sequence.</description>
+  </other_outcome>
+  <other_outcome>
+    <measure>Wechsler Adult Intelligence Scale (WAIS) -III Digit Symbol Subtest</measure>
+    <time_frame>Week 0, Week 52</time_frame>
+  </other_outcome>
+  <other_outcome>
+    <measure>Controlled Word Association (CFL)</measure>
+    <time_frame>Week 0, Week 52</time_frame>
+  </other_outcome>
+  <other_outcome>
+    <measure>Boston Naming Test (BNT)</measure>
+    <time_frame>Week 0, Week 52</time_frame>
+  </other_outcome>
+  <other_outcome>
+    <measure>Wechsler Memory Scale (WMS)-R Digit Span</measure>
+    <time_frame>Week 0, Week 52</time_frame>
+  </other_outcome>
+  <other_outcome>
+    <measure>Treatment Emergent Symptom Scale (TESS)</measure>
+    <time_frame>Week 0, Week 4, Week 8, Week 26, Week 52</time_frame>
+    <description>TESS is widely used to evaluate somatic side effects. For each item, a rating is made on a 3-point scale, with an additional rating on the likelihood that the medication caused the side effect.</description>
+  </other_outcome>
+  <number_of_arms>1</number_of_arms>
+  <enrollment type="Actual">41</enrollment>
+  <condition>Mild Cognitive Impairment</condition>
+  <arm_group>
+    <arm_group_label>Donepezil Treatment &amp; Atropine Challenge</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Atropine nasal spray is administered at baseline for the atropine challenge which involves administration of the 40-item University of Pennsylvania Smell Identification Test (UPSIT) immediately before and 45 minutes after atropine administration. Immediately after the atropine challenge, donepezil treatment is started and continues for 52 weeks.</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Donepezil</intervention_name>
+    <description>Donepezil 5mg will be given for 4 weeks and if tolerated, the dose will be increased to 10 mg per day. The dose range of 5 to 10 mg of donepezil per day will be continued for the study duration, and this is the recommended dose for donepezil in the treatment of mild to moderate Alzheimer's disease.</description>
+    <arm_group_label>Donepezil Treatment &amp; Atropine Challenge</arm_group_label>
+    <other_name>Aricept</other_name>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Atropine</intervention_name>
+    <description>A single acute dose of 1 mg of atropine nasal spray is administered to the nostril. The dose chosen reflects clinical doses typically used by Ear, Nose, and Throat (ENT) physicians.</description>
+    <arm_group_label>Donepezil Treatment &amp; Atropine Challenge</arm_group_label>
+    <other_name>Atropine sulfate ophthalmic solution 1%</other_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Of either sex, age 55-95 years old
+
+          -  Patients who meet criteria for amnestic mild cognitive impairment by meeting all of
+             the following:
+
+             (i) subjective memory complaints (ii) Wechsler Memory Scale-R Logical Memory combined
+             Story A + B immediate recall score or combined Story A + B delayed recall score or
+             Free and Cued Selective Reminding Test immediate recall or delayed recall score
+             greater than 1.5 Standard Deviation (SD) below norms or Selective Reminding Test
+             immediate recall or delayed recall score greater than 1.5 SD below norms iii) no
+             functional impairment consistent with dementia
+
+          -  Folstein Mini Mental State (MMSE) score ≥ 23 out of 30
+
+          -  Clinical Dementia Rating (CDR) of 0.5 (questionable dementia)
+
+          -  Availability of informant
+
+        Exclusion Criteria:
+
+          -  Meets Criteria for dementia by Diagnostic and Statistical Manual IV (DSM-IV) criteria
+             or probable Alzheimer's disease
+
+          -  Meets DSM IV criteria for:
+
+             (i)schizophrenia, schizoaffective disorder, other psychosis, or bipolar I disorder
+             (ii)alcohol or substance dependence or abuse (current or within past 6 months)
+
+          -  Current untreated major depression or suicidality
+
+          -  Parkinson's disease, Lewy body disease, multiple sclerosis, central nervous system
+             infection, Huntington's disease, amyotrophic lateral sclerosis, other major
+             neurological disorder.
+
+          -  Mental Retardation
+
+          -  Clinical stroke with residual neurological deficits. MRI findings of cerebrovascular
+             disease (small infarcts, lacunes, periventricular disease) in the absence of clinical
+             stroke with residual neurological deficits will not lead to exclusion.
+
+          -  Patients receiving cholinesterase inhibitors (donepezil, rivastigmine, galantamine) or
+             memantine will be excluded.
+
+          -  Acute, severe, unstable medical illness. For cancer, patients with active illness or
+             metastases will be excluded, but past history of successfully treated cancer will not
+             lead to exclusion.
+
+          -  Medical contraindication to donepezil treatment or prior history of intolerability to
+             donepezil treatment.
+
+          -  Medications with anticholinergic effects that have been shown to adversely impact
+             cognition will not be permitted. Benzodiazepines in lorazepam equivalents greater than
+             or equal to 2 mg daily and narcotics will also not be permitted.
+
+          -  Exclusion criterion for olfaction: history of anosmia due to any cause (e.g. traumatic
+             or congenital) verified by UPSIT score of &lt;11 out of 40; head trauma with loss of
+             consciousness; nasal sinus disease, current upper respiratory infection; severe
+             allergies to odors; current smoker &gt; 1 pack daily.
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>55 Years</minimum_age>
+    <maximum_age>95 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Davangere Devanand, M.D.</last_name>
+    <role>Principal Investigator</role>
+    <affiliation>Columbia University</affiliation>
+  </overall_official>
+  <overall_official>
+    <last_name>Gregory Pelton, M.D.</last_name>
+    <role>Study Director</role>
+    <affiliation>Columbia University</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>New York State Psychiatric Institute</name>
+      <address>
+        <city>New York</city>
+        <state>New York</state>
+        <zip>10032</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <verification_date>September 2016</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>September 20, 2016</lastchanged_date>
+  <firstreceived_date>April 26, 2013</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>April 26, 2013</study_first_submitted>
+  <study_first_submitted_qc>April 30, 2013</study_first_submitted_qc>
+  <study_first_posted type="Estimate">May 3, 2013</study_first_posted>
+  <last_update_submitted>September 20, 2016</last_update_submitted>
+  <last_update_submitted_qc>September 20, 2016</last_update_submitted_qc>
+  <last_update_posted type="Actual">October 12, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <keyword>Olfaction</keyword>
+  <keyword>Donepezil</keyword>
+  <keyword>Alzheimer's Disease</keyword>
+  <keyword>Mild Cognitive Impairment</keyword>
+  <keyword>Memory</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Cognitive Dysfunction</mesh_term>
+  </condition_browse>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Ophthalmic Solutions</mesh_term>
+    <mesh_term>Donepezil</mesh_term>
+    <mesh_term>Atropine</mesh_term>
+  </intervention_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

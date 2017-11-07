@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="995">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01202994</url>
+  </required_header>
+  <id_info>
+    <org_study_id>43306</org_study_id>
+    <nct_id>NCT01202994</nct_id>
+  </id_info>
+  <brief_title>Practice Effects and Amyloid Imaging Using 18F-PIB or Flutemetamol PET and FDG-PET</brief_title>
+  <official_title>Practice Effects and Amyloid Imaging Using 18F-PIB (18F-39-F-6-OH-BTA1) Known as [18FGE067]) or Flutemetamol PET and FDG-PET</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>University of Utah</agency>
+      <agency_class>Other</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>University of Utah</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      Alzheimer's disease (AD) is the most common cause of progressive cognitive decline in the
+      United States. AD is characterized by severe impairments in learning, memory and other
+      cognitive abilities that significantly interfere with daily functioning. The neuropathologic
+      hallmarks of AD consist of neuritic plaques, neurofibrillary tangles, and selective neuronal
+      cell loss. Amyloid plaques, which contain Abeta protein, are believed to play an integral
+      role in the development of AD. Elevated levels of Abeta in the brain are also correlated with
+      cognitive decline.
+
+      Alzheimer's (AD) develops insidiously, making it difficult to identify early, yet treatment
+      is most effective when begun during the early stages of the disease. Thus, it has become
+      important for researchers to identify markers of early AD. This project will examine the
+      relationship between four potential markers that may indicate the early development of AD:
+
+        1. Mild cognitive impairment (MCI)or normal cognition
+
+        2. Practice effects
+
+        3. Amyloid plaque binding on 18F-PIB PET
+
+        4. Glucose hypometabolism on FDG PET
+
+      This project will recruit 25 subjects from an ongoing community-based study of memory and
+      practice effects in cognitively normal, community-dwelling individuals who are age 65 and
+      over (NIA #5K23AG028417-05). Each subject will undergo positron emission tomography (PET)
+      with both 18F-Flutemetamol and FDG.
+
+      The overall objective of this companion project is to study the biodistribution and binding
+      of 18F-Flutemetamol in these subjects using PET imaging, which will provide biological
+      evidence to support the overall hypothesis that failure to benefit from practice on a
+      learning paradigm is an early marker of AD.
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      The overall objective of this companion study project is to study the biodistribution and
+      binding of 18F-Flutemetamol using PET imaging in community-dwelling functionally intact
+      elderly subjects. Understanding the biodistribution and binding of this radiopharmaceutical
+      in normal patients with various levels of potential for cognitive decline will help determine
+      its appropriate role as a disease biomarker and aid in the interpretation of images produced
+      with this agent. Comparison with FDG-PET is essential to correlate metabolic changes and for
+      anatomic co-registration of 18F-PIB images necessary for group analysis.
+
+      We will use 18F-Flutemetamol and FDG-PET to compare subjects with low and high practice
+      effects with the following aims and hypotheses:
+
+      Specific Aim 1: Examine the relationship between practice effects and amyloid burden in a
+      community sample.
+
+      Specific Aim 2: Determine whether FDG-PET or 18F-Flutemetamol better distinguish individuals
+      with high and low practice effects.
+
+      Hypothesis 1: Practice effects will be negatively correlated with amyloid deposition, so that
+      higher levels of practice effects (i.e., better repeat testing) will be associated with lower
+      levels of brain amyloid deposition and lower levels of practice effects (i.e., poorer repeat
+      testing) will be associated with greater levels of brain amyloid and these two groups are
+      more clearly distinguishable with 18F-PIB than FDG-PET.
+
+      Hypothesis 2: Patients with increased amyloid deposition shown with 18F-PIB will have an
+      FDG-PET scan with more pronounced temporal and parietal hypometabolism as noted on visual
+      review of images and on statistical image analysis.
+    </textblock>
+  </detailed_description>
+  <overall_status>Active, not recruiting</overall_status>
+  <start_date>May 2011</start_date>
+  <completion_date type="Anticipated">December 2018</completion_date>
+  <primary_completion_date type="Actual">May 2016</primary_completion_date>
+  <phase>Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <intervention_model>Single Group Assignment</intervention_model>
+    <primary_purpose>Screening</primary_purpose>
+    <masking>None (Open Label)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Practice effects and FDG-PET perfusion will be correlated with amyloid deposition in 18F-PIB.</measure>
+    <time_frame>All measures will be collected within six month.</time_frame>
+  </primary_outcome>
+  <number_of_arms>1</number_of_arms>
+  <enrollment type="Actual">27</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>18F-Flutemetamol</intervention_name>
+    <description>All subjects will undergo a PET scan with 18F-PIB, within six months of also undergoing an FDG-PET scan (PET scans will occur on separate days).
+For the 18F-PIB PET scan: Approximately 185 MBq (5 mCi) of 18F-PIB will be injected intravenously and PET data collected for each subject.
+The FDG-PET scan will follow the same procedures as routine scans obtained in a clinical setting (approximately 370 MBq of 18F-FDG will be injected intravenously and PET data collected for each subject). FDG-PET data will be used to correlate metabolic changes and for anatomic co-registration of 18F-PIB images.</description>
+    <other_name>18F-39-F-6-OH-BTA1</other_name>
+    <other_name>[18FGE067]</other_name>
+    <other_name>Flutametamol PET</other_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Subjects must be currently enrolled in an NIA-sponsored, community-based study of
+             practice effects in non-demented adults age 65 and older living independently (NIA
+             #5K23AG028417-05)
+
+        Exclusion Criteria:
+
+          -  History of neurological disease known to affect cognition (e.g., stroke, head injury
+             with loss of consciousness of &gt;30 minutes, seizure disorder, demyelinating disorder,
+             mental retardation, etc.)
+
+          -  Dementia based on DSM-IV criteria
+
+          -  Current or past major psychiatric illness (e.g., schizophrenia, bipolar affective
+             disorder)
+
+          -  30-item Geriatric Depression Score &gt;14
+
+          -  Evidence of stroke or mass lesion on CT or MRI scan
+
+          -  History of alcoholism or other substance abuse
+
+          -  Current use of cholinesterase inhibitors, other cognitive enhancers, antipsychotics,
+             or anticonvulsant medications
+
+          -  History of radiation therapy to the brain
+
+          -  History of significant major medical illnesses, such as cancer or AIDS
+
+          -  Uncontrolled diabetes or blood glucose &gt;180 mg/dl on the day of the FDG-PET scan
+
+          -  Currently pregnant
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>65 Years</minimum_age>
+    <maximum_age>N/A</maximum_age>
+    <healthy_volunteers>Accepts Healthy Volunteers</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Kevin Duff, Ph.D.</last_name>
+    <role>Principal Investigator</role>
+    <affiliation>University of Utah</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>University of Utah Center for Alzheimer's Care, Imaging and Research</name>
+      <address>
+        <city>Salt Lake City</city>
+        <state>Utah</state>
+        <zip>84108</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <link>
+    <url>http://www.utahmemory.org</url>
+    <description>Link to the University of Utah Center for Alzheimer's Care, Imaging and Research</description>
+  </link>
+  <verification_date>March 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>March 20, 2017</lastchanged_date>
+  <firstreceived_date>September 14, 2010</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>September 14, 2010</study_first_submitted>
+  <study_first_submitted_qc>September 14, 2010</study_first_submitted_qc>
+  <study_first_posted type="Estimate">September 16, 2010</study_first_posted>
+  <last_update_submitted>March 20, 2017</last_update_submitted>
+  <last_update_submitted_qc>March 20, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">October 25, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Principal Investigator</responsible_party_type>
+    <investigator_affiliation>University of Utah</investigator_affiliation>
+    <investigator_full_name>Kevin Duff</investigator_full_name>
+    <investigator_title>Phd</investigator_title>
+  </responsible_party>
+  <keyword>Alzheimer's disease</keyword>
+  <keyword>Mild cognitive impairment</keyword>
+  <keyword>PET</keyword>
+  <keyword>Practice effects</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

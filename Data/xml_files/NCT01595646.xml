@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="1297">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01595646</url>
+  </required_header>
+  <id_info>
+    <org_study_id>IRB00023230</org_study_id>
+    <secondary_id>ZEN-10-173646US</secondary_id>
+    <nct_id>NCT01595646</nct_id>
+  </id_info>
+  <brief_title>Study of Nasal Insulin to Fight Forgetfulness - Long-acting Insulin Detemir - 120 Days (SL120)</brief_title>
+  <acronym>SL120</acronym>
+  <official_title>Study of Nasal Insulin to Fight Forgetfulness - Long-acting Insulin Detemir - 120 Days (SL120)</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>Wake Forest University Health Sciences</agency>
+      <agency_class>Other</agency_class>
+    </lead_sponsor>
+    <collaborator>
+      <agency>Alzheimer's Association</agency>
+      <agency_class>Other</agency_class>
+    </collaborator>
+  </sponsors>
+  <source>Wake Forest University Health Sciences</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      The study will examine the effects of intranasally administered long-acting insulin detemir
+      on cognition in persons with Alzheimer's disease (AD) or amnestic mild cognitive impairment
+      (aMCI). The rationale for these studies is derived from growing evidence that insulin
+      contributes to multiple brain functions, and that insulin dysregulation can contribute to AD
+      pathogenesis. Thus, therapies aimed at restoring normal insulin signaling in the CNS may have
+      beneficial effects on brain function. Intranasal administration of insulin increases insulin
+      signaling in the brain without raising peripheral levels and causing hypoglycemia. Insulin
+      detemir is an insulin analogue that may have better action in brain than other insulin
+      formulations because of its albumin binding properties. The investigators will test the
+      therapeutic effects of intranasally-administered insulin detemir in a study in which
+      participants will receive insulin detemir, regular insulin, or placebo over a four month
+      period. The investigators will test the hypothesis that insulin and insulin detemir will both
+      improve memory and daily functioning in persons with AD/aMCI compared with placebo, but that
+      insulin detemir will have the greatest effect.
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      It is well-known that insulin, a hormone that is naturally secreted by the pancreas, plays an
+      important physiological role by regulating blood sugar levels in the body. Researchers now
+      know that insulin plays many important roles in the brain as well. Insulin seems to be
+      especially active in the part of the brain that corresponds to learning and memory. Studies
+      have shown that when people have insufficient insulin in the brain (which, for example, is
+      the case with Type-II diabetes), they are increasingly at risk to develop memory problems and
+      Alzheimer's disease. In a past study, the investigators administered intravenous insulin to
+      participants and found that it improves memory. However, that particular method would not be
+      a practical intervention for people with Alzheimer's disease due to the risks of hypoglycemia
+      or exacerbation of insulin resistance. Instead, the investigators use an &quot;intranasal&quot; method
+      of administration, in which the insulin is inserted into a device, and administered
+      intranasally. In this method, the insulin travels directly to the brain, and bypasses the
+      body. Past studies have also demonstrated that this can be a reliable way to improve memory,
+      and it does not change the body's blood glucose levels.
+
+      In our past studies, investigators have used regular insulin, which lasts about 3-4 hours and
+      creates a similar &quot;spike&quot; in insulin that one would have after eating a meal. However, in
+      normal physiology, the pancreas also releases small and more constant &quot;pulses&quot; of insulin
+      throughout the day and night, establishing a base level of insulin. Accordingly, several
+      longer-lasting types of insulin are now available that last closer to 10-12 hours, mimicking
+      that basal level of insulin. The current study uses a long-lasting type of insulin called
+      &quot;insulin detemir,&quot; to determine if learning and memory will benefit from a more consistent
+      supplement of insulin. The investigators want to determine whether this treatment can benefit
+      people who already have a memory impairment—either they have a diagnosis of Alzheimer's
+      disease (AD) or have a mild cognitive impairment (MCI), a condition that precedes Alzheimer's
+      disease. The investigators will examine cognition, daily function, cerebral blood flow, and
+      different markers of Alzheimer's disease that are in the blood and cerebral spinal fluid
+      (CSF) as outcome measures.
+
+      The investigators have these specific aims:
+
+        1. We will test the hypothesis that compared to placebo, four months of treatment with
+           intranasal insulin or insulin detemir will improve cognition and function in adults with
+           AD or MCI, but that greater effects will be observed for insulin detemir.
+
+        2. We will examine the effects of intranasal insulin and insulin detemir on cerebral blood
+           flow in adults with AD or MCI.
+
+        3. We will examine the effects of intranasal insulin and insulin detemir on CSF Aβ, tau and
+           inflammatory markers in adults with AD or MCI.
+
+      To examine these hypotheses, the investigators are recruiting approximately 90 participants
+      who have been diagnosed with AD or mild cognitive impairment. They will be randomly selected
+      to take a placebo (saline), insulin detemir, or insulin. Cognition, the level of daily
+      functioning, glucose tolerance, and cerebral blood flow will be tested before they begin the
+      study drug, and after 16 weeks of the study drug. Some participants will also undergo a
+      lumbar puncture both before beginning study drug and after 16 weeks of taking the study drug.
+
+      Statistical analysis will follow an intent-to-treat (ITT) approach; that is, subjects will be
+      analyzed in their original randomized group regardless of adherence to group assignment. A
+      completer analysis will also be performed, including only those subjects who successfully
+      complete the treatment phase. Missing data will be handled using multiple imputation linear
+      regression. We will conduct secondary analyses on other measures of cognition, daily
+      function, cerebral blood flow, and CSF biomarkers. For ASL-MRI, following coregistration and
+      processing, parametric maps will be generated to determine regional CBF values by treatment
+      group. Secondary analyses will also examine treatment duration (2-month vs. 4-month) for all
+      relevant outcomes. All models will be adjusted for age and an index of peripheral insulin
+      sensitivity (derived from 120-minute OGTT glucose and insulin values) if statistically
+      warranted, and posthoc contrasts will be performed when appropriate. Secondary analyses will
+      also evaluate whether treatment response of cognition, daily function, CSF and plasma
+      markers, and insulin differ according to APOE4 genotype. Although these analyses will be
+      exploratory due to possible limited APOE4 by treatment arm cell size, the data will be
+      examined for statistical trends that warrant further exploration in larger trials. Other
+      secondary analyses will examine associations among treatment-related outcomes using scores
+      derived from multiple regression of data collected during the treatment phase residualized
+      with respect to baseline values.
+    </textblock>
+  </detailed_description>
+  <overall_status>Active, not recruiting</overall_status>
+  <start_date>November 2011</start_date>
+  <completion_date type="Anticipated">March 2017</completion_date>
+  <primary_completion_date type="Anticipated">March 2017</primary_completion_date>
+  <phase>Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Quadruple (Participant, Care Provider, Investigator, Outcomes Assessor)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Verbal Memory Composite</measure>
+    <time_frame>Change from Baseline in Verbal Memory at 16 weeks</time_frame>
+    <description>The composite will consist of the sum of Z scores for Delayed Story Recall and Delayed List Recall</description>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Glucose Tolerance</measure>
+    <time_frame>Change from Baseline in Glucose Tolerance at 16 Weeks</time_frame>
+    <description>Subjects will undergo oral glucose tolerance test (OGTT) to assess glucose tolerance</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Cerebral Blood Flow</measure>
+    <time_frame>Change from Baseline in Cerebral Blood Flow at 16 Weeks</time_frame>
+    <description>Functional MRI and arterial-spin labeling perfusion MRI</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Cerebral Spinal Fluid (CSF) Biomarkers of AD</measure>
+    <time_frame>Change from Baseline in CSF Biomarkers at 16 Weeks</time_frame>
+    <description>CSF Abeta (ABeta 38, ABeta 40, and Abeta 42) and Tau (total tau and phosphorylated tau) will be measured in each subject.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Plasma Biomarkers of AD</measure>
+    <time_frame>Change from Baseline in Plasma Biomarkers at 16 Weeks</time_frame>
+    <description>Plasma Abeta (ABeta 38, ABeta 40, and Abeta 42) and Tau (total tau and phosphorylated tau) will be measured in each subject.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Executive Function Composite</measure>
+    <time_frame>Change from Baseline in Executive Functioning at 16 Weeks</time_frame>
+    <description>Sum of Z Scores from Dot Counting Test (test of executive functioning) and Benton Visual Retention Test Form F&amp;G (a test of visual working memory)</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Functional Ability</measure>
+    <time_frame>Change from Baseline in Functional Ability at 16 Weeks</time_frame>
+    <description>Subjects will have a collateral informant (i.e., spouse or friend) rate the subjects' ability to carry out activities of daily living on the Dementia Severity Rating Scale.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>The Alzheimer's Disease Assessment Scale-Cognitive [ADAS-Cog/Alzheimer's Disease Cooperative Study (ADCS)] - MCI revision</measure>
+    <time_frame>Change from Baseline in this measure at 16 Weeks</time_frame>
+    <description>This cognitive screening measure contains measures of confrontational naming, following commands, constructional praxis, ideational praxis, orientation, and language production and comprehension.</description>
+  </secondary_outcome>
+  <number_of_arms>3</number_of_arms>
+  <enrollment type="Anticipated">36</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <condition>Mild Cognitive Impairment</condition>
+  <arm_group>
+    <arm_group_label>Saline</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Insulin Detemir</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>20IU of Insulin Detemir taken twice per day (40IU total per day)</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Insulin</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>20IU Insulin, administered twice per day (40IU total per day)</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Saline</intervention_name>
+    <description>Saline, administered intranasally twice per day for a 16 week duration</description>
+    <arm_group_label>Saline</arm_group_label>
+    <other_name>Saline solution</other_name>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Insulin detemir</intervention_name>
+    <description>20IU of insulin detemir, administered intranasally twice per day for a 16 week duration (total of 40IU insulin detemir per day)</description>
+    <arm_group_label>Insulin Detemir</arm_group_label>
+    <other_name>Levemir</other_name>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Insulin</intervention_name>
+    <description>20IU insulin, administered intranasally twice per day for a 16 week duration (total of 40IU insulin per day)</description>
+    <arm_group_label>Insulin</arm_group_label>
+    <other_name>Novolin R</other_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Age 50-89
+
+          -  Diagnosed with mild cognitive impairment, or mild/moderate AD
+
+        Exclusion Criteria:
+
+          -  Excessively high or low blood pressure, heart rate
+
+          -  Pre-existing diabetes not controlled by exercise/diet
+
+          -  Previous/current use of insulin
+
+          -  Significant elevations in lipids, liver enzymes
+
+          -  Menstrual period within the last 12 months
+
+          -  Significant neurological or medical disorder (other than AD)
+
+          -  Significant use of nasal decongestants
+
+          -  Current use of anti-psychotic, anti-convulsive, anxiolytic, glucocorticoids, or
+             sedative medications
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>50 Years</minimum_age>
+    <maximum_age>89 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Suzanne Craft, PhD</last_name>
+    <role>Principal Investigator</role>
+    <affiliation>Wake Forest University Health Sciences</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>Wake Forest Baptist Hospital</name>
+      <address>
+        <city>Winston-Salem</city>
+        <state>North Carolina</state>
+        <zip>27157</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>VA Puget Sound Health Care System - American Lake Division</name>
+      <address>
+        <city>Tacoma</city>
+        <state>Washington</state>
+        <zip>98493</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <verification_date>November 2016</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>November 30, 2016</lastchanged_date>
+  <firstreceived_date>May 8, 2012</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>May 8, 2012</study_first_submitted>
+  <study_first_submitted_qc>May 9, 2012</study_first_submitted_qc>
+  <study_first_posted type="Estimate">May 10, 2012</study_first_posted>
+  <last_update_submitted>November 30, 2016</last_update_submitted>
+  <last_update_submitted_qc>November 30, 2016</last_update_submitted_qc>
+  <last_update_posted type="Actual">October 12, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Principal Investigator</responsible_party_type>
+    <investigator_affiliation>Wake Forest School of Medicine</investigator_affiliation>
+    <investigator_full_name>Suzanne Craft</investigator_full_name>
+    <investigator_title>Research Director, Sticht Center on Aging</investigator_title>
+  </responsible_party>
+  <keyword>Memory</keyword>
+  <keyword>Intranasal insulin</keyword>
+  <keyword>Alzheimer's disease</keyword>
+  <keyword>Mild Cognitive Impairment</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+    <mesh_term>Cognitive Dysfunction</mesh_term>
+  </condition_browse>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Insulin, Globin Zinc</mesh_term>
+    <mesh_term>Insulin</mesh_term>
+    <mesh_term>Insulin Detemir</mesh_term>
+    <mesh_term>Insulin, Long-Acting</mesh_term>
+  </intervention_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

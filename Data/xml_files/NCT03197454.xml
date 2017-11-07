@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="1285">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT03197454</url>
+  </required_header>
+  <id_info>
+    <org_study_id>PSC-0605-17</org_study_id>
+    <nct_id>NCT03197454</nct_id>
+  </id_info>
+  <brief_title>Plasticity-based Adaptive Cognitive Remediation for Alzheimer Disease (PACR-AD)</brief_title>
+  <acronym>PACR-AD</acronym>
+  <official_title>Plasticity-based Adaptive Cognitive Remediation for Alzheimer Disease (PACR-AD) Phase II</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>Posit Science Corporation</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+    <collaborator>
+      <agency>University of Iowa</agency>
+      <agency_class>Other</agency_class>
+    </collaborator>
+    <collaborator>
+      <agency>The University of Texas at Dallas</agency>
+      <agency_class>Other</agency_class>
+    </collaborator>
+    <collaborator>
+      <agency>National Institute on Aging (NIA)</agency>
+      <agency_class>NIH</agency_class>
+    </collaborator>
+  </sponsors>
+  <source>Posit Science Corporation</source>
+  <oversight_info>
+    <is_fda_regulated_drug>No</is_fda_regulated_drug>
+    <is_fda_regulated_device>No</is_fda_regulated_device>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      The primary objective of this study is to evaluate the effects of the experimental treatment
+      (cognitive training) further outlined in this protocol on the cognitive abilities (e.g.,
+      processing speed, attention, working memory, and executive function), brain functionality,
+      functional status and quality of life of individuals with age-related cognitive decline as
+      compared to a computer-based active control.
+    </textblock>
+  </brief_summary>
+  <overall_status>Not yet recruiting</overall_status>
+  <start_date type="Anticipated">October 2017</start_date>
+  <completion_date type="Anticipated">October 2020</completion_date>
+  <primary_completion_date type="Anticipated">October 2020</primary_completion_date>
+  <phase>N/A</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Quadruple (Participant, Care Provider, Investigator, Outcomes Assessor)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Processing Speed</measure>
+    <time_frame>At 3 months and at 9 months</time_frame>
+    <description>Between-group magnitude of change in processing speed utilizing Pattern-Number Comparison, Letter-Number Comparison and Digit Symbol Substitution task.</description>
+  </primary_outcome>
+  <number_of_arms>2</number_of_arms>
+  <enrollment type="Anticipated">120</enrollment>
+  <condition>Age-related Cognitive Decline</condition>
+  <arm_group>
+    <arm_group_label>Experimental Treatment</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Computerized plasticity-based adaptive cognitive training requiring a total maximum of 52 treatment sessions, up to 5 sessions per week, 42 minutes per session.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Active Comparator</arm_group_label>
+    <arm_group_type>Active Comparator</arm_group_type>
+    <description>Commercially available computerized training requiring a total maximum of 52 treatment sessions, up to 5 sessions per week, 42 minutes per session.</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Other</intervention_type>
+    <intervention_name>Computerized Plasticity-Based Adaptive Cognitive Training</intervention_name>
+    <description>Forty-two minutes of training on computerized exercises that targets processing speed, memory and attention.</description>
+    <arm_group_label>Experimental Treatment</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Other</intervention_type>
+    <intervention_name>Commercially available computerized training</intervention_name>
+    <description>Forty-two minutes of training on computerized, casual video games.</description>
+    <arm_group_label>Active Comparator</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Participant must be a fluent English speaker
+
+          -  Participant must have adequate sensorimotor capacity to perform the program, including
+             visual capacity adequate to read from a computer screen at a normal viewing distance,
+             auditory capacity adequate to understand normal speech, and motor capacity adequate to
+             control a computer mouse
+
+          -  Participant must not have evidence of dementia as indicated by the Montreal Cognitive
+             Assessment (MoCA)
+
+        Exclusion Criteria:
+
+          -  Participant with diagnosis of Alzheimer's Disease or related dementias
+
+          -  Participant requiring caregiver assistance in dressing/personal hygiene
+
+          -  Participant with medical conditions predisposing to imminent functional decline
+
+          -  Participant with recent participation of computer-delivered cognitive training within
+             2 years of consent
+
+          -  Participant with a diagnosis of an illness or condition with known cognitive
+             consequences (e.g., schizophrenia, bipolar disorder, cancer, multiple sclerosis)
+
+          -  Participant with uncorrectable acuity greater than 20/40
+
+          -  Participant with cardiovascular disease
+
+          -  Participant with claustrophobia or any other contraindication to MRI scanning
+
+          -  Participant with inability to complete a 1-hour MRI
+
+          -  Pregnant women
+
+          -  Participant with any implanted devices above the waist (e.g., cardiac pacemaker or
+             auto-defibrillators, neural pacemaker, aneurysm clips, cochlear implant, metallic
+             bodies in the eye or central nervous system, any form of wires or metal devices that
+             may concentrate radio frequency fields)
+
+          -  Participant with history of brain surgery; removal of brain tissue; or history of
+             stroke
+
+          -  Participants with active suicidal ideations as measured by the Columbia-Suicide
+             Severity Rating Scale (C-SSRS)
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>65 Years</minimum_age>
+    <maximum_age>N/A</maximum_age>
+    <healthy_volunteers>Accepts Healthy Volunteers</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Hyun Kyu Lee, PhD</last_name>
+    <role>Principal Investigator</role>
+    <affiliation>Posit Science Corporation</affiliation>
+  </overall_official>
+  <overall_contact>
+    <last_name>Sarah-Jane Kim, MA</last_name>
+    <phone>415-539-3130</phone>
+    <email>sarah-jane.kim@positscience.com</email>
+  </overall_contact>
+  <verification_date>June 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>June 26, 2017</lastchanged_date>
+  <firstreceived_date>June 21, 2017</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>June 21, 2017</study_first_submitted>
+  <study_first_submitted_qc>June 21, 2017</study_first_submitted_qc>
+  <study_first_posted type="Actual">June 23, 2017</study_first_posted>
+  <last_update_submitted>June 26, 2017</last_update_submitted>
+  <last_update_submitted_qc>June 26, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">June 28, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+    <mesh_term>Cognitive Dysfunction</mesh_term>
+  </condition_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

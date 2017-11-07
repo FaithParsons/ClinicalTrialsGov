@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="950">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01255163</url>
+  </required_header>
+  <id_info>
+    <org_study_id>100423</org_study_id>
+    <secondary_id>10-AG-0423</secondary_id>
+    <nct_id>NCT01255163</nct_id>
+  </id_info>
+  <brief_title>A Pilot Clinical Trial of Exendin-4 in Alzheimer's Disease</brief_title>
+  <official_title>A Pilot Study of Exendin-4 in Alzheimer s Disease</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>National Institute on Aging (NIA)</agency>
+      <agency_class>NIH</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>National Institutes of Health Clinical Center (CC)</source>
+  <brief_summary>
+    <textblock>
+      Background:
+
+      - Exendin-4 (or Exenatide) is a medication currently used to treat diabetes, but it has shown
+      promising results in tests of its effectiveness in protecting neurons from damaging processes
+      associated with Alzheimer s disease. It is possible that Exendin-4 may be a treatment for
+      Alzheimer s disease, which involves the gradual deterioration and death of neurons.
+      Researchers are interested in studying the safety and comparing the effects of Exendin-4 with
+      placebo to on congestive performance, overall clinical progression, various chemicals
+      measured in blood and cerebrospinal fluid, and brain MRI, in individuals with early-stage
+      Alzheimer's disease or mild cognitive impairment.
+
+      Objectives:
+
+      - To determine the safety and tolerability, as well as to acquire preliminary evidence for
+      the effectiveness of twice daily administration of Exendin-4 as a treatment for early-stage
+      Alzheimer s disease or mild cognitive impairment.
+
+      Eligibility:
+
+      - Individuals at least 60 years of age who have objective evidence of early-stage Alzheimer's
+      disease or mild cognitive impairment in screening testing.
+
+      Design:
+
+        -  Participants will be screened.
+
+        -  Following the telephone screening, two in-person screening visits to determine
+           eligibility.
+
+        -  The screening visit will involve a medical history and neurological examination, tests
+           of memory and cognition, a lumbar puncture, collection of blood and saliva samples, and
+           brain Magnetic Resonance Imagine (MRI) studies. Participants will be required to appoint
+           a Durable Power of Attorney for research and medical care during this protocol.
+
+        -  Eligible participants will be divided into two groups. One group will receive Exendin-4,
+           and the other will receive a placebo. Participants will keep a medication diary and will
+           be scheduled for additional study visits 1 and 2 weeks after the start of the treatment.
+
+        -  Participants will have regular followup visits with blood tests, imaging studies, and
+           other examinations 6, 12, and18 months after the start of the treatment. Another lumbar
+           puncture may be performed optionally at the 18-month followup visit.
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      Objective: Exendin-4 (or exenatide) is a medication currently used in the treatment of
+      diabetes mellitus (DM). Exendin-4 has generated promising results as an agent protecting
+      neurons from a number of assaults both in the laboratory and in studies on animals.
+      Specifically, there is pre-clinical evidence that Exendin-4 may be a treatment for Alzheimer
+      s disease (AD). Based on these facts, we propose a pilot Phase II double blind randomized
+      placebo-controlled clinical study to assess the safety and provide proof of concept for
+      efficacy of exendin-4 treatment in early Alzheimer s disease (AD), by demonstrating a
+      response of disease biomarkers to the intervention. Our main hypothesis is that long-term
+      administration of Exendin-4 in participants with amnestic MCI/early AD in FDA-approved doses
+      is safe and will induce a change over time in AD biomarkers. Subject population: We intend to
+      screen up to 100 potential participants in order to ensure that at least 40 participants
+      (enrolled based on a clinical diagnosis of amnestic MCI/early AD and Cerebrospinal Fluid
+      (CSF) biomarker evidence of AD) will be enrolled into treatment and complete the study.
+      Design: Enrolled participants will be randomly assigned into one of two groups (Exendin-4 vs.
+      Placebo) and will be followed at regular intervals for 18 months. Outcome measures: Safety
+      and tolerability will be the primary outcomes. In addition, we will measure and assess the
+      change over time of a number of exploratory outcomes with the intervention, including CSF and
+      plasma biochemical biomarkers (such as CSF BDNF, A42, tau, p181-tau and plasma A42/A40),
+      cognitive performance measures (such as the Alzheimer s Disease Assessment scale, cognitive
+      sub-scale, and other tests), overall clinical progression measures (such as the Clinical
+      Dementia Rating scale sum-of-boxes), volumetric changes on structural brain MRI and changes
+      in default mode network activation on resting fMRI. All research will be performed on the
+      National Institute on Aging (NIA) Clinical Research Unit located on the 5th floor of Harbor
+      Hospital.
+    </textblock>
+  </detailed_description>
+  <overall_status>Completed</overall_status>
+  <start_date>November 21, 2010</start_date>
+  <completion_date type="Actual">November 18, 2016</completion_date>
+  <primary_completion_date type="Actual">November 18, 2016</primary_completion_date>
+  <phase>Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Single Group Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Safety and tolerability of Exendin-4 administered twice daily via SC injections</measure>
+    <time_frame>18 months</time_frame>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Behavioral and cognitive performance measures</measure>
+    <time_frame>18 months</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Changes on structural and functional MRI and MRS</measure>
+    <time_frame>18 months</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Hormonal and metabolic changes and changes in cerebrospinal fluid and plasma Alzheimer s disease biomarkers.</measure>
+    <time_frame>18 months</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Clinical Dementia Rating (CDR) scale sum-of-boxes</measure>
+    <time_frame>18 months</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Alzheimer's Disease Assessment scale - cognitive sub-scale (ADAS-cog)</measure>
+    <time_frame>18 months</time_frame>
+  </secondary_outcome>
+  <number_of_arms>1</number_of_arms>
+  <enrollment type="Anticipated">100</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <condition>Mild Cognitive Impairment</condition>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Exendin-4 (Exenatide)</intervention_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        -  INCLUSION CRITERIA:
+
+          -  Age &gt; 60
+
+          -  Clinical Dementia Rating (global CDR) of 0.5 or 1. Memory box score must be at least
+             0.5.
+
+          -  Mini Mental Status Exam (MMSE) &gt; 20
+
+          -  Clinical diagnosis of (amnestic or mixed) MCI or early AD and Memory deficit on
+             neuropsychological or clinical testing.
+
+          -  Hamilton Depression Scale score of less than or equal to 12 on the 17-item scale
+
+          -  CSF A beta 42 &lt; 192 (+- 10%) pg/ml (given an intra-subject laboratory variability ~
+             10%)
+
+          -  Medications stable for at least 4 weeks prior to screening. In particular:
+
+               -  Participants may take stable doses of antidepressants, chronic anxiolytics or
+                  sedative hypnotics, if started at least 4 weeks or longer prior to screening
+
+               -  Cholinesterase inhibitors and/or memantine are allowable, if started at least 4
+                  weeks prior to screening
+
+               -  Participants will not be asked to discontinue medications without permission from
+                  their primary care provider (PCP) or specialist.
+
+          -  Fluency in English
+
+          -  At the time of enrollment, participants must have the ability to provide informed
+             consent and make health care decisions.
+
+          -  An informant or caregiver who has frequent contact with the participant (e.g. an
+             average of 10 hours per week or more) must be appointed to serve as Durable Power of
+             Attorney (DPA) for research and medical care at NIA, accompany the participant to
+             clinic visits and provide historical information regarding the participant s cognitive
+             status, and assist participants with/administer injections of the investigational
+             medication.
+
+          -  Good general health with no additional disease states that could interfere with the
+             study.
+
+        EXCLUSION CRITERIA:
+
+          -  Other significant neurological disease of the Central Nervous System (such as
+             Parkinson s disease, atypical Parkinsons disease, Multi-infarct Dementia,
+             Frontotemporal Dementia, Huntington s disease, Normal Pressure Hydrocephalus, brain
+             tumor, Progressive Supranuclear Palsy, Epilepsy, Subdural Hematoma or Multiple
+             Sclerosis)
+
+          -  A history of significant head trauma followed by persistent neurologic defaults or
+             known structural brain abnormalities
+
+          -  Positive RPR or HIV
+
+          -  Abnormal PT/PTT and INR (1.5 standard deviation over the upper normal limit)
+             increasing the risk for LP related bleeding/hematoma; platelet count
+             &lt;100,000/microliters.
+
+          -  Anti-coagulant therapy (such as coumadin). Aspirin up to 325 is allowed.
+
+          -  Investigators unable to obtain CSF, failure of Lumbar Puncture after a limited number
+             of unsuccessful attempts).
+
+          -  History of psychiatric disease with significant impairment in thought processes (e.g.
+             schizophrenia, bipolar disease, psychosis). Participants who develop psychiatric
+             conditions necessitating treatment after their enrollment will not be dropped from the
+             study. The high incidence of late-onset depression and anxiety among individuals with
+             MCI and AD requires that participants with depression, and/or anxiety should not be
+             excluded from the cohort to maintain the ecological validity of the results.
+
+          -  Current abuse of alcoholic beverages (&gt; 7 in women and &gt;14 in men) or substance abuse.
+
+          -  Known diagnosis of diabetes at the time of enrollment or new diagnosis of diabetes
+             based on the findings of elevated fasting blood glucose (= or &gt;126 mg/dl) and/or the
+             oral glucose tolerance test at screening (&gt;200 mg/dl at two hours).
+
+          -  Severe renal impairment (creatinine clearance &lt;30 ml/min) or end-stage renal disease.
+             Individuals with moderate renal impairment (creatinine clearance 30 to 50 ml/min) may
+             be enrolled in the study, but their BUN and Creatinine will be monitored during each
+             visit after drug initiation and extra safety visits will be conducted at 3, 9, and 15
+             months.
+
+          -  Current or previous treatment with Exendin-4 (Exenatide, trade name Byetta.)
+
+          -  History of pancreatitis, active upper GI, hepatic or gallbladder disease
+
+          -  Personal or family history of medullary thyroid carcinoma or Multiple Endocrine
+             Neoplasia syndrome type 2
+
+          -  History of repeated hypoglycemia
+
+          -  Body mass index (BMI) &lt; 18 on enrollment (given the expected weight loss caused by
+             Exendin-4 and dementia). In the BLSA, participants with age &gt; 65 had a mean BMI of
+             25.8 with SD of 3.9 Exendin-4 has been shown to cause an average 5.3 kg weight loss,
+             with 95% CI: 6 to 4.5 kg (126).
+
+          -  Allergy to Exendin-4 or to substances in the injection pen (metacresol, mannitol,
+             glacial acetic acid, sodium acetate trihydrate, water for injection).
+
+          -  Participation in other studies of investigational treatments for Alzheimer s disease
+             in the last year.
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>60 Years</minimum_age>
+    <maximum_age>N/A</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Dimitrios I Kapogiannis, M.D.</last_name>
+    <role>Principal Investigator</role>
+    <affiliation>National Institute on Aging (NIA)</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>National Institute on Aging, Clinical Research Unit</name>
+      <address>
+        <city>Baltimore</city>
+        <state>Maryland</state>
+        <zip>21224</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <link>
+    <url>https://clinicalstudies.info.nih.gov/cgi/detail.cgi?B_2010-AG-0423.html</url>
+    <description>NIH Clinical Center Detailed Web Page</description>
+  </link>
+  <reference>
+    <citation>Kapogiannis D, Mattson MP. Disrupted energy metabolism and neuronal circuit dysfunction in cognitive impairment and Alzheimer's disease. Lancet Neurol. 2011 Feb;10(2):187-98. doi: 10.1016/S1474-4422(10)70277-5. Epub 2010 Dec 10. Review. Erratum in: Lancet Neurol. 2011 Feb;10(2):115.</citation>
+    <PMID>21147038</PMID>
+  </reference>
+  <reference>
+    <citation>Bomfim TR, Forny-Germano L, Sathler LB, Brito-Moreira J, Houzel JC, Decker H, Silverman MA, Kazi H, Melo HM, McClean PL, Holscher C, Arnold SE, Talbot K, Klein WL, Munoz DP, Ferreira ST, De Felice FG. An anti-diabetes agent protects the mouse brain from defective insulin signaling caused by Alzheimer's disease- associated Aβ oligomers. J Clin Invest. 2012 Apr;122(4):1339-53. doi: 10.1172/JCI57256.</citation>
+    <PMID>22476196</PMID>
+  </reference>
+  <verification_date>June 7, 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>October 5, 2017</lastchanged_date>
+  <firstreceived_date>December 4, 2010</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>December 4, 2010</study_first_submitted>
+  <study_first_submitted_qc>December 4, 2010</study_first_submitted_qc>
+  <study_first_posted type="Estimate">December 7, 2010</study_first_posted>
+  <last_update_submitted>October 5, 2017</last_update_submitted>
+  <last_update_submitted_qc>October 5, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">October 6, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <keyword>Alzheimer's</keyword>
+  <keyword>Memory</keyword>
+  <keyword>Diabetes</keyword>
+  <keyword>Placebo</keyword>
+  <keyword>Alzheimer Disease</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+    <mesh_term>Cognitive Dysfunction</mesh_term>
+  </condition_browse>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Exenatide</mesh_term>
+  </intervention_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

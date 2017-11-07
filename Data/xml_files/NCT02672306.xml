@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="327">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT02672306</url>
+  </required_header>
+  <id_info>
+    <org_study_id>UCMSC-1</org_study_id>
+    <nct_id>NCT02672306</nct_id>
+    <nct_alias>NCT02513706</nct_alias>
+  </id_info>
+  <brief_title>Safety and Exploratory Efficacy Study of UCMSCs in Patients With Alzheimer's Disease</brief_title>
+  <acronym>SEESUPAD</acronym>
+  <official_title>Safety and Exploratory Efficacy Study of UCMSCs in Patients With Alzheimer's Disease</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>South China Research Center for Stem Cell and Regenerative Medicine</agency>
+      <agency_class>Other</agency_class>
+    </lead_sponsor>
+    <collaborator>
+      <agency>Third Affiliated Hospital, Sun Yat-Sen University</agency>
+      <agency_class>Other</agency_class>
+    </collaborator>
+    <collaborator>
+      <agency>Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University</agency>
+      <agency_class>Other</agency_class>
+    </collaborator>
+    <collaborator>
+      <agency>Guangzhou Psychiatric Hospital</agency>
+      <agency_class>Other</agency_class>
+    </collaborator>
+  </sponsors>
+  <source>South China Research Center for Stem Cell and Regenerative Medicine</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      The primary purpose of this study is to evaluate the safety and the efficacy of (Human
+      Umbilical Cord-Derived Mesenchymal Stem Cells) UCMSCs for patients with Alzheimer's disease
+      (AD).
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      Study Type: Interventional Study Design: Treatment, Parallel Assignment, Double Blind
+      (Subject, Outcomes Assessor), Randomized, Safety/ Efficacy Study Official Title: Multicenter,
+      Randomized, Double-blind, Placebo Controlled Trial of UCMSCs in Subjects With Alzheimer's
+      Disease
+    </textblock>
+  </detailed_description>
+  <overall_status>Not yet recruiting</overall_status>
+  <start_date>May 2016</start_date>
+  <completion_date type="Anticipated">October 2019</completion_date>
+  <primary_completion_date type="Anticipated">October 2018</primary_completion_date>
+  <phase>Phase 1/Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Double (Participant, Care Provider)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Change in Alzheimer's Disease Assessment Scale - Cognitive Subscale (ADAS-Cog)Score</measure>
+    <time_frame>10 weeks from post-administration</time_frame>
+    <description>A psychometric instrument that evaluates memory, attention, reasoning, language, orientation, and praxis.</description>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Change in Alzheimer's Disease Cooperative Study Clinician's Global Impression of Change (ADCS-CCGIC) Score</measure>
+    <time_frame>10 weeks from post-administration</time_frame>
+    <description>A systematic method for assessing clinically significant change in a clinical trial as viewed by an independent skilled and experienced clinician . The ADCS-CGIC focuses on clinician's observations of change in the subject's cognitive, functional, and behavioral performance since the beginning of a trial. It relies on both direct examination of the subject and an interview of an informant. Unlike a targeted symptom scale, it takes into account a subject's overall function in the cognitive, behavioral, and functional activity domains.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in Mini-Mental State Examination (MMSE) Score</measure>
+    <time_frame>10 weeks from post-administration</time_frame>
+    <description>A frequently used screening instrument for Alzheimer's disease drug studies. It evaluates orientation, memory, attention, concentration, naming, repetition, comprehension, and ability to create a sentence and to copy two intersecting polygons</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory (ADCS-ADL) Score</measure>
+    <time_frame>10 weeks from post-administration</time_frame>
+    <description>ADCS-ADL assesses functional performance in subjects with Alzheimer's disease. In a structured interview format, informants are queried as to whether subjects attempted each item in the inventory during the prior 4 weeks and their level of performance. The ADCS-ADL scale discriminates well between normal controls and mild AD patients. It has good test-retest reliability. The ADCS-ADL includes some items from traditional basic ADL scales (e.g., grooming, dressing, walking, bathing, feeding, toileting) as well as items from instrumental activities of daily living scales (e.g., shopping, preparing meals, using household appliances, keeping appointments, reading).</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change in Neuropsychiatric Inventory (NPI) Score</measure>
+    <time_frame>10 weeks from post-administration</time_frame>
+    <description>The NPI is a well-validated, reliable, multi-item instrument to assess psychopathology and behavior in AD based on interview with the informant.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Changes in AD Biomarkers</measure>
+    <time_frame>10 weeks from post-administration</time_frame>
+    <description>Plasma beta-amyloid proteins will be collected from blood samples obtained.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from the baseline in cerebrospinal fluid (CSF) biomarkers</measure>
+    <time_frame>10 weeks from post-administration</time_frame>
+    <description>Amyloid beta and tau will be collected from CSF obtained.</description>
+  </secondary_outcome>
+  <other_outcome>
+    <measure>Symptoms Checklist and Adverse Event Assessment</measure>
+    <time_frame>10 weeks</time_frame>
+    <description>Adverse events and symptoms checklist are used to monitor signs or symptoms that may or may not be related to study medication, abnormalities detected during physical examination, or clinical significant laboratory abnormalities.</description>
+  </other_outcome>
+  <number_of_arms>2</number_of_arms>
+  <enrollment type="Anticipated">40</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>UCMSCs</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Subjects with Alzheimer's Disease Intervention: UCMSCs</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Placebo</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+    <description>Subjects with Alzheimer's Disease Intervention: Placebo (normal saline)</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Biological</intervention_type>
+    <intervention_name>UCMSCs</intervention_name>
+    <description>Biological: Human UCMSCs 20 million cells per subject (0.5×10^6 UCMSCs per kg) intravenous injection Infusion number: 8 (Once every two weeks)</description>
+    <arm_group_label>UCMSCs</arm_group_label>
+    <other_name>Human Umbilical Cord Derived Mesenchymal</other_name>
+  </intervention>
+  <intervention>
+    <intervention_type>Biological</intervention_type>
+    <intervention_name>Placebo</intervention_name>
+    <description>Subjects with Alzheimer's Disease placebo comparator (normal saline) intravenous injection Infusion number: 8 (Once every two weeks)</description>
+    <arm_group_label>Placebo</arm_group_label>
+    <other_name>Normal saline</other_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  A diagnosis of probable AD and Mixed Dementia according to the criteria of the
+             NINCDS-ADRDA
+
+          -  History of cognitive decline that had been gradual in onset and progressive over at
+             least 6 months
+
+          -  MMSE score between 3 and 20, both inclusive
+
+          -  Home monitoring available for supervision of medications
+
+          -  Voluntarily participating subject who sign the Inform Concent
+
+        Exclusion Criteria:
+
+          -  Subject with positive test for Human Immunodeficiency Virus(HIV)
+
+          -  Subject who cannot undergo Magnetic Resonance Imaging(MRI), computed tomography(CT)
+             screening
+
+          -  Subject with psychological diseases (i.e. depression, schizophrenia, bipolar disorder,
+             etc)
+
+          -  Subject with cancer
+
+          -  Subject with dementia caused by other than Alzheimer's disease (i.e. infection of
+             central nervous system, Creutzfeldts-Jacob disease, severe head trauma, Pick's
+             disease, Huntington's disease, and Parkinson's disease)
+
+          -  Subject with severe white matter hyperintensities (WMH); Severe WMH is defined that
+             length of the deep white matter is 25 mm or longer and length of the periventricular
+             capping/banding is 10 mm or longer
+
+          -  Subject who have had stroke in 3 months
+
+          -  Subject with severe kidney failure (1.5 mg/dL of serum creatinine or more) Hemoglobin
+             &lt; 9.5 g/dL for men, &lt; 9.0 g/dL for women; Total white blood count &lt; 3000/mm3; Total
+             bilirubin ≥ 3 mg/dL
+
+          -  Active hepatic or renal disease
+
+          -  Subject who have been excluded in the subject selection process for this study before
+
+          -  Subject who is determined inappropriate by the investigators
+
+          -  Subject who is allergic constitution
+
+          -  History of screening failure for the clinical trial of neural stem cells
+
+          -  A platelet count &lt; 150,000/mm3; Plasma prothrombin time(PT)≥ 1.5; the international
+             normalized ratio (INR) or activated partial thromboplastin time(aPTT)≥ 1.5 x control
+             value
+
+          -  Participation in another clinical trial within the three months prior to the beginning
+             (Week 0) of this clinical trial
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>50 Years</minimum_age>
+    <maximum_age>85 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_contact>
+    <last_name>Xuetao Pei, M.D., Ph.D</last_name>
+    <phone>8610-68164807</phone>
+    <email>AMMS0906@163.com</email>
+  </overall_contact>
+  <overall_contact_backup>
+    <last_name>Yali Jia, Ph.D</last_name>
+    <phone>8620-89199011</phone>
+    <email>jiayali@scrm.org.cn</email>
+  </overall_contact_backup>
+  <verification_date>January 2016</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>January 29, 2016</lastchanged_date>
+  <firstreceived_date>January 24, 2016</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>January 24, 2016</study_first_submitted>
+  <study_first_submitted_qc>January 29, 2016</study_first_submitted_qc>
+  <study_first_posted type="Estimate">February 3, 2016</study_first_posted>
+  <last_update_submitted>January 29, 2016</last_update_submitted>
+  <last_update_submitted_qc>January 29, 2016</last_update_submitted_qc>
+  <last_update_posted type="Estimate">February 3, 2016</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <patient_data>
+    <sharing_ipd>Yes</sharing_ipd>
+  </patient_data>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

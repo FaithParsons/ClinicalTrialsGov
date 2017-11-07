@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="497">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01852110</url>
+  </required_header>
+  <id_info>
+    <org_study_id>7622-012</org_study_id>
+    <secondary_id>2013-000937-11</secondary_id>
+    <nct_id>NCT01852110</nct_id>
+  </id_info>
+  <brief_title>Efficacy and Safety of MK-7622 as Adjunct Therapy in Participants With Alzheimer's Disease (MK-7622-012)</brief_title>
+  <official_title>A Seamless Phase IIa/IIb, Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel Group Trial to Evaluate the Efficacy and Safety of MK-7622 as an Adjunctive Therapy for Symptomatic Treatment in Subjects With Alzheimer's Disease</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>Merck Sharp &amp; Dohme Corp.</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>Merck Sharp &amp; Dohme Corp.</source>
+  <oversight_info>
+    <has_dmc>No</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      The purpose of this multicenter trial is to assess the efficacy and safety of MK-7622
+      compared with placebo as adjunctive therapy to acetylcholinesterase inhibitors (AChEIs) for
+      the symptomatic treatment of participants with mild to moderate Alzheimer's Disease (AD). The
+      trial consists of two stages: Stage 1 and Stage 2. Participants in Stage 1 will be randomized
+      to receive either placebo or MK-7622 45 mg once daily. In Stage 2, participants will be
+      randomized to receive either placebo, or MK-7622 5, 15 or 45 mg once daily. Participants will
+      be enrolled in only one stage. Interim analyses will be performed in both Stage 1 and Stage 2
+      to determine whether the trial should continue. Duration of each stage is approximately 26
+      weeks; all participants receive placebo at some time during the trial. The primary study
+      hypotheses are the following: Stage 1 - MK-7622 45 mg once daily is superior to placebo in
+      improving cognition in participants with mild to moderate AD as assessed by mean change from
+      baseline in the 11-item Alzheimer's Disease Assessment Scale-Cognitive Subscale (ADAS-Cog11)
+      at Week 12; Stage 2 - At least one of the top two doses of MK-7622 (15 mg once daily, 45 mg
+      once daily) is superior to placebo in improving cognition in participants with mild to
+      moderate AD as assessed by mean change from baseline in ADAS-Cog11 at Week 12.
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      If double-blind treatment dose is not tolerated during first 2 weeks, participant will be
+      discontinued. After first 2 weeks, if dose is not tolerated regimen may be modified according
+      to defined algorithm, beginning with administration of reduced dose for up to 2 weeks, then
+      rechallenge at original dose, if tolerability issues diminish or resolve at reduced dose.
+    </textblock>
+  </detailed_description>
+  <overall_status>Terminated</overall_status>
+  <start_date>October 2013</start_date>
+  <completion_date type="Actual">April 2016</completion_date>
+  <primary_completion_date type="Actual">April 2016</primary_completion_date>
+  <phase>Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Triple (Participant, Care Provider, Investigator)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Change from baseline in ADAS-Cog11 score at Week 12 (Stage 1, MK-7622 45 mg versus placebo)</measure>
+    <time_frame>Baseline and Week 12</time_frame>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Change from baseline in ADAS-Cog11 score at Week 12 (Stage 2, MK-7622 45 mg and 15 mg versus placebo)</measure>
+    <time_frame>Baseline and Week 12</time_frame>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Number of Participants With an Adverse Event (AE)</measure>
+    <time_frame>Up to 26 weeks</time_frame>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Number of Participants Who Discontinued Study Drug Due to an AE</measure>
+    <time_frame>Up to 24 weeks</time_frame>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in Alzheimer's Disease Cooperative Study-Activities of Daily Living Inventory (ADCS-ADL) at Week 24 (combining Stage 1 and 2, MK-7622 45 mg versus placebo)</measure>
+    <time_frame>Baseline and Week 24</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in Composite Cognition Score-3 Domain (CCS-3D) at Week 12 (Stage 1, MK-7622 45 mg versus placebo)</measure>
+    <time_frame>Baseline and Week 12</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in CCS-3D at Week 12 (Stage 2, MK-7622 45 mg and 15 mg versus placebo)</measure>
+    <time_frame>Baseline and Week 12</time_frame>
+  </secondary_outcome>
+  <number_of_arms>6</number_of_arms>
+  <enrollment type="Actual">240</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>MK-7622 High Dose - 45 mg (Stage 1)</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Dose titration to single 45 mg MK-7622 capsule once daily, taken orally: - 15 mg MK-7622 once daily for 1 week - 30 mg MK-7622 once daily for 1 week - 45 mg MK-7622 once daily for remainder of treatment. Duration of each study stage is approximately 26 weeks; all participants receive placebo at some time during the trial.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Placebo (Stage 1)</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+    <description>Matching placebo to MK-7622 capsule once daily, taken orally. Duration of each study stage is approximately 26 weeks; all participants receive placebo at some time during the trial.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>MK-7622 Low Dose - 5 mg (Stage 2)</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Single 5 mg MK-7622 capsule once daily, taken orally. Duration of each study stage is approximately 26 weeks; all participants receive placebo at some time during the trial.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>MK-7622 Mid Dose - 15 mg (Stage 2)</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Single 15 mg MK-7622 capsule once daily, taken orally. Duration of each study stage is approximately 26 weeks; all participants receive placebo at some time during the trial.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>MK-7622 High Dose - 45 mg (Stage 2)</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Dose titration to single 45 mg MK-7622 capsule once daily, taken orally: - 15 mg MK-7622 once daily for 1 week - 30 mg MK-7622 once daily for 1 week - 45 mg MK-7622 once daily for remainder of treatment. Duration of each study stage is approximately 26 weeks; all participants receive placebo at some time during the trial.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Placebo (Stage 2)</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+    <description>Matching placebo to MK-7622 capsule once daily, taken orally. Duration of each study stage is approximately 26 weeks; all participants receive placebo at some time during the trial.</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>MK-7622</intervention_name>
+    <description>MK-7622 capsule</description>
+    <arm_group_label>MK-7622 High Dose - 45 mg (Stage 1)</arm_group_label>
+    <arm_group_label>MK-7622 Low Dose - 5 mg (Stage 2)</arm_group_label>
+    <arm_group_label>MK-7622 Mid Dose - 15 mg (Stage 2)</arm_group_label>
+    <arm_group_label>MK-7622 High Dose - 45 mg (Stage 2)</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Placebo</intervention_name>
+    <description>Matching placebo to MK-7622 capsule</description>
+    <arm_group_label>Placebo (Stage 1)</arm_group_label>
+    <arm_group_label>Placebo (Stage 2)</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>AChEI</intervention_name>
+    <description>One of the following AChEIs, as prescribed by the participant's primary care physician: donepezil, 10 mg total daily dose administered orally; rivastigmine, 9.5 or 13.3 mg/24 hours administered by transdermal patch or 6-12 mg total daily dose administered orally; galantamine, 16-24 mg total daily dose administered orally</description>
+    <arm_group_label>MK-7622 High Dose - 45 mg (Stage 1)</arm_group_label>
+    <arm_group_label>Placebo (Stage 1)</arm_group_label>
+    <arm_group_label>MK-7622 Low Dose - 5 mg (Stage 2)</arm_group_label>
+    <arm_group_label>MK-7622 Mid Dose - 15 mg (Stage 2)</arm_group_label>
+    <arm_group_label>MK-7622 High Dose - 45 mg (Stage 2)</arm_group_label>
+    <arm_group_label>Placebo (Stage 2)</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Diagnosis of probable AD based on both a) the National Institute of Neurological and
+             Communicative Diseases and Stroke/Alzheimer's Disease and Related Disorders
+             Association (NINCDS-ADRDA) criteria and b) the Diagnostic and Statistical Manual of
+             Mental Disorders, 4th Edition, Text Revision (DSM-IV-TR) criteria for AD
+
+          -  AD is of mild to moderate severity
+
+          -  Clear history of cognitive and functional decline over at least one year that is
+             either a) documented in medical records or b) documented by history from an informant
+             who knows the participant well
+
+          -  On a stable and effective daily dose of AChEI (either donepezil, rivastigmine, or
+             galantamine), for at least two months before Screening, and willing to remain on the
+             same dose for the duration of the trial. Effective doses are considered to be:
+             donepezil, 10 mg total daily dose administered orally; rivastigmine, 9.5 or 13.3 mg/24
+             hours administered by transdermal patch or 6-12 mg total daily dose administered
+             orally; galantamine, 16-24 mg total daily dose administered orally
+
+          -  Able to read at a 6th grade level or equivalent, and must have a history of academic
+             achievement and/or employment sufficient to exclude mental retardation
+
+          -  Participant must have a reliable and competent trial partner who must have a close
+             relationship with the subject
+
+        Exclusion Criteria:
+
+          -  History of clinically significant stroke
+
+          -  Evidence of a neurological disorder other than the disease being studied (ie, probable
+             AD)
+
+          -  History of seizures or epilepsy within the last 5 years before Screening
+
+          -  Evidence of a clinically relevant or unstable psychiatric disorder, excluding major
+             depression in remission
+
+          -  Participant is at imminent risk of self-harm or of harm to others
+
+          -  History of alcoholism or drug dependency/abuse within the last 5 years before
+             Screening
+
+          -  Participant does not have a magnetic resonance imaging (MRI) scan obtained within 12
+             months of Screening and is unwilling or not eligible to undergo an MRI scan at
+             Screening
+
+          -  History of hepatitis or liver disease that has been active within the six months prior
+             to Screening Visit
+
+          -  Recent or ongoing, uncontrolled, clinically significant medical condition within 3
+             months of the Screening Visit (e.g., diabetes, hypertension, thyroid or endocrine
+             disease, congestive heart failure, angina, cardiac or gastrointestinal disease,
+             dialysis, or abnormal renal function) other than the condition being studied such that
+             participation in the trial would pose a significant medical risk to the participant.
+             Controlled co-morbid conditions are not exclusionary if stable within three months of
+             the Screening Visit
+
+          -  History or current evidence of long QT syndrome, corrected QT (QTc) interval ≥470
+             milliseconds (for male subjects) or ≥480 milliseconds (for female subjects), or
+             torsades de pointes
+
+          -  History of malignancy occurring within the five years before Screening, except for
+             adequately treated basal cell or squamous cell skin cancer, in situ cervical cancer,
+             or localized prostate carcinoma which has been treated with potentially curative
+             therapy with no evidence of recurrence for ≥3 year posttherapy
+
+          -  Clinically significant vitamin B12 deficiency, or increased thyroid stimulating
+             hormone (TSH) in the six months before Screening
+
+          -  Major surgery within 3 months of Screening
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>55 Years</minimum_age>
+    <maximum_age>85 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Medical Director</last_name>
+    <role>Study Director</role>
+    <affiliation>Merck Sharp &amp; Dohme Corp.</affiliation>
+  </overall_official>
+  <removed_countries>
+    <country>Canada</country>
+    <country>United States</country>
+  </removed_countries>
+  <verification_date>April 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>April 6, 2017</lastchanged_date>
+  <firstreceived_date>May 8, 2013</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>May 8, 2013</study_first_submitted>
+  <study_first_submitted_qc>May 8, 2013</study_first_submitted_qc>
+  <study_first_posted type="Estimate">May 13, 2013</study_first_posted>
+  <last_update_submitted>April 6, 2017</last_update_submitted>
+  <last_update_submitted_qc>April 6, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">April 7, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

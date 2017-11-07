@@ -1,0 +1,1770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="338">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01127633</url>
+  </required_header>
+  <id_info>
+    <org_study_id>11935</org_study_id>
+    <secondary_id>H8A-MC-LZAO</secondary_id>
+    <nct_id>NCT01127633</nct_id>
+  </id_info>
+  <brief_title>Continued Safety Monitoring of Solanezumab in Alzheimer's Disease</brief_title>
+  <acronym>EXPEDITION EXT</acronym>
+  <official_title>Continued Efficacy and Safety Monitoring of Solanezumab, an Anti-Amyloid β Antibody in Patients With Alzheimer's Disease</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>Eli Lilly and Company</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>Eli Lilly and Company</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      This study is an open-label extension study in Alzheimer's patients who have completed
+      participation in either solanezumab Clinical Trial H8A-MC-LZAM (NCT00905372) or H8A-MC-LZAN
+      (NCT00904683).
+    </textblock>
+  </brief_summary>
+  <overall_status>Terminated</overall_status>
+  <why_stopped>
+    Solanezumab did not meet the primary endpoint in study H8A-MC-LZAX.
+  </why_stopped>
+  <start_date>December 2010</start_date>
+  <completion_date type="Actual">February 2017</completion_date>
+  <primary_completion_date type="Actual">July 2014</primary_completion_date>
+  <phase>Phase 3</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <intervention_model>Single Group Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>None (Open Label)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Assess the Number of Participants with One or More Drug-Related Adverse Events (AEs) or any Serious AEs (SAEs)</measure>
+    <time_frame>Baseline through Week 104</time_frame>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in Alzheimer's Disease Assessment Scale - Cognitive 14-Item Scale (ADAS-Cog14)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in Alzheimer's Disease Cooperative Study - Activities of Daily Living Inventory (ADCS-ADL)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in Clinical Dementia Rating - Sum of Boxes (CDR-SB)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in Neuropsychiatric Inventory (NPI)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in Resource Utilization in Dementia - Lite (RUD-Lite)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in EuroQol 5-Dimensional Health-Related Quality of Life Scale Proxy version (EQ-5D Proxy)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in Quality of Life in Alzheimer's Disease (QoL-AD)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in Mini-Mental State Examination (MMSE)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 52-week endpoint in Plasma Amyloid Beta Levels</measure>
+    <time_frame>Baseline, Week 52</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in volumetric Magnetic Resonance Imaging (vMRI)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 104-week endpoint in Alzheimer's Disease Assessment Scale - Cognitive Subscore 11-Item Scale (ADAS-Cog11)</measure>
+    <time_frame>Baseline, Week 104</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline to 80-week endpoint in Amyloid Plaque Burden in the Brain using Positron Emission Tomography (PET) Imaging</measure>
+    <time_frame>Baseline, Week 80</time_frame>
+  </secondary_outcome>
+  <number_of_arms>1</number_of_arms>
+  <enrollment type="Actual">1457</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>Solanezumab</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Solanezumab</intervention_name>
+    <description>400 mg administered once every 4 weeks by intravenous infusion (IV) for up to 8 years.</description>
+    <arm_group_label>Solanezumab</arm_group_label>
+    <other_name>LY2062430</other_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Meets National Institute of Neurological and Communicative Disorders and
+             Stroke/Alzheimer's Disease and Related Disorders Association (NINCDS/ADRDA) criteria
+             for probable Alzheimer's Disease
+
+          -  Has completed participation in solanezumab Study LZAM or Study LZAN through 80 weeks
+
+          -  Must continue to have a reliable caregiver who is in frequent contact with the patient
+             for the entire study
+
+          -  Must have good vein access to administer infusions
+
+          -  Agrees not to participate in studies of any other investigational compounds for the
+             duration of their participation in Study LZAO
+
+        Exclusion Criteria:
+
+          -  Are currently enrolled in, or discontinued within the last 30 days from, a clinical
+             trial involving an investigational drug or device or off-label use of a drug or device
+             (other than the study drug/device used in this study), or concurrently enrolled in any
+             other type of medical research judged not to be scientifically or medically compatible
+             with this study
+
+          -  Meets LZAM or LZAN discontinuation criteria at the end of treatment in LZAM or LZAN
+             study
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>55 Years</minimum_age>
+    <maximum_age>N/A</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Call 1-877-CTLILLY (1-877-285-4559) or 1-317-615-4559 Mon - Fri 9 AM - 5 PM Eastern time (UTC/GMT - 5 hours, EST)</last_name>
+    <role>Study Director</role>
+    <affiliation>Eli Lilly and Company</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Phoenix</city>
+        <state>Arizona</state>
+        <zip>85006</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Sun City</city>
+        <state>Arizona</state>
+        <zip>85351</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Tuscon</city>
+        <state>Arizona</state>
+        <zip>85718</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Little Rock</city>
+        <state>Arkansas</state>
+        <zip>72211</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Carson</city>
+        <state>California</state>
+        <zip>90746</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Laguna Hills</city>
+        <state>California</state>
+        <zip>92653</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Lomita</city>
+        <state>California</state>
+        <zip>90717</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Los Angeles</city>
+        <state>California</state>
+        <zip>90073</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Oxnard</city>
+        <state>California</state>
+        <zip>93030</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>San Diego</city>
+        <state>California</state>
+        <zip>92103</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>San Francisco</city>
+        <state>California</state>
+        <zip>94109</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Santa Ana</city>
+        <state>California</state>
+        <zip>92705</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Santa Monica</city>
+        <state>California</state>
+        <zip>90404</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Denver</city>
+        <state>Colorado</state>
+        <zip>80239</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Fairfield</city>
+        <state>Connecticut</state>
+        <zip>06824</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Hamden</city>
+        <state>Connecticut</state>
+        <zip>06518</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>New Haven</city>
+        <state>Connecticut</state>
+        <zip>06510</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Norwalk</city>
+        <state>Connecticut</state>
+        <zip>06851</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Newark</city>
+        <state>Delaware</state>
+        <zip>19713</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Washington</city>
+        <state>District of Columbia</state>
+        <zip>20057</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Boca Raton</city>
+        <state>Florida</state>
+        <zip>33431</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Fort Myers</city>
+        <state>Florida</state>
+        <zip>33912</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Hollywood</city>
+        <state>Florida</state>
+        <zip>33021</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Miami Springs</city>
+        <state>Florida</state>
+        <zip>33166</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Miami</city>
+        <state>Florida</state>
+        <zip>33137</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Orange City</city>
+        <state>Florida</state>
+        <zip>32763</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Orlando</city>
+        <state>Florida</state>
+        <zip>32806</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Sunrise</city>
+        <state>Florida</state>
+        <zip>33351</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Tampa Bay</city>
+        <state>Florida</state>
+        <zip>33613</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Tampa</city>
+        <state>Florida</state>
+        <zip>33613</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Atlanta</city>
+        <state>Georgia</state>
+        <zip>30341</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Canton</city>
+        <state>Georgia</state>
+        <zip>30114</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Decatur</city>
+        <state>Georgia</state>
+        <zip>30033</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Indianapolis</city>
+        <state>Indiana</state>
+        <zip>46202</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Lexington</city>
+        <state>Kentucky</state>
+        <zip>40503</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Baltimore</city>
+        <state>Maryland</state>
+        <zip>21285</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Rockville</city>
+        <state>Maryland</state>
+        <zip>20852</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Belmont</city>
+        <state>Massachusetts</state>
+        <zip>02478</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Traverse City</city>
+        <state>Michigan</state>
+        <zip>49684</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Creve Coeur</city>
+        <state>Missouri</state>
+        <zip>63141</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Albuquerque</city>
+        <state>New Mexico</state>
+        <zip>87109</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Albany</city>
+        <state>New York</state>
+        <zip>12205</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Amherst</city>
+        <state>New York</state>
+        <zip>14226</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Brooklyn</city>
+        <state>New York</state>
+        <zip>11235</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Latham</city>
+        <state>New York</state>
+        <zip>12210</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>New York</city>
+        <state>New York</state>
+        <zip>10032</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Staten Island</city>
+        <state>New York</state>
+        <zip>10312</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Raleigh</city>
+        <state>North Carolina</state>
+        <zip>27607</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Winston-Salem</city>
+        <state>North Carolina</state>
+        <zip>27103</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Beachwood</city>
+        <state>Ohio</state>
+        <zip>44122</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Toledo</city>
+        <state>Ohio</state>
+        <zip>43623</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Oklahoma City</city>
+        <state>Oklahoma</state>
+        <zip>73116</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Eugene</city>
+        <state>Oregon</state>
+        <zip>97401</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Portland</city>
+        <state>Oregon</state>
+        <zip>97210</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Philadelphia</city>
+        <state>Pennsylvania</state>
+        <zip>19104</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>East Providence</city>
+        <state>Rhode Island</state>
+        <zip>02914</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Charleston</city>
+        <state>South Carolina</state>
+        <zip>29425</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Greer</city>
+        <state>South Carolina</state>
+        <zip>29650</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Sioux Falls</city>
+        <state>South Dakota</state>
+        <zip>57105</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Salt Lake City</city>
+        <state>Utah</state>
+        <zip>84108</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Bennington</city>
+        <state>Vermont</state>
+        <zip>05201</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Burlington</city>
+        <state>Vermont</state>
+        <zip>05401</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Norfolk</city>
+        <state>Virginia</state>
+        <zip>23502</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Roanoke</city>
+        <state>Virginia</state>
+        <zip>24018</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Seattle</city>
+        <state>Washington</state>
+        <zip>98108</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Buenos Aires</city>
+        <zip>CBA 1419</zip>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Ciudad Automona De Buenos Aire</city>
+        <zip>C1111AAL</zip>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Cordoba</city>
+        <zip>X5004AOA</zip>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Mendoza</city>
+        <zip>5500</zip>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Rosario</city>
+        <zip>S2000BZL</zip>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Santa Fe</city>
+        <zip>S3000FWO</zip>
+        <country>Argentina</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Gosford</city>
+        <state>New South Wales</state>
+        <zip>2250</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Kogarah</city>
+        <state>New South Wales</state>
+        <zip>2217</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Chermside</city>
+        <state>Queensland</state>
+        <zip>4032</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Toowoomba</city>
+        <state>Queensland</state>
+        <zip>4650</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Box Hill</city>
+        <state>Victoria</state>
+        <zip>3128</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Glen Iris</city>
+        <state>Victoria</state>
+        <zip>3146</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Heidelberg Heights</city>
+        <state>Victoria</state>
+        <zip>3081</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Melbourne</city>
+        <state>Victoria</state>
+        <zip>3004</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Subiaco</city>
+        <state>Western Australia</state>
+        <zip>6008</zip>
+        <country>Australia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Curitiba</city>
+        <zip>80060-900</zip>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Itapira</city>
+        <zip>13970-905</zip>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Porto Alegre</city>
+        <zip>90110-270</zip>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Rio De Janeiro</city>
+        <zip>22271-100</zip>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>SÃ£o Paulo</city>
+        <zip>04024-002</zip>
+        <country>Brazil</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Medicine Hat</city>
+        <state>Alberta</state>
+        <zip>T1B4E7</zip>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Kelowna</city>
+        <state>British Columbia</state>
+        <zip>V1Y3G5</zip>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Penticton</city>
+        <state>British Columbia</state>
+        <zip>V2A 5C8</zip>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Ottawa</city>
+        <state>Ontario</state>
+        <zip>K1N 5C8</zip>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Toronto</city>
+        <state>Ontario</state>
+        <zip>M6M 3Z5</zip>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Greenfield Park</city>
+        <state>Quebec</state>
+        <zip>J4V 2J2</zip>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Sherbrooke</city>
+        <state>Quebec</state>
+        <zip>J1H1Z1</zip>
+        <country>Canada</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Paris</city>
+        <zip>75475</zip>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Rennes</city>
+        <zip>35000</zip>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Strasbourg</city>
+        <zip>67091</zip>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Toulouse</city>
+        <zip>31300</zip>
+        <country>France</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Berlin</city>
+        <zip>12203</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Hamburg</city>
+        <zip>22307</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Hannover</city>
+        <zip>30559</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Mannheim</city>
+        <zip>68165</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Munich</city>
+        <zip>D-81675</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Regensburg</city>
+        <zip>93042</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Biella</city>
+        <zip>13900</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Boggiovara</city>
+        <zip>41100</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Chieti</city>
+        <zip>66013</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Genova</city>
+        <zip>16128</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Lido Di Camaiore</city>
+        <zip>55043</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Milano</city>
+        <zip>20132</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Rome</city>
+        <zip>00186</zip>
+        <country>Italy</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Aichi</city>
+        <zip>474-8511</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Ehime</city>
+        <zip>791-0295</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Fukuoka</city>
+        <zip>816-0864</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Hiroshima</city>
+        <zip>720-0825</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Hyogo</city>
+        <zip>514-8507</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Kanagawa</city>
+        <zip>247-8533</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Kyoto</city>
+        <zip>607-8062</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Osaka</city>
+        <zip>545-8586</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Shizuoka</city>
+        <zip>424-0911</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Tokyo</city>
+        <zip>187-8551</zip>
+        <country>Japan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Incheon</city>
+        <zip>400-711</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Seongnam-Si</city>
+        <zip>463-707</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Seoul</city>
+        <zip>143-729</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Suwon-Si</city>
+        <zip>443-721</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Bydgoszcz</city>
+        <zip>85-796</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Gliwice</city>
+        <zip>44-100</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Katowice</city>
+        <zip>40-588</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Krakow</city>
+        <zip>31-530</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Lublin</city>
+        <zip>20-954</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Warsaw</city>
+        <zip>01-211</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Chelyabinsk</city>
+        <zip>454091</zip>
+        <country>Russian Federation</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Saint Petersburg</city>
+        <zip>190021</zip>
+        <country>Russian Federation</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Barcelona</city>
+        <zip>08014</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Getafe</city>
+        <zip>28905</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Madrid</city>
+        <zip>28006</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Plasencia</city>
+        <zip>10600</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Terrassa</city>
+        <zip>08221</zip>
+        <country>Spain</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Joenkoeping</city>
+        <zip>551 85</zip>
+        <country>Sweden</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Kalmar</city>
+        <zip>39185</zip>
+        <country>Sweden</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Lund</city>
+        <zip>22241</zip>
+        <country>Sweden</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Molndal</city>
+        <zip>43135</zip>
+        <country>Sweden</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Umea</city>
+        <zip>901 85</zip>
+        <country>Sweden</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Kuei Shan Hsiang</city>
+        <zip>33305</zip>
+        <country>Taiwan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Niao Sung Hsiang</city>
+        <zip>833</zip>
+        <country>Taiwan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Taipei</city>
+        <zip>112</zip>
+        <country>Taiwan</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Uckfield</city>
+        <state>E Susx</state>
+        <zip>TN225AW</zip>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Scotland</city>
+        <state>Glasgow</state>
+        <zip>G20 0XA</zip>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>London</city>
+        <state>Greater London</state>
+        <zip>N195NX</zip>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.</name>
+      <address>
+        <city>Camberwell</city>
+        <state>London</state>
+        <zip>SE5 8AF</zip>
+        <country>United Kingdom</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>Argentina</country>
+    <country>Australia</country>
+    <country>Brazil</country>
+    <country>Canada</country>
+    <country>France</country>
+    <country>Germany</country>
+    <country>Italy</country>
+    <country>Japan</country>
+    <country>Korea, Republic of</country>
+    <country>Poland</country>
+    <country>Russian Federation</country>
+    <country>Spain</country>
+    <country>Sweden</country>
+    <country>Taiwan</country>
+    <country>United Kingdom</country>
+    <country>United States</country>
+  </location_countries>
+  <verification_date>March 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>March 7, 2017</lastchanged_date>
+  <firstreceived_date>May 19, 2010</firstreceived_date>
+  <firstreceived_results_disposition_date>September 29, 2014</firstreceived_results_disposition_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>May 19, 2010</study_first_submitted>
+  <study_first_submitted_qc>May 19, 2010</study_first_submitted_qc>
+  <study_first_posted type="Estimate">May 21, 2010</study_first_posted>
+  <disposition_first_submitted>September 29, 2014</disposition_first_submitted>
+  <disposition_first_submitted_qc>September 29, 2014</disposition_first_submitted_qc>
+  <disposition_first_posted type="Estimate">October 8, 2014</disposition_first_posted>
+  <last_update_submitted>March 7, 2017</last_update_submitted>
+  <last_update_submitted_qc>March 7, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">March 8, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <patient_data>
+    <sharing_ipd>Yes</sharing_ipd>
+    <ipd_description>Lilly provides access to the individual patient data from studies on approved medicines and indications as defined by the sponsor specific information on ClinicalStudyDataRequest.com.
+This access is provided in a timely fashion after the primary publication is accepted. Researchers need to have an approved research proposal submitted through ClinicalStudyDataRequest.com. Access to the data will be provided in a secure data sharing environment after signing a data sharing agreement.</ipd_description>
+  </patient_data>
+  <!-- Results have not yet been posted, but a results disposition has been submitted           -->
+</clinical_study>
+

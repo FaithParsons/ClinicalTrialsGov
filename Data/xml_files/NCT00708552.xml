@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="106">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT00708552</url>
+  </required_header>
+  <id_info>
+    <org_study_id>AZ3110865</org_study_id>
+    <nct_id>NCT00708552</nct_id>
+  </id_info>
+  <brief_title>Study of SB-742457 or Donepezil Versus Placebo in Subjects With Mild-to-moderate Alzheimer's Disease</brief_title>
+  <official_title>Study AZ3110865, a Study Comparing SB-742457 or Donepezil Versus Placebo in Subjects With Mild-to-moderate Alzheimer's Disease</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>GlaxoSmithKline</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>GlaxoSmithKline</source>
+  <brief_summary>
+    <textblock>
+      The study is designed to investigate the efficacy, safety and tolerability of SB-742457
+      versus placebo in subjects with mild-to-moderate Alzheimer's disease. SB-742457 is an
+      experimental treatment which increases the levels of certain chemicals in the brain that are
+      often decreased in patients with Alzheimer's disease.
+    </textblock>
+  </brief_summary>
+  <overall_status>Completed</overall_status>
+  <start_date>July 2008</start_date>
+  <completion_date type="Actual">March 2010</completion_date>
+  <primary_completion_date type="Actual">March 2010</primary_completion_date>
+  <phase>Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Double (Participant, Investigator)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Assessment of cognition and global function after 24 weeks treatment</measure>
+    <time_frame>24 weeks</time_frame>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Assessment of cognition and global function after 12 and 24 weeks treatment. Activities of daily living, assessment of depressive symptoms. Safety and tolerability. Pharmacokinetics and exploratory pharmacogenetics.</measure>
+    <time_frame>24 weeks</time_frame>
+  </secondary_outcome>
+  <number_of_arms>4</number_of_arms>
+  <enrollment type="Actual">576</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>SB-742457 - 15mg</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>SB-742457 - 15mg</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Placebo</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>SB-742457 - 35mg</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>SB-742457 - 35mg</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Donepezil</arm_group_label>
+    <arm_group_type>Active Comparator</arm_group_type>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>SB-742457</intervention_name>
+    <description>investigational drug</description>
+    <arm_group_label>SB-742457 - 15mg</arm_group_label>
+    <arm_group_label>SB-742457 - 35mg</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Donepezil</intervention_name>
+    <description>comparator</description>
+    <arm_group_label>Donepezil</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Placebo</intervention_name>
+    <description>comparator</description>
+    <arm_group_label>Placebo</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion criteria:
+
+          -  Subjects and their caregivers must provide informed consent prior to study entry.
+
+          -  Subjects must have a clinical diagnosis of probable mild-to-moderate Alzheimer's
+             disease with a documented 6-month history of AD symptoms
+
+          -  Subjects must have a regular caregiver who is willing to attend visits, oversee the
+             subject's compliance with the study and report on the subject's status.
+
+          -  Female subjects of child-bearing potential must agree to pregnancy testing and
+             approved form of birth control.
+
+        Exclusion criteria:
+
+          -  Diagnosis of possible, probable or definite vascular dementia.
+
+          -  History/evidence of any other CNS disorder that could be interpreted as a cause of
+             dementia
+
+          -  History of known or suspected seizures, loss of consciousness or significant head
+             trauma
+
+          -  Subjects with ECG, blood pressure and laboratory values outside of protocol criteria
+             are excluded.
+
+          -  Subjects with known photosensitivity
+
+          -  Subjects with a history of previous exposure to SB-742457, taking agents for which
+             there is a theoretical risk of interaction with SB-742457, or taking medication for
+             Alzheimer's disease or centrally acting agents which might impact study outcomes may
+             not participate.
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>50 Years</minimum_age>
+    <maximum_age>85 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>GSK Clinical Trials</last_name>
+    <role>Study Director</role>
+    <affiliation>GlaxoSmithKline</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Shumen</city>
+        <zip>9700</zip>
+        <country>Bulgaria</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Sofia</city>
+        <zip>1113</zip>
+        <country>Bulgaria</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Sofia</city>
+        <zip>1431</zip>
+        <country>Bulgaria</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Varna</city>
+        <zip>9010</zip>
+        <country>Bulgaria</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Santiago</city>
+        <state>Región Metro De Santiago</state>
+        <zip>7510186</zip>
+        <country>Chile</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Santiago</city>
+        <state>Región Metro De Santiago</state>
+        <zip>7560356</zip>
+        <country>Chile</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Viña del Mar</city>
+        <state>Valparaíso</state>
+        <zip>252-0997</zip>
+        <country>Chile</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Santiago</city>
+        <country>Chile</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Brno</city>
+        <zip>656 91</zip>
+        <country>Czech Republic</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Olomouc</city>
+        <zip>775 20</zip>
+        <country>Czech Republic</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Praha 10</city>
+        <zip>100 00</zip>
+        <country>Czech Republic</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Praha 10</city>
+        <zip>10000</zip>
+        <country>Czech Republic</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Praha 1</city>
+        <zip>110 00</zip>
+        <country>Czech Republic</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Praha 2</city>
+        <zip>120 00</zip>
+        <country>Czech Republic</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Tallinn</city>
+        <zip>10138</zip>
+        <country>Estonia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Tallinn</city>
+        <zip>10617</zip>
+        <country>Estonia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Tartu</city>
+        <zip>51014</zip>
+        <country>Estonia</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Stuttgart</city>
+        <state>Baden-Wuerttemberg</state>
+        <zip>70178</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Tuebingen</city>
+        <state>Baden-Wuerttemberg</state>
+        <zip>72076</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Muenchen</city>
+        <state>Bayern</state>
+        <zip>80331</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Muenchen</city>
+        <state>Bayern</state>
+        <zip>81675</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Neuburg / Donau</city>
+        <state>Bayern</state>
+        <zip>86633</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Nuernberg</city>
+        <state>Bayern</state>
+        <zip>90402</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Unterhaching</city>
+        <state>Bayern</state>
+        <zip>82008</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Bad Homburg</city>
+        <state>Hessen</state>
+        <zip>61348</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Erbach</city>
+        <state>Hessen</state>
+        <zip>64711</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Huettenberg</city>
+        <state>Hessen</state>
+        <zip>35625</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Achim</city>
+        <state>Niedersachsen</state>
+        <zip>28832</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Hannover</city>
+        <state>Niedersachsen</state>
+        <zip>30559</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Bochum</city>
+        <state>Nordrhein-Westfalen</state>
+        <zip>44805</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Bochum</city>
+        <state>Nordrhein-Westfalen</state>
+        <zip>44892</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Dueren</city>
+        <state>Nordrhein-Westfalen</state>
+        <zip>52349</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Duisburg</city>
+        <state>Nordrhein-Westfalen</state>
+        <zip>47051</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Hattingen</city>
+        <state>Nordrhein-Westfalen</state>
+        <zip>45525</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Koeln</city>
+        <state>Nordrhein-Westfalen</state>
+        <zip>50935</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Siegen</city>
+        <state>Nordrhein-Westfalen</state>
+        <zip>57072</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Dresden</city>
+        <state>Sachsen</state>
+        <zip>01097</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Leipzig</city>
+        <state>Sachsen</state>
+        <zip>04107</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Leipzig</city>
+        <state>Sachsen</state>
+        <zip>04157</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Hamburg</city>
+        <zip>20249</zip>
+        <country>Germany</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Athens</city>
+        <zip>115 21</zip>
+        <country>Greece</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Athens</city>
+        <zip>11528</zip>
+        <country>Greece</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Athens</city>
+        <country>Greece</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Melissia</city>
+        <zip>151 27</zip>
+        <country>Greece</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Thessaloniki</city>
+        <zip>57010</zip>
+        <country>Greece</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Busan</city>
+        <zip>602-715</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Seoul</city>
+        <zip>133-792</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Seoul</city>
+        <zip>135-710</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Seoul</city>
+        <zip>138-736</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Seoul</city>
+        <zip>158-710</zip>
+        <country>Korea, Republic of</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Aguascalientes, Ags</city>
+        <state>Aguascalientes</state>
+        <zip>20127</zip>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Tijuana</city>
+        <state>Baja California Norte</state>
+        <zip>22320</zip>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Saltillo</city>
+        <state>Coahuila</state>
+        <zip>25000</zip>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Monterrey</city>
+        <state>Nuevo León</state>
+        <zip>64660</zip>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Mexico City</city>
+        <zip>06700</zip>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Mexico, D.F.</city>
+        <zip>14050</zip>
+        <country>Mexico</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Bydgoszcz</city>
+        <zip>85-094</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Bydgoszcz</city>
+        <zip>85-796</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Mosina</city>
+        <zip>62-050</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Poznan</city>
+        <zip>61-298</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Sopot</city>
+        <zip>81-824</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Warszawa</city>
+        <zip>02-097</zip>
+        <country>Poland</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Moscow</city>
+        <zip>115522</zip>
+        <country>Russian Federation</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Moscow</city>
+        <zip>115552</zip>
+        <country>Russian Federation</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Moscow</city>
+        <zip>117049</zip>
+        <country>Russian Federation</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>St.-Petersburg</city>
+        <zip>198103</zip>
+        <country>Russian Federation</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Durban</city>
+        <zip>4001</zip>
+        <country>South Africa</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Loeventstein</city>
+        <zip>7530</zip>
+        <country>South Africa</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Oakdale</city>
+        <zip>7530</zip>
+        <country>South Africa</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Pretoria</city>
+        <zip>0181</zip>
+        <country>South Africa</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Rosebank</city>
+        <zip>2196</zip>
+        <country>South Africa</country>
+      </address>
+    </facility>
+  </location>
+  <location>
+    <facility>
+      <name>GSK Investigational Site</name>
+      <address>
+        <city>Sunninghill</city>
+        <zip>2157</zip>
+        <country>South Africa</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>Bulgaria</country>
+    <country>Chile</country>
+    <country>Czech Republic</country>
+    <country>Estonia</country>
+    <country>Germany</country>
+    <country>Greece</country>
+    <country>Korea, Republic of</country>
+    <country>Mexico</country>
+    <country>Poland</country>
+    <country>Russian Federation</country>
+    <country>South Africa</country>
+  </location_countries>
+  <verification_date>March 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>March 21, 2017</lastchanged_date>
+  <firstreceived_date>June 30, 2008</firstreceived_date>
+  <firstreceived_results_disposition_date>February 23, 2012</firstreceived_results_disposition_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>June 30, 2008</study_first_submitted>
+  <study_first_submitted_qc>June 30, 2008</study_first_submitted_qc>
+  <study_first_posted type="Estimate">July 2, 2008</study_first_posted>
+  <disposition_first_submitted>February 23, 2012</disposition_first_submitted>
+  <disposition_first_submitted_qc>February 23, 2012</disposition_first_submitted_qc>
+  <disposition_first_posted type="Estimate">February 28, 2012</disposition_first_posted>
+  <last_update_submitted>March 21, 2017</last_update_submitted>
+  <last_update_submitted_qc>March 21, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">October 12, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <keyword>Alzheimer's disease</keyword>
+  <keyword>Cognition</keyword>
+  <keyword>SB-742457</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Donepezil</mesh_term>
+  </intervention_browse>
+  <!-- Results have not yet been posted, but a results disposition has been submitted           -->
+</clinical_study>
+

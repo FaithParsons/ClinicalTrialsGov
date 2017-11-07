@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="503">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT01739348</url>
+  </required_header>
+  <id_info>
+    <org_study_id>P07738</org_study_id>
+    <secondary_id>MK-8931-017</secondary_id>
+    <secondary_id>2011-003151-20</secondary_id>
+    <secondary_id>132229</secondary_id>
+    <nct_id>NCT01739348</nct_id>
+  </id_info>
+  <brief_title>An Efficacy and Safety Trial of Verubecestat (MK-8931) in Mild to Moderate Alzheimer's Disease (P07738)</brief_title>
+  <acronym>EPOCH</acronym>
+  <official_title>A Randomized, Placebo Controlled, Parallel-Group, Double Blind Efficacy and Safety Trial of MK-8931 With a Long Term Double-Blind Extension in Subjects With Mild to Moderate Alzheimer's Disease (Protocol No. MK-8931-017-10)(Also Known as SCH 900931, P07738)</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>Merck Sharp &amp; Dohme Corp.</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>Merck Sharp &amp; Dohme Corp.</source>
+  <oversight_info>
+    <has_dmc>Yes</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      This study consists of two parts, Part I and Part II. The purpose of Part I of the study is
+      to assess the efficacy and safety of verubecestat (MK-8931) compared with placebo
+      administered for 78 weeks in the treatment of Alzheimer's Disease (AD). The primary study
+      hypotheses for Part I are that at least one verubecestat dose is superior to placebo at 78
+      weeks of treatment with respect to change from Baseline in Alzheimer's Disease Assessment
+      Scale Cognitive Subscale (ADAS-Cog) score and that at least one verubecestat dose is superior
+      to placebo at 78 weeks of treatment with respect to change from Baseline in Alzheimer's
+      Disease Cooperative Study Activities of Daily Living Inventory (ADCS-ADL) score. The first
+      approximately 400 participants entering Part I of the study are identified as the Safety
+      Cohort. Participants who complete Part I of the study may choose to participate in Part II,
+      which is a long term double-blind extension to assess efficacy and safety of verubecestat
+      administered for up to an additional 260 weeks.
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      Two substudies are included in Part I of the study: 1) a medical imaging substudy to evaluate
+      changes in brain amyloid protein load using positron emission tomography (PET) and an amyloid
+      tracer ([18F]flutemetamol); and 2) a cerebrospinal fluid (CSF) biomarker substudy to evaluate
+      changes in CSF concentrations of amyloid-β related peptides, total tau, and phosphorylated
+      tau (p-tau). The substudies will be conducted only at designated investigational sites.
+      Participants are not required to take part in a substudy in order to take part in the larger
+      trial.
+    </textblock>
+  </detailed_description>
+  <overall_status>Terminated</overall_status>
+  <start_date type="Actual">November 30, 2012</start_date>
+  <completion_date type="Actual">April 14, 2017</completion_date>
+  <primary_completion_date type="Actual">April 14, 2017</primary_completion_date>
+  <phase>Phase 2/Phase 3</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Double (Participant, Investigator)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Change from baseline in ADAS-Cog score</measure>
+    <time_frame>Baseline and week 78</time_frame>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Change from baseline in ADCS-ADL score</measure>
+    <time_frame>Baseline and week 78</time_frame>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Extension period (Part II): Change from baseline in ADAS-Cog score</measure>
+    <time_frame>Baseline and week 104</time_frame>
+    <description>Baseline for this measure is Part I baseline</description>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Extension period (Part II): Change from baseline in ADCS-ADL score</measure>
+    <time_frame>Baseline and week 104</time_frame>
+    <description>Baseline for this measure is Part I baseline</description>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in Clinical Dementia Rating Sum of Boxes (CDR-SB) score</measure>
+    <time_frame>Baseline and week 78</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in total hippocampal volume</measure>
+    <time_frame>Baseline and week 78</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in cerebrospinal fluid (CSF) total tau</measure>
+    <time_frame>Baseline and week 78</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in brain amyloid load</measure>
+    <time_frame>Baseline and week 78</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Percentage of Responders</measure>
+    <time_frame>Week 78</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in Neuropsychiatric Inventory (NPI) score</measure>
+    <time_frame>Baseline and week 78</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Change from baseline in Mini-Mental State Examination (MMSE) score</measure>
+    <time_frame>Baseline and week 78</time_frame>
+  </secondary_outcome>
+  <number_of_arms>4</number_of_arms>
+  <enrollment type="Actual">2210</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>Verubecestat 12 mg</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Verubecestat 12 mg once daily for 78 weeks (Part I). Participants who complete Part I may continue to receive verubecestat 12 mg once daily for up to an additional 260 weeks (Part II).</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Verubecestat 40 mg</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Verubecestat 40 mg once daily for 78 weeks (Part I). Participants who complete Part I may continue to receive verubecestat 40 mg once daily for up to an additional 260 weeks (Part II).</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Verubecestat 60 mg (Safety Cohort Only)</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Verubecestat 60 mg once daily until the first interim analysis in Part 1 of study. Based on results of the first interim analysis, conducted when the first 200 participants in all study treatment groups combined reach 13 weeks of treatment or discontinue study before 13 weeks, participants in this group will be switched to verubecestat 40 mg once daily, for remainder of Part I (total dosing period of 78 weeks). Participants who complete Part I may continue to receive verubecestat 40 mg once daily for up to an additional 260 weeks (Part II).</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Placebo/Verubecestat 40 mg</arm_group_label>
+    <arm_group_type>Placebo Comparator</arm_group_type>
+    <description>Placebo once daily for 78 weeks (Part I). Participants who complete Part I may receive verubecestat 40 mg once daily for up to 260 weeks (Part II).</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Verubecestat (Part I and Part II)</intervention_name>
+    <description>Single 12 mg verubecestat tablet once daily, taken orally</description>
+    <arm_group_label>Verubecestat 12 mg</arm_group_label>
+    <other_name>SCH 900931</other_name>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Verubecestat (Part I and Part II)</intervention_name>
+    <description>Single 40 mg verubecestat tablet once daily, taken orally</description>
+    <arm_group_label>Verubecestat 40 mg</arm_group_label>
+    <other_name>SCH 900931</other_name>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Verubecestat (Part I and Part II)</intervention_name>
+    <description>Single 60 or 40 mg verubecestat tablet once daily, taken orally</description>
+    <arm_group_label>Verubecestat 60 mg (Safety Cohort Only)</arm_group_label>
+    <other_name>SCH 900931</other_name>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Placebo (Part I)</intervention_name>
+    <description>Single placebo tablet matching verubecestat treatment once daily, taken orally</description>
+    <arm_group_label>Placebo/Verubecestat 40 mg</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Verubecestat (Part II)</intervention_name>
+    <description>Single 40 mg verubecestat tablet once daily, taken orally</description>
+    <arm_group_label>Placebo/Verubecestat 40 mg</arm_group_label>
+    <other_name>SCH 900931</other_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Diagnosis of probable AD based on both a) the National Institute of Neurological and
+             Communicative Diseases and Stroke/Alzheimer's Disease and Related Disorders
+             Association (NINCDS-ADRDA) criteria and b) the Diagnostic and Statistical Manual of
+             Mental Disorders, 4th Edition, Text Revision (DSM-IV-TR) criteria for AD
+
+          -  AD is of mild to moderate severity
+
+          -  Clear history of cognitive and functional decline over at least one year that is
+             either a) documented in medical records or b) documented by history from an informant
+             who knows the subject well
+
+          -  Able to read at a 6th grade level or equivalent, and must have a history of academic
+             achievement and/or employment sufficient to exclude mental retardation
+
+          -  If a participant is receiving an acetylcholinesterase inhibitor, memantine, medical
+             food/supplement (e.g., vitamin E) and/or herbal medications for AD, the dose must have
+             been stable for at least three months before Screening, and the participant must be
+             willing to remain on the same dose for the duration of the trial. Participants may
+             need to be on AD treatments in accordance with local requirements
+
+          -  Participant must have a reliable and competent trial partner/caregiver who must have a
+             close relationship with the subject
+
+        Inclusion Criteria for Extension Period (Part II):
+
+          -  Tolerated study drug and completed the initial 78-week period of the trial (Part I)
+
+          -  Participant must have a reliable and competent trial partner who must have a close
+             relationship with the subject
+
+        Exclusion Criteria:
+
+          -  History of stroke
+
+          -  Evidence of a neurological disorder other than the disease being studied (i.e.,
+             probable AD)
+
+          -  History of seizures or epilepsy within the last 5 years before Screening
+
+          -  Evidence of a clinically relevant or unstable psychiatric disorder, excluding major
+             depression in remission
+
+          -  Participant is at imminent risk of self-harm or of harm to others
+
+          -  History of alcoholism or drug dependency/abuse within the last 5 years before
+             Screening
+
+          -  Participant does not have a magnetic resonance imaging (MRI) scan obtained within 12
+             months of Screening and is unwilling or not eligible to undergo an MRI scan at the
+             Screening Visit. With Sponsor approval, a head computed tomography (CT) scan may be
+             substituted for MRI scan to evaluate eligibility
+
+          -  History of hepatitis or liver disease that has been active within the six months prior
+             to Screening Visit
+
+          -  Recent or ongoing, uncontrolled, clinically significant medical condition within 3
+             months of the Screening Visit (e.g., diabetes, hypertension, thyroid or endocrine
+             disease, congestive heart failure, angina, cardiac or gastrointestinal disease,
+             dialysis, or abnormal renal function) other than the condition being studied such that
+             participation in the trial would pose a significant medical risk to the subject.
+             Controlled co-morbid conditions are not exclusionary if stable within three months of
+             the Screening Visit
+
+          -  History or current evidence of long QT syndrome, corrected QT (QTc) interval ≥470
+             milliseconds (for male subjects) or ≥480 milliseconds (for female subjects), or
+             torsades de pointes
+
+          -  History of malignancy occurring within the five years before Screening, except for
+             adequately treated basal cell or squamous cell skin cancer, in situ cervical cancer,
+             or localized prostate carcinoma; or malignancy which has been treated with potentially
+             curative therapy with no evidence of recurrence for ≥3 year post-therapy
+
+          -  Clinically significant vitamin B12 or folate deficiency in the six months before
+             Screening Visit
+
+          -  Use of any investigational drugs within 30 days (or longer depending on drug) before
+             Screening or participation in studies involving repeated cognitive testing within 30
+             days before Screening. Participation in an observational study, such as those
+             involving annual cognitive assessments and/or neuroimaging, may be allowed if approved
+             by Sponsor
+
+          -  History of a hypersensitivity reaction to more than three drugs
+
+          -  Has tested positive for human immunodeficiency virus (HIV)
+
+          -  Close family member (including the caregiver, the spouse or any children) who is among
+             the personnel of the investigational or sponsor staff directly involved with this
+             trial
+
+        Additional Exclusion Criteria for Safety Cohort:
+
+          -  History of an ongoing medical condition that has been poorly controlled within 6
+             months of the Screening Visit (e.g., hypotension, diabetes, hypertension,
+             cerebrovascular disease, thyroid disease, endocrine disturbance, congestive heart
+             failure, cardiac or gastrointestinal disease, dialysis, or abnormal renal function)
+             other than the condition being studied such that a subject's participation in the
+             trial would pose a significant medical risk
+
+          -  History of congestive heart failure (moderate or greater severity), myocardial
+             infarction, heart surgery, syncope, bradycardia, or clinically significant hypotension
+             within one year before Screening
+
+        Exclusion Criteria for Extension Period (Part II):
+
+          -  Participant is at imminent risk of self-harm or of harm to others
+
+          -  Has developed a recent or ongoing, uncontrolled, clinically significant medical
+             condition other than AD
+
+          -  Has history of or has developed during Part I evidence of long QT syndrome, QTc
+             interval ≥470 milliseconds (for male subjects) or ≥480 milliseconds (for female
+             subjects), or torsades de pointes
+
+          -  Has developed a form of dementia that is not AD
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>55 Years</minimum_age>
+    <maximum_age>85 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Medical Director</last_name>
+    <role>Study Director</role>
+    <affiliation>Merck Sharp &amp; Dohme Corp.</affiliation>
+  </overall_official>
+  <removed_countries>
+    <country>Argentina</country>
+    <country>Australia</country>
+    <country>Austria</country>
+    <country>Belgium</country>
+    <country>Brazil</country>
+    <country>Canada</country>
+    <country>Denmark</country>
+    <country>France</country>
+    <country>Germany</country>
+    <country>Hungary</country>
+    <country>Israel</country>
+    <country>Italy</country>
+    <country>Japan</country>
+    <country>Korea, Republic of</country>
+    <country>Netherlands</country>
+    <country>New Zealand</country>
+    <country>Portugal</country>
+    <country>Spain</country>
+    <country>Turkey</country>
+    <country>United Kingdom</country>
+    <country>United States</country>
+  </removed_countries>
+  <verification_date>April 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>April 25, 2017</lastchanged_date>
+  <firstreceived_date>November 29, 2012</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>November 29, 2012</study_first_submitted>
+  <study_first_submitted_qc>November 29, 2012</study_first_submitted_qc>
+  <study_first_posted type="Estimate">December 3, 2012</study_first_posted>
+  <last_update_submitted>April 25, 2017</last_update_submitted>
+  <last_update_submitted_qc>April 25, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">April 27, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+  </condition_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study rank="580">
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on November 07, 2017</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT02423200</url>
+  </required_header>
+  <id_info>
+    <org_study_id>EIP14-745-303</org_study_id>
+    <nct_id>NCT02423200</nct_id>
+  </id_info>
+  <brief_title>Clinical Pharmacology of p38 MAP Kinase Inhibitor, VX-745, in Mild Cognitive Impairment Due to Alzheimer's Disease (AD) or Mild AD</brief_title>
+  <official_title>A Randomized, Open-Label, Multiple Dose Clinical Pharmacology Study of Two Doses of a Selective p38 MAP Kinase Inhibitor, VX-745 in Patients With Mild Cognitive Impairment (MCI) Due to Alzheimer's Disease (AD) or With Mild AD</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>EIP Pharma, LLC</agency>
+      <agency_class>Industry</agency_class>
+    </lead_sponsor>
+  </sponsors>
+  <source>EIP Pharma, LLC</source>
+  <oversight_info>
+    <has_dmc>No</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      This study will assess the effects of VX-745 on markers of disease in the central nervous
+      system of patients with MCI due to AD or with mild AD. The study will also evaluate the
+      safety and tolerability of VX-745 in these patients during 6 weeks of dosing, as well as the
+      plasma and cerebrospinal fluid concentrations of VX-745 during dosing.
+    </textblock>
+  </brief_summary>
+  <overall_status>Completed</overall_status>
+  <start_date>April 2015</start_date>
+  <completion_date type="Actual">November 2016</completion_date>
+  <primary_completion_date type="Actual">September 2016</primary_completion_date>
+  <phase>Phase 2</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Quadruple (Participant, Care Provider, Investigator, Outcomes Assessor)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Percent change from Baseline to end of treatment in cerebrospinal fluid levels of cytokines, amyloid-beta, phospho-tau, neurofilament light chain and butylcholinesterase and fludeoxyglucose positron emission tomography</measure>
+    <time_frame>Baseline and days 1 and 42 of dosing with VX-745</time_frame>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Number and severity of adverse events with VX-745 in patients with MCI or AD</measure>
+    <time_frame>At baseline and at each study visit during (days 1, 7, 14, 21, 28, 35 and 42) and after (day 51) dosing</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Area-under-curve (AUC) of plasma drug concentrations of VX-745</measure>
+    <time_frame>On day 1 and 42 of VX-745 dosing, at 0.5, 1, 2, 3, 4, 5, 6 and 8 hours post-dose</time_frame>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Maximal CSF VX-745 concentration</measure>
+    <time_frame>On day 1 and 42 of VX-745 dosing, 0, 3 and 6h post-dose</time_frame>
+  </secondary_outcome>
+  <number_of_arms>2</number_of_arms>
+  <enrollment type="Actual">16</enrollment>
+  <condition>Alzheimer's Disease</condition>
+  <arm_group>
+    <arm_group_label>VX-745 dose level 1</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Active Group 1: VX-745 dose level 1 twice daily</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>VX-745 dose level 2</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Active Group 1: VX-745 dose level 2 twice daily</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>VX-745</intervention_name>
+    <description>Orally-active P38 MAP kinase alpha-selective inhibitor</description>
+    <arm_group_label>VX-745 dose level 1</arm_group_label>
+    <arm_group_label>VX-745 dose level 2</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:
+
+          -  Age 60 - 85 (inclusive)
+
+          -  Willing and able to provide informed consent
+
+          -  Clinical presentation consistent with MCI due to AD or of mild AD
+
+               -  Gradual progressive decline in memory function over &gt;6 months
+
+               -  Amnestic presentation on neuropsychological testing with rapid forgetting (%
+                  reduction 1.5 standard deviations below the mean)
+
+               -  Clinical Dementia Rating (CDR) Sum of Box (SOB) score ≥0.5
+
+               -  Mini-Mental State Examination (MMSE) range: 20 to 30
+
+          -  Brain hypometabolism by 18F-2-fluoro-2-deoxyglucose (FDG)-PET
+
+          -  Participants may be taking medications for AD, provided that the dose of these
+             medications has been stable for &gt;3 months.
+
+        Exclusion Criteria:
+
+          -  Evidence of neurodegenerative disease other than AD
+
+          -  Inability for any reason to undergo MRI scans (e.g. pacemaker, vascular stent or stent
+             graft). Patients who require sedation for screening procedures such as MRI may receive
+             a short-acting sedative.
+
+          -  Psychiatric disorder that would compromise ability to comply with study requirements
+
+          -  History of cancer within the last 5 years, except basal cell carcinoma, non-squamous
+             skin carcinoma, prostate cancer or carcinoma in situ with no significant progression
+             over the past 2 years
+
+          -  Significant cardiovascular, pulmonary, renal, liver, infectious disease, immune
+             disorder or metabolic/endocrine disorders or other disease that would preclude
+             treatment with p38 MAP kinase inhibitor and/or assessment of drug safety and efficacy
+
+          -  Recent (&lt;90 days) changes to AD medications prescribed for cognitive reasons or with
+             the potential to impact cognition
+
+          -  Psychotropic drugs taken within 1 month. Anticoagulant drugs taken within 1 week.
+
+          -  Participation in a study of an investigational drug less than 6 months or 5 half-lives
+             of the investigational drug, whichever is longer, before enrollment in the study
+
+          -  Male subjects with female partner of child-bearing potential who are unwilling or
+             unable to adhere to contraception requirements
+
+          -  Female subjects who have not reached menopause or have not had a hysterectomy or
+             bilateral oophorectomy/salpingoophorectomy
+
+          -  Positive urine or serum pregnancy test or plans desires to become pregnant during the
+             course of the trial
+
+          -  Donation of &gt;500 mL of blood or blood products within 2 months
+
+          -  History of alcohol and/or illicit drug abuse within 6 months.
+
+          -  Infection with hepatitis A, B or C or HIV.
+
+          -  Any factor deemed by the investigator to be likely to interfere with study conduction
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>60 Years</minimum_age>
+    <maximum_age>85 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Hakop Gevorkyan, MD</last_name>
+    <role>Principal Investigator</role>
+    <affiliation>Parexel</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>Parexel International</name>
+      <address>
+        <city>Glendale</city>
+        <state>California</state>
+        <zip>91206</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <verification_date>April 2017</verification_date>
+  <!-- Old date names will be dropped in a few months (sometime in 2018)                        -->
+  <lastchanged_date>April 13, 2017</lastchanged_date>
+  <firstreceived_date>April 3, 2015</firstreceived_date>
+  <!-- New date names                                                                           -->
+  <study_first_submitted>April 3, 2015</study_first_submitted>
+  <study_first_submitted_qc>April 17, 2015</study_first_submitted_qc>
+  <study_first_posted type="Estimate">April 22, 2015</study_first_posted>
+  <last_update_submitted>April 13, 2017</last_update_submitted>
+  <last_update_submitted_qc>April 13, 2017</last_update_submitted_qc>
+  <last_update_posted type="Actual">April 17, 2017</last_update_posted>
+  <!-- End of dates                                                                             -->
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Alzheimer Disease</mesh_term>
+    <mesh_term>Cognitive Dysfunction</mesh_term>
+  </condition_browse>
+  <!-- Results have not yet been posted for this study                                          -->
+</clinical_study>
+
