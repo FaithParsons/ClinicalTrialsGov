@@ -1,0 +1,74 @@
+---
+title: "Extracting_data_across_all_xml_files"
+author: "Imaani Easthausen"
+date: "November 9, 2017"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rvest)
+library(XML)
+library(plyr)
+library(tidyverse)
+```
+
+
+
+
+Below is a method for extracting all of the data from all available nodes in each xml file. A couple of things to note:
+
+1) For this method, I downloaded the data from the internet, stored it on my hard drive, and then process the data. This mean that we're not making any calls to clinicaltrials.gov in real time. Personally I like the idea of taking a snapshot of the data in an instant in time better, as all of our files will load more quickly, although we can incorporate real time calls to the database later on if you guys prefer.
+
+2) This solution is not the most elegant. It works, but it's not very fast. It will need to be improved upon if we want to make real time calls to the data from the app. 
+
+3) This solution simply deletes any nodes with non-unique node names. I am not convinced that there is perninent data stored in nodes with non-unique names. These are nodes like 'comments,' location,' and 'keywords.' But then again, I haven't carefully examined the data contained in these nodes, so I could be wrong. 
+
+The dataset created at the end of all this is called `alzheimers` and it is a tibble of size 68 x 1771 where each row is a study. Obviously there is some substantial cleaning work to do on this dataset especially with respect to natural language variables. But after some cleaning, this can be merged with the .csv file of the search result table. 
+
+```{r}
+  get_node = function(node_name, xml_file) {
+    xmlTreeParse(xml_file, useInternal = TRUE) %>%
+    xmlRoot() %>%
+    xpathSApply(node_name, xmlValue)
+  }
+
+  get_node_value = function(node_name, xml_file) {
+    xpathSApply(xml_file, node_name, xmlValue)
+  }
+
+files = list.files("data/xml_files")
+
+list_of_dfs = list()
+
+for(i in files) {
+
+  
+  file_path = paste("data/xml_files/", i, sep = '')
+  
+
+  xml_file = read_xml(file_path) %>%
+    xmlTreeParse(useInternal = TRUE) %>%
+    xmlRoot() 
+
+  node_names = xml_file %>%
+    names() %>%
+    unique() #is this step removing data??
+
+   l =  sapply(node_names, get_node_value, xml_file)
+
+
+  
+  df = lapply(l, paste, collapse=", ") %>%
+    as.tibble()
+  
+  list_of_dfs[[i]] = df
+
+}
+
+alzheimers = ldply(list_of_dfs)
+
+```
+
+

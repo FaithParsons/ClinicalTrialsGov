@@ -1,0 +1,182 @@
+---
+title: "Untitled"
+author: "Imaani Easthausen"
+date: "November 9, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+  get_node = function(node_name, xml_file) {
+    xmlTreeParse(xml_file, useInternal = TRUE) %>%
+    xmlRoot() %>%
+    xpathSApply(node_name, xmlValue)
+  }
+
+  get_node_text = function(node_name, path) {
+    text_data = read_xml(path) %>%
+      xmlTreeParse(useInternal = TRUE) %>%
+      xmlRoot() %>%
+      xpathSApply(node_name, xmlValue)
+  }
+  
+  collapse_lists = function(list) {
+    
+  }
+  
+    for(i in df) {
+    if(length(i) > 1){
+    paste(i, collapse=", ")
+    }
+  }
+  
+
+
+files = list.files("data/xml_files")
+data = NULL
+
+for(i in files[1]) {
+
+  file_path = paste("data/xml_files/", i, sep = '')
+    
+  xml_file = read_xml(file_path) %>%
+    xmlTreeParse(useInternal = TRUE) %>%
+    xmlRoot() 
+  
+
+  node_names = xml_file %>%
+    names() %>%
+    unique()
+
+  l = sapply(node_names, get_node_text, file_path)
+  print(l)
+
+
+#  vars = c()
+#  for(node in node_names) {
+#    if(node != "comment" & node != "location" & node != #"keyword" & node != "condition") {
+#      vars = c(vars, node)
+#    }
+#  }
+
+
+  df = NULL
+  for(i in node_names) {
+    df = c(df, l[i])
+  }
+  
+  for(i in df) {
+    if(length(i) > 1){
+    paste(i, collapse=", ")
+    }
+  }
+  
+
+    df = df %>%
+    as.tibble()
+  
+  
+
+  
+  data = rbind(df)
+
+}
+
+
+
+for(i in df) {
+    if(length(i) > 1){
+    paste(i, collapse=", ")
+    }
+  }
+  
+
+```
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+
+ files = list.files("data/xml_files")
+ data = NULL
+ 
+ for(i in files) {
+ 
+   file_path = paste("data/xml_files/", i, sep = '')
+     
+   xml_file = read_xml(file_path) %>%
+     xmlTreeParse(useInternal = TRUE) %>%
+     xmlRoot() 
+   
+ 
+   node_names = xml_file %>%
+     names()
+   
+ 
+   get_node = function(node_name, xml_file) {
+     xmlTreeParse(xml_file, useInternal = TRUE) %>%
+     xmlRoot() %>%
+     xpathSApply(node_name, xmlValue)
+   }
+ 
+   l = sapply(node_names, get_node_text, path)
+ 
+   get_node_text = function(node_name, path) {
+     text_data = read_xml(path) %>%
+       xmlTreeParse(useInternal = TRUE) %>%
+       xmlRoot() %>%
+       xpathSApply(node_name, xmlValue)
+   }
+ 
+   vars = c()
+   for(node in node_names) {
+     if(node != "comment" & node != "location" & node != "keyword" & node != "condition") {
+       vars = c(vars, node)
+     }
+   }
+ 
+ 
+   df = NULL
+   for(i in vars) {
+     df = c(df, l[i])
+   }
+ 
+   df = df %>%
+     as.tibble()
+ 
+   data = rbind(df)
+ 
+}
+
+ 
+xml_file = example = read_xml("data/xml_files/NCT00000171.xml") %>%
+     xmlTreeParse(useInternal = TRUE) %>%
+     xmlRoot() 
+  
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
