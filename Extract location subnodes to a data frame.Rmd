@@ -1,0 +1,58 @@
+---
+title: "Get Locations"
+author: "Faith E. Parsons"
+date: "November 19, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(janitor)
+library(plyr)
+library(tidyverse)
+library(XML)
+```
+
+```{r}
+xml = xmlTreeParse("data/xml_files/NCT00051909.xml", useInternalNodes = TRUE, asText = F)
+  
+facility = xmlToDataFrame(getNodeSet(xml, "//location//name")) 
+
+# File path where all xml files are stored
+filepath = "data/xml_files/"
+xml_list = list.files(filepath)[1:118]
+
+# Create an empty list
+locations = list()
+
+# Loop through all XML files
+for (xml_file in xml_list) {
+  
+  xml_filename = paste(filepath, xml_file, sep="")
+  xml = xmlTreeParse(xml_filename, useInternalNodes = TRUE, asText = F)
+  
+  # If node does not exist, skip to the next file
+  if (nrow(xmlToDataFrame(getNodeSet(xml, "//location//address"))) == 0 ) next
+    address <- xmlToDataFrame(getNodeSet(xml, "//location//address")) %>%
+      mutate(nct_id = gsub(".xml", "", xml_file))
+    
+    facility = xmlToDataFrame(getNodeSet(xml, "//location//name"))  %>%
+      mutate(nct_id = gsub(".xml", "", xml_file))
+    
+    locations[[xml_file]] = full_join( facility, address, by = "nct_id") 
+    
+
+}
+
+
+rct_locations = do.call(rbind.fill, locations)
+nrow(rct_locations)
+str(rct_locations)
+
+
+
+View(rct_locations)
+
+
+```
+

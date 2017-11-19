@@ -30,7 +30,7 @@ temp = tempfile(fileext = ".zip")
 tdir = tempdir()
 
 # This is the URL that searches for "Alzheimer" which produces a zip file
-url = "https://clinicaltrials.gov/ct2/download_studies?term=Alzheimer"
+url = "https://clinicaltrials.gov/ct2/download_studies?cond=Alzheimer"
 
 # Download zipped file to temporary file
  download.file(url, temp, mode="wb")
