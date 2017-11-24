@@ -15,10 +15,9 @@ library(stringr)
 library(tidyverse)
 library(timevis)
 
-
 # Read data for Gantt Chart
 
-gantt_data = readRDS("../data/gantt_data.rds") %>%
+gantt_data = readRDS("../Data/gantt_data.rds") %>%
   arrange(date_start)
 
 # Define server logic required to draw a histogram
@@ -29,7 +28,8 @@ shinyServer(function(input, output, session) {
     # data to plot
     
     toplot <- gantt_data %>%
-      filter(study_type == input$study_type)
+      filter(study_type == input$study_type &
+               date_start >= input$date_range[1] & date_start <= input$date_range[2])
     
     gvisTimeline(data = toplot,
                             rowlabel = "nct_number",

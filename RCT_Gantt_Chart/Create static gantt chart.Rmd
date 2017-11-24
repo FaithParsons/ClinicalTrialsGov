@@ -55,7 +55,7 @@ gantt_data = results %>%
     label = ifelse(acronym == "null", title, acronym)
     ) %>%
   select(nct_number, title, acronym, date_start, date_end, n_locations, n_treatments,
-           phases, study_type, label) %>%
+           phases, study_type, label, recruitment) %>%
   filter(!is.na(date_start) & !is.na(date_end))%>%
   select(label, everything())
 

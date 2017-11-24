@@ -19,13 +19,20 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
 
-       dateRangeInput("date_range", label = "Date Range"),
+       dateRangeInput("date_range", 
+                      label = "Date Range (Study Start)",
+                      start = "2010-01-01",
+                      end = "2017-12-31"),
        
        selectInput("study_type",
                    label = "Select Study Type",
                    choices = c("Interventional",
                                "Observational"),
-                   selected = "Interventional")
+                   selected = "Interventional"),
+       
+       selectInput("recruit_status",
+                   label = "Select Recruitment Status",
+                   choices = c(""))
        
        
     ),
