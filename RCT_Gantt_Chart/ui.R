@@ -32,7 +32,12 @@ shinyUI(fluidPage(
        
        selectInput("recruit_status",
                    label = "Select Recruitment Status",
-                   choices = c(""))
+                   choices = c("Active, not recruiting", 
+                               "Completed",
+                               "Enrolling by invitation",
+                               "Not yet recruiting",
+                               "Recruiting"),
+                   selected = "Recruiting")
        
        
     ),
@@ -41,6 +46,7 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
+       textOutput("info_text"),
        htmlOutput("gantt_chart")
     )
   )
