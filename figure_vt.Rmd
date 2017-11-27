@@ -70,13 +70,33 @@ data_for_plot %>%
 ```{r figure2}
 data_for_plot = 
   data %>% 
-  select(rank, nct_number, age, phases, study_type, enrollment, nct_number) %>% 
+  select(rank, nct_number, phases, study_type, enrollment, nct_number, age) %>% 
   mutate(age_start   = str_sub(age,  1,  3) ) %>%
   mutate(age_start = replace(age_start, age_start == "Chi", 0)) %>%
   mutate(age_start = replace(age_start, age_start == "up ", 0)) %>%
   separate(age_start, c("age_start", "remove"), " ") %>%
   mutate(age_start = as.numeric(age_start)) %>%
   mutate(n = as.numeric(enrollment))
+
+
+temp = 
+  data_for_plot %>%
+  mutate(age_end = str_sub(age, 13, 14)) %>%
+  # replace "...Years and older   (Adult, Senior)" with age_end==100
+  mutate(age_end = replace(age_end, age_end == " o", 100)) %>%
+  #replace "Child, Adult, Senior" with age_end == 100
+  mutate(age_end = replace(age_end, age_end == ", ", 100)) %>%
+  #replace "up to 100 Years   (Child, Adult, Senior)" with age_end==100
+  mutate(age_end = replace(age_end, age_end == "ar", 100)) %>%
+  # replace "...Years and older   (Child, Adult, Senior)" for those with 
+  # starting one digit age with age_end == 100
+  mutate(age_end = replace(age_end, age_end == "ol", 100)) %>%
+  # replace "up to ..Years   (Child, Adult, Senior)" where ... is 2 digit
+  # with age_end == 100
+  mutate(age_end1 = str_sub(age, 7, 8)) %>%
+  mutate(age_end = replace(age_end, age_end == "rs", age_end1[age_end == "rs"])) %>%
+  # convert age_end to numeric
+  mutate(age_end = as.numeric(age_end))
 
 
 data_for_plot %>%
@@ -95,16 +115,5 @@ data_for_plot %>%
           text = ~hover_text,
           type = "scatter", mode = "marker")
 
-
-
-#data_for_plot[c(1282, 1657),] 
-#mutate(age_start = as.numeric(age_start))
-
-temp = 
-  data_for_plot %>%
-  mutate(age_start_1 = as.numeric(age_start))
-
-temp[is.na(temp$age_start_1),]  
-  
 ```
 
