@@ -26,7 +26,8 @@ First, let's extract dates from the CSV file
 
 ``` {r Extract_data}
 # Extract data 
-results = read_csv("data/searchresultstable.csv") %>%
+#results = read_csv("data/searchresultstable.csv") %>%
+  results = read_csv("Data/SearchResultsTable.csv") %>%
   clean_names()  
 
 names(results)

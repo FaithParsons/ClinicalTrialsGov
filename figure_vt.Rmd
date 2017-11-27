@@ -1,0 +1,102 @@
+---
+title: "Volha`s figure"
+author: "Volha Tryputsen"
+date: "November 27, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries}
+library(tidyverse)
+library(dplyr)
+library(janitor)
+library(plotly)
+library(stringr)
+```
+
+
+``` {r get_data}
+data = 
+  read_csv("Data/SearchResultsTable.csv") %>%
+  clean_names()  
+```
+
+```{r figure1, eval = FALSE}
+data_for_plot = 
+  data %>% 
+  select(nct_number, start_date, completion_date, phases, study_type, 
+         enrollment, interventions) %>% 
+  mutate(mm_start   = str_sub(start_date,  1,  3), 
+         yy_start   = str_sub(start_date, -4, -1), 
+         mm_end     = str_sub(completion_date,  1,  3),
+         yy_end     = str_sub(completion_date, -4, -1)) %>%
+  filter(!mm_start == "nul" & !mm_end == "nul" & 
+           !yy_start == "null" & !yy_end == "null") %>%
+  mutate(date_start = as.Date(paste(yy_start, mm_start, sep = "-"), "%Y-%b"),
+    date_end   = as.Date(paste(yy_end, mm_end, sep = "-"), "%Y-%b"))
+  
+
+
+temp = 
+  data %>% 
+  select(nct_number, start_date, completion_date, phases, study_type, 
+         enrollment, interventions) %>% 
+  mutate(mm_start   = str_sub(start_date,  1,  3), 
+         yy_start   = str_sub(start_date, -4, -1), 
+         mm_end     = str_sub(completion_date,  1,  3),
+         yy_end     = str_sub(completion_date, -4, -1)) %>%
+  filter(!mm_start == "nul" & !mm_end == "nul" & 
+           !yy_start == "null" & !yy_end == "null")
+temp =
+  temp %>%
+  mutate(date = paste(yy_start, mm_start, sep = "-")) 
+
+as.Date(temp$date[1:10], "%Y-%b")
+
+#Sys.setlocale("en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8")
+
+data_for_plot %>% 
+    plot_ly(x = ~product_name, y = ~n, color = ~product_name, 
+          type = "bar") %>%
+  layout(xaxis = list(showticklabels = FALSE))
+
+```
+
+
+```{r figure2}
+data_for_plot = 
+  data %>% 
+  select(rank, nct_number, age, phases, study_type, enrollment) %>% 
+  mutate(age_start   = str_sub(age,  1,  3) ) %>%
+  mutate(age_start = replace(age_start, age_start == "Chi", 0)) %>%
+  mutate(age_start = replace(age_start, age_start == "up ", 0)) %>%
+  separate(age_start, c("age_start", "remove"), " ") %>%
+  mutate(age_start = as.numeric(age_start)) %>%
+  mutate(n = as.numeric(enrollment))
+
+
+data_for_plot %>%
+  na.omit() %>% 
+  #filter(study_type == "Interventional") %>%
+  #filter(study_type == "Observational") %>%
+  ggplot(aes(x = age_start, y = n, color = phases)) +
+  geom_point(alpha = 0.3) +
+  geom_jitter(width = 0.5) +
+  facet_wrap(~study_type)
+
+
+
+#data_for_plot[c(1282, 1657),] 
+#mutate(age_start = as.numeric(age_start))
+
+temp = 
+  data_for_plot %>%
+  mutate(age_start_1 = as.numeric(age_start))
+
+temp[is.na(temp$age_start_1),]  
+  
+```
+
