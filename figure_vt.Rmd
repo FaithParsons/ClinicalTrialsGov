@@ -15,6 +15,7 @@ library(dplyr)
 library(janitor)
 library(plotly)
 library(stringr)
+library(plotly)
 ```
 
 
@@ -69,7 +70,7 @@ data_for_plot %>%
 ```{r figure2}
 data_for_plot = 
   data %>% 
-  select(rank, nct_number, age, phases, study_type, enrollment) %>% 
+  select(rank, nct_number, age, phases, study_type, enrollment, nct_number) %>% 
   mutate(age_start   = str_sub(age,  1,  3) ) %>%
   mutate(age_start = replace(age_start, age_start == "Chi", 0)) %>%
   mutate(age_start = replace(age_start, age_start == "up ", 0)) %>%
@@ -86,6 +87,13 @@ data_for_plot %>%
   geom_point(alpha = 0.3) +
   geom_jitter(width = 0.5) +
   facet_wrap(~study_type)
+
+data_for_plot %>%
+  mutate(hover_text = str_c("\nStudy ID: ", nct_number)) %>% 
+  na.omit() %>% 
+  plot_ly(x = ~age_start, y = ~n, color = ~phases,
+          text = ~hover_text,
+          type = "scatter", mode = "marker")
 
 
 
