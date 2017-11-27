@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 ```{r libraries}
@@ -66,8 +66,8 @@ data_for_plot %>%
 
 ```
 
-
-```{r figure2}
+Separate elligible enrollment age into starting and ending age:  
+```{r prepare_data_for_plotting}
 data_for_plot = 
   data %>% 
   select(rank, nct_number, phases, study_type, enrollment, nct_number, age) %>% 
@@ -76,12 +76,8 @@ data_for_plot =
   mutate(age_start = replace(age_start, age_start == "up ", 0)) %>%
   separate(age_start, c("age_start", "remove"), " ") %>%
   mutate(age_start = as.numeric(age_start)) %>%
-  mutate(n = as.numeric(enrollment))
-
-
-temp = 
-  data_for_plot %>%
-  mutate(age_end = str_sub(age, 13, 14)) %>%
+  mutate(n = as.numeric(enrollment)) %>%
+    mutate(age_end = str_sub(age, 13, 14)) %>%
   # replace "...Years and older   (Adult, Senior)" with age_end==100
   mutate(age_end = replace(age_end, age_end == " o", 100)) %>%
   #replace "Child, Adult, Senior" with age_end == 100
@@ -96,9 +92,14 @@ temp =
   mutate(age_end1 = str_sub(age, 7, 8)) %>%
   mutate(age_end = replace(age_end, age_end == "rs", age_end1[age_end == "rs"])) %>%
   # convert age_end to numeric
-  mutate(age_end = as.numeric(age_end))
+  mutate(age_end = as.numeric(age_end)) %>%
+  select(-c(remove, age_end1)) %>%
+  # reorder 
+  mutate(nct_number = forcats::fct_reorder(nct_number, age_start))
+```
 
-
+Static dot plot with facets for _study type_. We can set _study type_ as user input/filter in the final dashboard:    
+```{r}
 data_for_plot %>%
   na.omit() %>% 
   #filter(study_type == "Interventional") %>%
@@ -106,14 +107,58 @@ data_for_plot %>%
   ggplot(aes(x = age_start, y = n, color = phases)) +
   geom_point(alpha = 0.3) +
   geom_jitter(width = 0.5) +
-  facet_wrap(~study_type)
+  facet_wrap(~study_type) +
+  labs(x = "eligible entry age",
+       y = "enrollment") +
+  theme_bw()
+```
 
+Interactive dot plot (without facetting, but can implememt if needed):    
+```{r}
 data_for_plot %>%
   mutate(hover_text = str_c("\nStudy ID: ", nct_number)) %>% 
   na.omit() %>% 
   plot_ly(x = ~age_start, y = ~n, color = ~phases,
           text = ~hover_text,
           type = "scatter", mode = "marker")
-
 ```
 
+Prepare data for line plot - convert into long format and group by nct_number:   
+```{r}
+data_for_line_plot = 
+  data_for_plot %>%
+  gather(key = "eligible_age", value = "years", age_start, age_end) %>%
+  group_by(nct_number) %>%
+  arrange(years)
+```
+
+Static plot with lines for eligible age:  
+```{r}
+data_for_line_plot %>%
+  na.omit() %>% 
+  #filter(study_type == "Interventional") %>%
+  #filter(study_type == "Observational") %>%
+  ggplot(aes(x = years, y = n, color = phases, group = nct_number)) +
+  geom_path() +
+  facet_wrap(~study_type) +
+  labs(x = "eligible age",
+       y = "enrollment") +
+  theme_bw()
+```
+
+
+Static plot with lines for eligible age:  
+```{r}
+p = data_for_line_plot %>%
+  na.omit() %>% 
+  #filter(study_type == "Interventional") %>%
+  #filter(study_type == "Observational") %>%
+  ggplot(aes(x = years, y = n, color = phases, group = nct_number)) +
+  geom_path() +
+  facet_wrap(~study_type) +
+  labs(x = "eligible age",
+       y = "enrollment") +
+  theme_bw()
+
+ggplotly(p)
+```
