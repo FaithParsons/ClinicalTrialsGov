@@ -29,18 +29,9 @@ First, let's extract dates from the CSV file
 results = read_csv("Data/SearchResultsTable.csv") %>%
   clean_names()  
 
-names(results)
 ```
 
 ``` {r get start and end dates }
-
-# Determine number of variables to create for location
-nlocs = str_count(results$locations , "\\|") %>%
-  max(na.rm = TRUE)
-
-# Determine number of variables to create for interventions
-ntreatment = str_count(results$interventions, "\\|") %>%
-  max(na.rm = TRUE)
 
 gantt_data = results %>%
   mutate(
@@ -62,17 +53,7 @@ gantt_data = results %>%
   arrange(date_start)
 
 
-# Save data to Data directory
-saveRDS(gantt_data, "data/gantt_data.rds")
-
-
-str(gantt_data)  
-View(gantt_data)
-names(gantt_data)
-
-
-
- toplot <- gantt_data %>%
+toplot <- gantt_data %>%
       filter(study_type == "Observational")
     
     timeline = gvisTimeline(data = toplot,
@@ -80,7 +61,7 @@ names(gantt_data)
                             barlabel = "label",
                             start = "date_start",
                             end = "date_end",
-                            options = list(height = 600))
+                            options = list(height = 600), colors(distinct = FALSE))
     plot(timeline)
 
 testdata = gantt_data %>%
@@ -90,40 +71,17 @@ testdata = gantt_data %>%
   #.[1:10,] %>%
   arrange(date_start) %>%
   filter(date_start >= "2010-01-01" )
+
+nrow(testdata)
   
 timeline = gvisTimeline(data=testdata,
                         rowlabel = "nct_number",
                         barlabel = "label",
                         start = "date_start",
                         end = "date_end",
-                        options = list(height = 600))
+                        options = list(height = 600), colors(distinct = FALSE))
 
 plot(timeline)
-
-```
-
-
-```{r}
-datTL <- data.frame(Position=c(rep("President", 3), rep("Vice", 3)),
-                    Name=c("Washington", "Adams", "Jefferson",
-                           "Adams", "Jefferson", "Burr"),
-                    start=as.Date(x=rep(c("1789-03-29", "1797-02-03", 
-                                          "1801-02-03"),2)),
-                    end=as.Date(x=rep(c("1797-02-03", "1801-02-03", 
-                                        "1809-02-03"),2)))
-Timeline <- gvisTimeline(data=datTL, 
-                         rowlabel="Name",
-                         barlabel="Position",
-                         start="start", 
-                         end="end",
-                         options = list(height=350)) 
-
-,
-                         options=list(timeline="{groupByRowLabel:false}",
-                                      backgroundColor='#ffd', 
-                                      height=350,
-                                      colors="['#cbb69d', '#603913', '#c69c6e']"))
-plot(Timeline)
 
 ```
 
