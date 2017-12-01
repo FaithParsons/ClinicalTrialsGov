@@ -1,16 +1,24 @@
 ---
 title: "Gantt Chart"
-output: html_document
+output: 
+  html_document:
+    self_contained: no
 ---
 
 ### GANTT CHART OF RCT DATA
 
 #### Process data for Gantt Chart
 
+```{r setOptions}
+library(googleVis)
+op <- options(gvis.plot.tag='chart')
+
+```
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(googleVis)
 library(janitor)
 library(readr)
 library(stringr)
@@ -31,7 +39,7 @@ results = read_csv("Data/SearchResultsTable.csv") %>%
 
 ```
 
-``` {r get start and end dates }
+```{r Gantt, results='asis', tidy=FALSE}
 
 gantt_data = results %>%
   mutate(
@@ -47,40 +55,20 @@ gantt_data = results %>%
     ) %>%
   select(nct_number, title, acronym, date_start, date_end, n_locations, n_treatments,
            phases, study_type, label, recruitment) %>%
-  filter(!is.na(date_start) & !is.na(date_end))%>%
+  # Exclude records with no start or end dates
+  filter(!is.na(date_start) & !is.na(date_end))%>% 
   select(label, everything()) %>%
+  # Declare interactivity filters here
+  filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
   #Sort by date
   arrange(date_start)
 
-
-toplot <- gantt_data %>%
-      filter(study_type == "Observational")
-    
-    timeline = gvisTimeline(data = toplot,
-                            rowlabel = "nct_number",
-                            barlabel = "label",
-                            start = "date_start",
-                            end = "date_end",
-                            options = list(height = 600), colors(distinct = FALSE))
-    plot(timeline)
-
-testdata = gantt_data %>%
-  filter(!is.na(date_start) & !is.na(date_end)) %>%
-  mutate(label = ifelse(acronym == "null", title, acronym),
-         ) %>%
-  #.[1:10,] %>%
-  arrange(date_start) %>%
-  filter(date_start >= "2010-01-01" )
-
-nrow(testdata)
-  
-timeline = gvisTimeline(data=testdata,
+timeline = gvisTimeline(data = gantt_data,
                         rowlabel = "nct_number",
                         barlabel = "label",
                         start = "date_start",
                         end = "date_end",
-                        options = list(height = 600), colors(distinct = FALSE))
-
+                        options = list(height = 600, width = 800, timeline= "{ singleColor: 'blue' }"))
 plot(timeline)
 
 ```
