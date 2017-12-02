@@ -1,0 +1,157 @@
+---
+title: "Map visualization for AD studies"
+author: "Feben Asefaha"
+date: "12/1/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#loading packages
+library(tidyverse)
+library(dplyr)
+library(janitor)
+library(haven)
+library(stringr)
+library(knitr)
+library(plotly)
+library(ggplot2)
+library(viridis)
+library(flexdashboard)
+library(readr)
+library(readxl)
+library(ggmap)
+library(leaflet)
+library(splitstackshape)
+library(purrr)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+The variables I am interested in utilizing are 
+
+PHASE
+ID 
+AGE
+GENDER
+RECRUITMENT STAGE
+INTERVENTIONS
+LOCATION
+
+From LOCATION, cleaning to derive CITY, STATE
+
+Using ggmap function geocode(), get the lat and long for each city using the Google Maps Geocoding API.
+
+
+(this is accessing the web, so you can't send too many at once! Otherwise you will get back as NAs. So I will make filtering by state a requirement)
+
+Plot those coordinates using leaflet package
+
+(See below)
+
+
+Leaflet is supposed to work well with Shiny...
+
+So intend to add drop down menus:
+
+STATE(necessary; if you get an NA, reload and it should be fine)
+RECRUITMENT(Recruiting, Completed, By invitation only, etc)
+PHASE (1, 2, 1 and 2)
+INTERVENTION (Behavioral, Genetic, Device, Drug, Other)
+AGE(was gonna make a slider but probably not, like not that helpful.)
+GENDER (Female, Male, All)
+
+```{r order of stuff}
+
+## Download data
+## for location, have to locate strings that end in "United States"
+## Every time you see a usable address, it's "City, State, Country"
+## I have to isolate "City, State, Country" and then separate the three
+## mutate a column that gets the state abbrev for each State
+## merge each state abbrev with the city in a new column, with a comma separating
+## geocode function from ggmap will let me get lat and long for each "City, ST"ate
+
+
+## make sure lat and lng get their own columns
+## from there, I can map them using leaflet
+## can use leaflet to apply interactivity
+## and from there, can apply Shiny interactivity with dropdown menus
+
+```
+
+
+```{r loading data}
+
+## import data, select variables of interest, filter for US locations 
+AD_search_results <- read_csv("../data/SearchResultsTable.csv") %>%  clean_names() %>% 
+  select(nct_number, recruitment, interventions, gender, age,
+         phases, enrollment, study_type, locations) %>% 
+  filter(str_detect(locations, "United States")) %>%
+  separate(phases, into = c("phase_a", "phase_b", "phase_c", "phase_d"), sep = "\\|")  
+  # separate(locations, into = c(), sep = "\\|") %>% 
+  
+dim(AD_search_results)
+```
+
+```{r  Part 2}
+
+AD_search_results_split_locations <- AD_search_results %>%
+  cSplit("locations", sep = '|')
+
+View(AD_search_results_split_locations)
+dim(AD_search_results_split_locations)
+
+## 
+clean_loc = function(location) {
+  
+  result <- location
+  
+  if (grepl("United States", location, fixed = TRUE)) {
+    result = sub(".*, (.+), (.+), United States(.*)", "\\1, \\2", location)
+  } else {
+    result  = ""
+  }
+  
+  result
+}
+
+
+
+
+for (i in 12:dim(AD_search_results_split_locations)[2]) {
+  AD_search_results_split_locations[[i]] = map(AD_search_results_split_locations[[i]], clean_loc)
+}
+
+View(AD_search_results_split_locations)
+
+dim(AD_search_results_split_locations)
+
+```
+
+
+```{r Part 3}
+
+## gathering locations and phases
+AD_edit <- AD_search_results_split_locations %>% 
+  gather( key = place, value = location, locations_001:locations_348) %>% 
+  select(-place) %>% 
+  gather( key = remove, value = phase, phase_a:phase_d) %>% 
+  select(-remove)
+
+## simplifying interventions, removing additional country indicator 
+## city and state columns
+AD_edit_unique <- AD_edit %>% 
+  separate(interventions, into = c("interventions", "remove"), sep = ':') %>% 
+  select(-remove) %>%
+  mutate(location = sub("(.+), United States", "\\1", location)) %>% 
+  separate(location, into = c("city", "state"), sep = ", ") %>% 
+  unique()
+
+View(AD_edit_unique)
+
+dim(AD_edit_unique)
+  
+```
+
+
+
