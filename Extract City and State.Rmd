@@ -1,0 +1,85 @@
+---
+title: "Descriptives and Stats"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(readr)
+library(janitor)
+
+results = read_csv("Data/SearchResultsTable.csv") %>%
+  clean_names()  
+
+# Determine number of variables to create for location
+nlocs = str_count(results$locations , "\\|") %>%
+  max(na.rm = TRUE) + 1
+
+# Determine number of variables to create for interventions
+ntreatment = str_count(results$interventions, "\\|") %>%
+  max(na.rm = TRUE) + 1
+
+# Extract locations
+locations = results %>%
+  # Only keep nct_number and locations variable
+  select(nct_number, locations) %>%
+  # Separate locations into multiple columns
+  separate(locations, into = paste("loc", 1:nlocs, sep = ""), sep = "\\|", fill = "right") %>%
+  # Convert to longitudinal format
+  gather(key = locnum, value = locname, loc1:paste("loc", nlocs, sep = "")) %>%
+  # remove if locname = NA
+  filter(!is.na(locname)) %>%
+  # Sort by nct_number
+  arrange(nct_number)
+
+# How many commas in each locname? This will determine number of variables to split each location into
+ncomma = str_count(locations$locname, ",") %>%
+  max(na.rm = TRUE) + 1
+
+# Split locnames to identify city, state and country; Eventually only keep United States locations
+loc_states = locations %>%
+  separate(locname, into = paste("subloc", 1:ncomma, sep=""), sep = ",", fill = "right") %>%
+  # Only keep if in United States
+  filter(str_detect(subloc1, "United States") | str_detect(subloc2, "United States") |
+           str_detect(subloc3, "United States") | str_detect(subloc4, "United States") |
+           str_detect(subloc5, "United States") | str_detect(subloc6, "United States") |
+           str_detect(subloc7, "United States") | str_detect(subloc8, "United States") |
+           str_detect(subloc9, "United States")) %>%
+  #Convert to longitudinal so we can extract the City and State
+  gather(key = sublocnum, value = sublocname, subloc1:subloc9) %>%
+  arrange(nct_number, locnum, sublocnum) %>%
+  # Remove blank sublocnames, and remove rows containing "United States"
+  filter(!is.na(sublocname) & !str_detect(sublocname, "United States")) %>%
+  # Convert sublocnum to numeric
+  mutate(sublocnum = as.numeric(gsub("[^0-9]", "", sublocnum)),
+         locnum = as.numeric(gsub("[^0-9]", "", locnum))) %>%
+  # Sort sublocnum in descending order so that State is at the top, and City next
+  arrange(nct_number, locnum, desc(sublocnum)) %>%
+  group_by(nct_number, locnum) %>%
+  # Reverse code sublocnum
+  mutate(sublocnum = max(sublocnum) - sublocnum +1)  %>%
+  ungroup()
+
+View(loc_states)
+
+# Create separate City & State variables
+loc_city_state = loc_states %>%
+  # Convert to wide format, 1 row per location (we still have multiple rows per NCT_ID)
+  spread(sublocnum, sublocname) %>%
+  clean_names() %>%
+  # Combine x3 onwards into one variable
+  rename(state = x1,
+         city = x2) %>%
+  tidyr::unite(institution, x3:x7, sep = ",") %>%
+  # Remove ",NA" from inst
+  mutate(institution = gsub(",NA", "", institution))
+
+
+View(loc_city_state)  
+
+ftable(loc_city_state$city) %>% as.tibble() %>% View()
+```
+
+
