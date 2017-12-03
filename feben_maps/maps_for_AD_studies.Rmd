@@ -58,7 +58,7 @@ STATE(necessary; if you get an NA, reload and it should be fine)
 RECRUITMENT(Recruiting, Completed, By invitation only, etc)
 PHASE (1, 2, 1 and 2)
 INTERVENTION (Behavioral, Genetic, Device, Drug, Other)
-AGE(was gonna make a slider but probably not, like not that helpful.)
+AGE (categorized into groups)
 GENDER (Female, Male, All)
 
 ```{r order of stuff}
@@ -95,7 +95,7 @@ AD_search_results <- read_csv("../data/SearchResultsTable.csv") %>%  clean_names
 
 
 
-```{r  Part 2}
+```{r  Part 2 FUNCTION TO GET EXTRACT LOCATIONS}
 
 AD_search_results_split_locations <- AD_search_results %>%
   cSplit("locations", sep = '|')
@@ -125,7 +125,7 @@ for (i in 12:dim(AD_search_results_split_locations)[2]) {
 ```
 
 
-```{r Part 3}
+```{r Part 3 CLEANUP}
 
 ## gathering locations and phases
 AD_edit <- AD_search_results_split_locations %>% 
@@ -148,7 +148,7 @@ View(AD_edit_unique)
 
 ```
 
-```{r Part 4}
+```{r Part 4 AGE GROUPS variable}
 
 
 ## cleaning up AGE variable for drop-down menu
@@ -181,7 +181,7 @@ dim(AD_new)
 ```
 
 
-```{r Part 5}
+```{r Part 5 SETTING UP A COLUMN FOR GEOCODE ACCESS}
 
 ## getting state abbrevs
 
@@ -219,12 +219,25 @@ dim(AD_newer)
 
 ```
 
+I'm not sure if I should try to have it call latitude and longitude live or write a function to get lat and long like 10 at a time and then put them in their own columns? That might be better since this is a static dataset ways. It would have to be looped to do it like ten at a time because if you request too many for the site it returns some NAs.
 
+The way I got the maps to work before was by filtering out by state, and making that into a new dataset, and having geocode work on an entire column that was "X, Y", X being city names, and Y being the states. That's not really efficient for our code so I'd like to try the function idea. Will get back to later.
 
-```{r Part 6}
+```{r Part 6 MAKING MAPS}
 
-## getting latitude and longitude
+## getting latitude and longitude for geo_place
 
+##example
+geocode("New York , NY")
+
+##previous example code I had used to make maps
+# us_data_tristate <- us_data %>% 
+#   filter(state %in% c("NEW YORK", "NEW JERSEY","CONNECTICUT"))
+# 
+# geocode(us_data_tristate$place) %>%
+#   leaflet() %>% 
+#   addTiles() %>%
+#   addMarkers()
 
 
 
