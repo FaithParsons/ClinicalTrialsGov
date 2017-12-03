@@ -150,11 +150,80 @@ View(AD_edit_unique)
 
 ```{r Part 4}
 
+
+## cleaning up AGE variable for drop-down menu
+dim(AD_edit_unique)
+
+AD_edit_unique %>% 
+  group_by(age) %>% 
+  summarize()
+
+## Child is 0 - 17, Adult is 18 - 65, Senior is 66 +
+## extracting age group labels
+
+AD_new <- AD_edit_unique %>% 
+  mutate(age = sub("^([^()]+)$", "(\\1)", age)) %>% 
+  mutate(cleaned_age = str_extract(age, "\\(.+\\)")) %>%
+  mutate(cleaned_age = sub("\\((.+)\\)", "\\1", cleaned_age)) %>% 
+   select(-age, -enrollment) 
+
+# View(AD_new)
+
+
+
+AD_new %>% 
+  count(cleaned_age) 
+
+
+View(AD_new)
+dim(AD_new)
+
+```
+
+
+```{r Part 5}
+
 ## getting state abbrevs
 
+AD_new %>% 
+  count(state)
+
+state_list <- list()
+state_list[['name']] = c(state.name,"District of Columbia")
+state_list[['abb']] = c(state.abb,"DC")
+
+state_lookup <- setNames(state_list$abb, state_list$name)
+
+##filter out any entry without state because can't map it  
+AD_newer <- AD_new %>% 
+  rename(state_name = state) %>%
+  filter(!is.na(state_name)) %>%
+  mutate(state_code = state_lookup[state_name])
+
+AD_newer %>% 
+  count(gender)
 
 
 
+## merging city and state code
+
+AD_newer$geo_place <- paste(AD_newer$city, ",", AD_newer$state_code)
+
+## finding all empty cells and replace each one with a string
+
+AD_newer[is.na(AD_newer)] <- "Not available"
+
+View(AD_newer)
+dim(AD_newer)
+
+
+```
+
+
+
+```{r Part 6}
+
+## getting latitude and longitude
 
 
 
