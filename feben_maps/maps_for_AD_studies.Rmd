@@ -90,16 +90,15 @@ AD_search_results <- read_csv("../data/SearchResultsTable.csv") %>%  clean_names
   separate(phases, into = c("phase_a", "phase_b", "phase_c", "phase_d"), sep = "\\|")  
   # separate(locations, into = c(), sep = "\\|") %>% 
   
-dim(AD_search_results)
+
 ```
+
+
 
 ```{r  Part 2}
 
 AD_search_results_split_locations <- AD_search_results %>%
   cSplit("locations", sep = '|')
-
-View(AD_search_results_split_locations)
-dim(AD_search_results_split_locations)
 
 ## 
 clean_loc = function(location) {
@@ -122,9 +121,6 @@ for (i in 12:dim(AD_search_results_split_locations)[2]) {
   AD_search_results_split_locations[[i]] = map(AD_search_results_split_locations[[i]], clean_loc)
 }
 
-View(AD_search_results_split_locations)
-
-dim(AD_search_results_split_locations)
 
 ```
 
@@ -145,13 +141,27 @@ AD_edit_unique <- AD_edit %>%
   select(-remove) %>%
   mutate(location = sub("(.+), United States", "\\1", location)) %>% 
   separate(location, into = c("city", "state"), sep = ", ") %>% 
-  unique()
+  unique() 
+  
 
 View(AD_edit_unique)
 
-dim(AD_edit_unique)
-  
 ```
+
+```{r Part 4}
+
+## getting state abbrevs
+
+
+
+
+
+
+
+
+```
+
+
 
 
 
