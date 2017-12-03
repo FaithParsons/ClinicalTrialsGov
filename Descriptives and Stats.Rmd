@@ -1,85 +1,85 @@
 ---
-title: "Descriptives and Stats"
+title: "Descriptive Statistics"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(tidyverse)
+library(dplyr)
+library(ggplot2)
 library(readr)
 library(janitor)
+library(stringr)
+library(tidyverse)
+
+```
+
+```{r read data, include = FALSE}
 
 results = read_csv("Data/SearchResultsTable.csv") %>%
-  clean_names()  
+  clean_names() 
 
-# Determine number of variables to create for location
-nlocs = str_count(results$locations , "\\|") %>%
-  max(na.rm = TRUE) + 1
-
-# Determine number of variables to create for interventions
-ntreatment = str_count(results$interventions, "\\|") %>%
-  max(na.rm = TRUE) + 1
-
-# Extract locations
-locations = results %>%
-  # Only keep nct_number and locations variable
-  select(nct_number, locations) %>%
-  # Separate locations into multiple columns
-  separate(locations, into = paste("loc", 1:nlocs, sep = ""), sep = "\\|", fill = "right") %>%
-  # Convert to longitudinal format
-  gather(key = locnum, value = locname, loc1:paste("loc", nlocs, sep = "")) %>%
-  # remove if locname = NA
-  filter(!is.na(locname)) %>%
-  # Sort by nct_number
-  arrange(nct_number)
-
-# How many commas in each locname? This will determine number of variables to split each location into
-ncomma = str_count(locations$locname, ",") %>%
-  max(na.rm = TRUE) + 1
-
-# Split locnames to identify city, state and country; Eventually only keep United States locations
-loc_states = locations %>%
-  separate(locname, into = paste("subloc", 1:ncomma, sep=""), sep = ",", fill = "right") %>%
-  # Only keep if in United States
-  filter(str_detect(subloc1, "United States") | str_detect(subloc2, "United States") |
-           str_detect(subloc3, "United States") | str_detect(subloc4, "United States") |
-           str_detect(subloc5, "United States") | str_detect(subloc6, "United States") |
-           str_detect(subloc7, "United States") | str_detect(subloc8, "United States") |
-           str_detect(subloc9, "United States")) %>%
-  #Convert to longitudinal so we can extract the City and State
-  gather(key = sublocnum, value = sublocname, subloc1:subloc9) %>%
-  arrange(nct_number, locnum, sublocnum) %>%
-  # Remove blank sublocnames, and remove rows containing "United States"
-  filter(!is.na(sublocname) & !str_detect(sublocname, "United States")) %>%
-  # Convert sublocnum to numeric
-  mutate(sublocnum = as.numeric(gsub("[^0-9]", "", sublocnum)),
-         locnum = as.numeric(gsub("[^0-9]", "", locnum))) %>%
-  # Sort sublocnum in descending order so that State is at the top, and City next
-  arrange(nct_number, locnum, desc(sublocnum)) %>%
-  group_by(nct_number, locnum) %>%
-  # Reverse code sublocnum
-  mutate(sublocnum = max(sublocnum) - sublocnum +1)  %>%
-  ungroup()
-
-View(loc_states)
-
-# Create separate City & State variables
-loc_city_state = loc_states %>%
-  # Convert to wide format, 1 row per location (we still have multiple rows per NCT_ID)
-  spread(sublocnum, sublocname) %>%
-  clean_names() %>%
-  # Combine x3 onwards into one variable
-  rename(state = x1,
-         city = x2) %>%
-  tidyr::unite(institution, x3:x7, sep = ",") %>%
-  # Remove ",NA" from inst
-  mutate(institution = gsub(",NA", "", institution))
+# Create dataset for descriptives for clinical trials in the US
+us_studies = results %>%
+  # Filter only studies that have sites in the United States
+  filter(str_detect(locations, "United States"))  %>%
+         # Count number of locations, interventions, and funders
+  mutate(num_locs = as.numeric(str_count(locations, "\\|")) + 1,
+         num_intervs = as.numeric(str_count(interventions, "\\|")) + 1,
+         num_funders = as.numeric(str_count(funded_bys, "\\|")) + 1,
+         # Dummy for Funded by - "Industry"
+         fundby_industry = ifelse(str_detect(funded_bys, "Industry") == TRUE, 1, 0),
+         # dummy for Funded by - "NIH"
+         fundby_nih = ifelse(str_detect(funded_bys, "NIH") == TRUE, 1, 0),
+         # dummy for FUnded by - "U.S. Fed"
+         fundby_usfed = ifelse(str_detect(funded_bys, "U.S. Fed") == TRUE, 1, 0),
+         # dummy for Funded by - "Other")
+         fundby_other = ifelse(str_detect(funded_bys, "Other") == TRUE, 1, 0),
+         # Intervention Types -- Dummy Variables
+         interv_drug =  ifelse(str_detect(interventions, "Drug:") == TRUE, 1, 0), 
+         interv_behav = ifelse(str_detect(interventions, "Behavioral:") == TRUE, 1, 0),
+         interv_biol  = ifelse(str_detect(interventions, "Biological:") == TRUE, 1, 0), 
+         interv_diag  = ifelse(str_detect(interventions, "Diagnostic Test:") == TRUE, 1, 0) ,
+         interv_device = ifelse(str_detect(interventions, "Device:") == TRUE, 1, 0),
+         interv_rad   = ifelse(str_detect(interventions, "Radiation:") == TRUE, 1, 0),
+         interv_diet  = ifelse(str_detect(interventions, "Dietary Supplement:") == TRUE, 1, 0),
+         interv_gene  = ifelse(str_detect(interventions, "Genetic:") == TRUE, 1, 0),
+         interv_proc  = ifelse(str_detect(interventions, "Procedure:") == TRUE, 1, 0),
+         interv_other = ifelse(str_detect(interventions, "Other:") == TRUE, 1, 0))
+  
+# This data contains the variable on number of US Sites 
+num_ussites = readRDS("Data/num_ussites.rds")
+  
 
 
-View(loc_city_state)  
+```
 
-ftable(loc_city_state$city) %>% as.tibble() %>% View()
+```{r descriptives}
+
+
+```
+
+### Study Characteristics (DRAFT)
+
+The original dataset contained  **`r format(nrow(results), nsmall = 1, big.mark = ",")` records** corresponding to all studies on Alzheimer's Disease registered at the [ClinicalTrials.gov website](http://clinicaltrials.gov) with study start dates from `r results %>% pull(start_date) %>% min()` to `r results %>% pull(start_date) %>% max()`. We restricted our analysis dataset to the **`r nrow(us_studies)`** studies with study sites in the United States.
+
+The number of study sites within the United States ranged from `r min(num_ussites$num_ussites)` to `r max(num_ussites$num_ussites)`.
+
+The distribution of study phases is found in Figure1, and the distribution of the number of interventions are in Figure2.
+
+```{r ggplot phase and number of interventions}
+
+us_studies %>% 
+  group_by(phases) %>%
+  summarize(n = n()) %>%
+  ggplot(aes(x = phases, y = n)) +
+    geom_col() 
+
+us_studies %>%
+  ggplot(aes(x = num_intervs)) +
+    geom_histogram(bins = 5)
 ```
 
 
+ 

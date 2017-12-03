@@ -62,7 +62,7 @@ loc_states = locations %>%
   mutate(sublocnum = max(sublocnum) - sublocnum +1)  %>%
   ungroup()
 
-View(loc_states)
+#View(loc_states)
 
 # Create separate City & State variables
 loc_city_state = loc_states %>%
@@ -76,10 +76,19 @@ loc_city_state = loc_states %>%
   # Remove ",NA" from inst
   mutate(institution = gsub(",NA", "", institution))
 
+saveRDS(loc_city_state, "Data/loc_city_state")
+# Number of US Sites per study
 
-View(loc_city_state)  
+num_ussites = loc_city_state %>%
+  group_by(nct_number) %>%
+  summarize(num_ussites = n())
 
-ftable(loc_city_state$city) %>% as.tibble() %>% View()
+# Save File to data folder
+saveRDS(num_ussites, file="Data/num_ussites.rds")
+
+#View(loc_city_state)  
+
+#ftable(loc_city_state$city) %>% as.tibble() %>% View()
 ```
 
 
