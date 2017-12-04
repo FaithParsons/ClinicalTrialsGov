@@ -79,7 +79,10 @@ In the initial data import and cleanup, I select the variables that I am interes
 ```{r Part 1 loading data}
 
 ## import data, select variables of interest, filter for US locations 
-AD_search_results <- read_csv("../data/SearchResultsTable.csv") %>%  clean_names() %>% 
+AD_search_results <- 
+  #read_csv("../data/SearchResultsTable.csv") %>% 
+  read_csv("../Data/SearchResultsTable.csv") %>%  
+  clean_names() %>% 
   select(nct_number, recruitment, interventions, gender, age,
          phases, enrollment, study_type, locations) %>% 
   filter(str_detect(locations, "United States")) %>%
