@@ -43,7 +43,7 @@ source("functions.R")
 
 # Introduction 
 Alzheimers Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
-A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial information while sourcing data from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families, impacted by the illness and seeking a quick visual reference guide on Alzheimers Disease clinical trials past and ongoing research.  
+A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial information while sourcing data from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families, impacted by the illness and seeking a quick visual reference guide on Alzheimers Disease clinical trials past and present research.  
 
 
 # Data and methods   
@@ -73,6 +73,7 @@ data =
 
 ## Exploratory analysis [Volha will combine three figures]  
 
+Alzheimers Disease is a wide
 ```{r data_preprocessing_figure1}
 gantt_data = 
   data %>%
@@ -102,7 +103,7 @@ gantt_data =
 ```{r data_preprocessing_figure2}
 data_for_plot = 
   data %>% 
-  select(rank, nct_number, phases, study_type, enrollment, nct_number, age) %>% 
+  select(rank, nct_number, phases, study_type, enrollment, nct_number, age, recruitment) %>% 
   mutate(age_start   = str_sub(age,  1,  3) ) %>%
   mutate(age_start = replace(age_start, age_start == "Chi", 0)) %>%
   mutate(age_start = replace(age_start, age_start == "up ", 0)) %>%
@@ -132,8 +133,10 @@ data_for_plot =
 
 # Prepare data for line plot - convert into long format and group by nct_number:   
 
+
 data_for_line_plot = 
   data_for_plot %>%
+  filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
   gather(key = "eligible_age", value = "years", age_start, age_end) %>%
   group_by(nct_number) %>%
   arrange(years)
@@ -143,7 +146,7 @@ data_for_line_plot =
 ```{r data_preprocessing_figure3}
 AD_search_results =
   data %>% 
-  select(nct_number, recruitment, interventions, gender, age,
+  dplyr::select(nct_number, recruitment, interventions, gender, age,
          phases, enrollment, study_type, locations) %>% 
   filter(str_detect(locations, "United States")) %>%
   separate(phases, into = c("phase_a", "phase_b", "phase_c", "phase_d"), sep = "\\|")  
@@ -176,8 +179,6 @@ AD_edit_unique <- AD_edit %>%
   unique() 
   
 
-View(AD_edit_unique)
-
 ##Data set from this set is AD_edit_unique
 
 AD_new <- AD_edit_unique %>% 
@@ -207,10 +208,6 @@ AD_newer$geo_place <- paste(AD_newer$city, ",", AD_newer$state_code)
 
 AD_newer[is.na(AD_newer)] <- "Not available"
 
-
-
-
-
 ```
 
 
@@ -238,11 +235,9 @@ Figure 2: Interactive plot with lines for eligible age for different clinical tr
 ```{r}
 p = data_for_line_plot %>%
   na.omit() %>% 
-  #filter(study_type == "Interventional") %>%
-  #filter(study_type == "Observational") %>%
-  ggplot(aes(x = years, y = n, color = phases, group = nct_number)) +
+  ggplot(aes(x = years, y = n, color = nct_number, group = nct_number)) +
   geom_path() +
-  facet_wrap(~study_type) +
+  #facet_wrap(~study_type) +
   labs(x = "eligible age",
        y = "enrollment",
        caption = "Figure 2") +
