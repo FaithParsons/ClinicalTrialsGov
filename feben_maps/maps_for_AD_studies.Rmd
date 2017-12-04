@@ -61,26 +61,22 @@ INTERVENTION (Behavioral, Genetic, Device, Drug, Other)
 AGE (categorized into groups)
 GENDER (Female, Male, All)
 
-```{r order of stuff}
 
-## Download data
-## for location, have to locate strings that end in "United States"
-## Every time you see a usable address, it's "City, State, Country"
-## I have to isolate "City, State, Country" and then separate the three
-## mutate a column that gets the state abbrev for each State
-## merge each state abbrev with the city in a new column, with a comma separating
-## geocode function from ggmap will let me get lat and long for each "City, ST"ate
+Here is my ordered plan:
 
+1) Download data (SearchTableResults.csv)
+2) In the location variable, every time you see a usable address, it's in a "City, State, Country" format. So I have to locate strings that end in "United States" (We are only focusing on United States studies)
+3) Once "city, state, country" are isolated, separate into three columns 
+4) Mutate a new column that gives state abbreviation (eg. AK, CA, NY)
+5) Merge "city" and "state_code" so geocode() (from ggmap) may be applied. This will give me latitude and longitude.
+6) Give latitude and longitude their own columns
+7) Can map coordinate pairs using Leaflet package
 
-## make sure lat and lng get their own columns
-## from there, I can map them using leaflet
-## can use leaflet to apply interactivity
-## and from there, can apply Shiny interactivity with dropdown menus
-
-```
+After this, Shiny can be applied for widget interactivity.
 
 
-```{r loading data}
+In the initial data import and cleanup, I select the variables that I am interested in. Using string functions, I filter only for locations that have "United States" in them. Since some studies include more than one phase, I break each phase into its own column. 
+```{r Part 1 loading data}
 
 ## import data, select variables of interest, filter for US locations 
 AD_search_results <- read_csv("../data/SearchResultsTable.csv") %>%  clean_names() %>% 
@@ -91,12 +87,14 @@ AD_search_results <- read_csv("../data/SearchResultsTable.csv") %>%  clean_names
   # separate(locations, into = c(), sep = "\\|") %>% 
   
 
+## Data set from this step: AD_search_results
 ```
 
 
-
+Since many studies encompass several different locations, which were separated by the vertical pipe character ( | ), I split them up into multiple columns, and used a funtion to search for character strings in the "City, State, Country" format that ended in "United States". The result was a data set that had locations spread over hundreds of columns.
 ```{r  Part 2 FUNCTION TO GET EXTRACT LOCATIONS}
 
+## separate multiple locations into individual columns
 AD_search_results_split_locations <- AD_search_results %>%
   cSplit("locations", sep = '|')
 
@@ -121,10 +119,12 @@ for (i in 12:dim(AD_search_results_split_locations)[2]) {
   AD_search_results_split_locations[[i]] = map(AD_search_results_split_locations[[i]], clean_loc)
 }
 
-
+## Data set from this step: AD_search_results_split_locations
 ```
 
 
+
+For further tidying, I gather the locations and phases into one column. I also reduce the intervention column to only its class (Behavioral, Drug, Device...) for easier widget use. After removing any stray country names, I remove any duplicate entries. This is easily achievable because each study has a unique ID number, the "nct_number".
 ```{r Part 3 CLEANUP}
 
 ## gathering locations and phases
@@ -146,17 +146,20 @@ AD_edit_unique <- AD_edit %>%
 
 View(AD_edit_unique)
 
+##Data set from this set is AD_edit_unique
+
 ```
 
+The ages can be very specific and disparate (e.g. 60-80, 18 and older, up to 100), and would be too much on their own for a drop-down menu. Since age groups labels (like "Adult, Senior", "Child, Adult, Senior") are also listed with numerical ages in this column, it's more useful to use those. They are usually in parentheses, so we can extract them using the code below.
 ```{r Part 4 AGE GROUPS variable}
 
 
 ## cleaning up AGE variable for drop-down menu
-dim(AD_edit_unique)
 
-AD_edit_unique %>% 
-  group_by(age) %>% 
-  summarize()
+##   BREAKDOWN OF AGE GROUPS FOR INLINE CODE
+# AD_edit_unique %>% 
+#   group_by(age) %>% 
+#   summarize()
 
 ## Child is 0 - 17, Adult is 18 - 65, Senior is 66 +
 ## extracting age group labels
@@ -169,24 +172,22 @@ AD_new <- AD_edit_unique %>%
 
 # View(AD_new)
 
+#AD_new %>% 
+  #count(cleaned_age) 
 
-
-AD_new %>% 
-  count(cleaned_age) 
-
-
-View(AD_new)
-dim(AD_new)
+## Data set from this step is AD_new
 
 ```
 
-
+In order to use geocode for city locations, I need to also have state abbreviations after it ("Atlanta, GA"), so I mutate a new column with abbreviations, taking special care with Washington D.C. After this, I filter out any address that doesn't have a state associated with it, because it won't work with the final map. I also replace blank entries in the dataset with "Not available" because that can be a viable option for other menus. 
 ```{r Part 5 SETTING UP A COLUMN FOR GEOCODE ACCESS}
 
 ## getting state abbrevs
 
-AD_new %>% 
-  count(state)
+
+##  CHECKING THE STATE COLUMN
+# AD_new %>% 
+#   count(state)
 
 state_list <- list()
 state_list[['name']] = c(state.name,"District of Columbia")
@@ -213,23 +214,26 @@ AD_newer$geo_place <- paste(AD_newer$city, ",", AD_newer$state_code)
 
 AD_newer[is.na(AD_newer)] <- "Not available"
 
-View(AD_newer)
-dim(AD_newer)
 
 
+## Dataset from this set is AD_newer 
 ```
 
 I'm not sure if I should try to have it call latitude and longitude live or write a function to get lat and long like 10 at a time and then put them in their own columns? That might be better since this is a static dataset ways. It would have to be looped to do it like ten at a time because if you request too many for the site it returns some NAs.
 
 The way I got the maps to work before was by filtering out by state, and making that into a new dataset, and having geocode work on an entire column that was "X, Y", X being city names, and Y being the states. That's not really efficient for our code so I'd like to try the function idea. Will get back to later.
 
-```{r Part 6 MAKING MAPS}
+UPDATE: This is cumbersome. You end up with a new csv that you have to end up pasting together a bunch of times. The first csv gave me the coordinates for 2148 locations. So not only do I have to run it like ten times (it takes like 45 minutes to grab that much), then I have to keep track of the csv's to import and merge together into a new thing? Oy vey.
+
+UPDATE: DO NOT RUN THIS Part 6.1 CODE! I commented it out because I came up with a better way in Part 7! Skip ahead to there!
+
+```{r Part 6.1 MAKING MAPS}
 
 ## turn column into a vector
 ## write a function that, using indices to go ten at a time, will 
 ## grab long and lat from internet and paste into new columns
 
-## problem: you will get some NAs
+## problem: you may get some NAs?
 
 #AD_summaries <- AD_newer %>% 
   #group_by(state_code, recruitment, interventions, cleaned_age, gender, phase, ) %>% 
@@ -243,51 +247,137 @@ The way I got the maps to work before was by filtering out by state, and making 
 
 # loop through 10 at a time
 
-dim(AD_newer)
+#-------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------------#
+# dim(AD_newer)
+# 
+# accumulated_geocodes <- data.frame(lon = double(), lat = double())
+# 
+# start_at_row <- 1
+# 
+# for (i in seq(start_at_row, length(AD_newer[[1]]), by = 10)) {
+#   j <- i + 9
+#   print(AD_newer$geo_place[(i:j)])
+#   
+#   ten_locations <- AD_newer$geo_place[(i:j)]
+#   ten_geocodes <- geocode(ten_locations)
+#   
+#   accumulated_geocodes = bind_rows(accumulated_geocodes, ten_geocodes)
+# }
+# View(accumulated_geocodes)
+# dim(accumulated_geocodes)
+# 
+# write.csv(accumulated_geocodes, file = "accumulated_geocodes_1-2418.csv")
 
-accumulated_geocodes <- data.frame(lon = double(), lat = double())
-
-start_at_row <- 1
-
-for (i in seq(start_at_row, length(AD_newer[[1]]), by = 10)) {
-  j <- i + 9
-  print(AD_newer$geo_place[(i:j)])
-  
-  ten_locations <- AD_newer$geo_place[(i:j)]
-  ten_geocodes <- geocode(ten_locations)
-  
-  accumulated_geocodes = bind_rows(accumulated_geocodes, ten_geocodes)
-}
-View(accumulated_geocodes)
-dim(accumulated_geocodes)
-
-write.csv(accumulated_geocodes, file = "accumulated_geocodes_1-2418.csv")
+#-----------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------------#
 
 ## paste accumulated_geocodes as 2 new columns in the giant table
 
 ```
 
-```{r}
-# starting at 2419
-accumulated_geocodes <- data.frame(lon = double(), lat = double())
 
-start_at_row <- 2419
 
-for (i in seq(start_at_row, length(AD_newer[[1]]), by = 10)) {
+
+Here, I am forgoing my Part 6 code in favor of trying it the Part 7 way, BUT I AM blocked!
+
+geocode() has a limit on how many queries you can grab per day! So I grabbed 2500 last night when I was trying to cycle through the "city_state" column of the "AD_newer" data table, and get coordinate pairs one at a time. I put the original code I used in Part 6, between the dashes. It took like 45 minutes to get 2500 and I realized the limit placed on the function. 
+
+
+I realized it would be smarter to grab the unique "city_state" names and then apply the function to that vector of length 830. the results would be made into a new table from the code below, and for every ten that get sent (I chunk it because the more you send at once, the more NAs you receive), it gets added to the final table at the end. My computer is barred (even after changing places, so I can't do it), so can someone else try it to see if it works?)
+
+We can't do live calls because some states have an abundunce of studies (like Florida has hundreds) so it would take way too long for a user to grab those live, and many NA coordinates would be returned.
+
+
+```{r Part 7 getting unique geocodes}
+
+## OR BETTER IDEA! get geocodes for all unique places and make a different CSV where I have the coordinates and then do a join between the CSV that has the coordinates and the regular data table YASSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+# View(AD_newer)
+# 
+# names(AD_newer)
+# 
+ #AD_newer %>% 
+#group_by(state_code, geo_place) %>% 
+#count()
+
+#unique_city_state <- AD_newer[[11]] %>% 
+  #unique()
+
+#print(unique_city_state)
+
+
+## getting unique coordinates 
+geocode_table <- data.frame(city_state = character(), lon = double(), lat = double())
+
+start_at_row <- 1
+
+for (i in seq(start_at_row, length(unique_city_state), by = 10)) {
   j <- i + 9
-  print(AD_newer$geo_place[(i:j)])
+  print(unique_city_state[(i:j)])
   
-  ten_locations <- AD_newer$geo_place[(i:j)]
+  ten_locations <- unique_city_state[(i:j)]
   ten_geocodes <- geocode(ten_locations)
+  geocode_table_chunk <- bind_cols(ten_locations, ten_geocodes)
   
-  accumulated_geocodes = bind_rows(accumulated_geocodes, ten_geocodes)
+  geocode_table = bind_rows(geocode_table, geocode_table_chunk)
 }
-View(accumulated_geocodes) ## run it up to here
 
-dim(accumulated_geocodes)
+View(geocode_table)
+dim(geocode_table)
 
-write.csv(accumulated_geocodes, file = "accumulated_geocodes_2419.csv")
+write.csv(geocode_table, file = "geocode_table.csv")
 
+
+
+## Then have to do a join with everything in A and match them to the lat and long produced in B!!!!
+
+
+
+
+
+
+```
+
+
+I am also forwarding an email I sent to our TA...it has the leaflet/Shiny info we need. 
+(Shiny can be applied to Leaflet easily, and also the placemarkers can be customized but I need to get the above code to run first!)
+
+
+
+
+
+
+
+
+DO NOT RUN THIS Part 6.2 CODE! This was to be part of my original method (WHICH SUCKS). But live and learn. 
+```{r Part 6.2}
+
+#-----------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------------#
+
+# starting at 2419
+# accumulated_geocodes <- data.frame(lon = double(), lat = double())
+# 
+# start_at_row <- 2419
+# 
+# for (i in seq(start_at_row, length(AD_newer[[1]]), by = 10)) {
+#   j <- i + 9
+#   print(AD_newer$geo_place[(i:j)])
+#   
+#   ten_locations <- AD_newer$geo_place[(i:j)]
+#   ten_geocodes <- geocode(ten_locations)
+#   
+#   accumulated_geocodes = bind_rows(accumulated_geocodes, ten_geocodes)
+# }
+# View(accumulated_geocodes) ## run it up to here
+# 
+# dim(accumulated_geocodes)
+# 
+# write.csv(accumulated_geocodes, file = "accumulated_geocodes_2419.csv")
+
+#-----------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------------#
 
 ```
 
@@ -295,25 +385,19 @@ write.csv(accumulated_geocodes, file = "accumulated_geocodes_2419.csv")
 
 
 
+If you want to see some simple examples of the mapping in leaflet, here you go. 
+```{r Coordinate examples }
 
 
-OH BOY
+##example 1
+geocode("Columbus, OH")
 
-```{r help}
 
-
-##example
-geocode("Columbs, OH")
-
-##previous example code I had used to make maps
-# us_data_tristate <- us_data %>% 
-#   filter(state %in% c("NEW YORK", "NEW JERSEY","CONNECTICUT"))
-# 
-# geocode(us_data_tristate$place) %>%
-#   leaflet() %>% 
-#   addTiles() %>%
-#   addMarkers()
-
+##example 2
+geocode(c("Bronx, NY", "Staten Island, NY", "New York, NY")) %>% 
+  leaflet() %>% 
+  addTiles() %>%
+  addMarkers()
 
 
 ```
