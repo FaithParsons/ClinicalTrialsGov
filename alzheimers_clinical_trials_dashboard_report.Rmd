@@ -1,5 +1,5 @@
 ---
-title: "Final project summary"
+title: "Exploration and visualization of Alzheimer's Disease clinical trials summary made easy with ACT (Alzheimer's Clinical Trials) Shiny Dashboard" 
 author: "Feben Asefaha, Imaani Easthausen, Faith Parsons, Volha Tryputsen"
 date: "December 4, 2017"
 output: 
@@ -18,3 +18,13 @@ knitr::opts_chunk$set(fig.width = 6, fig.asp = .6, out.width = "90%")
 options(knitr.table.format = "html") 
 ```
 
+
+# Introduction 
+Alzheimer`s Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
+
+
+# Data and methods  
+
+
+# Results
+We think that shiny dashboard could simplify AD landscape research for an inexperienced user and as such will provide benefit for a family of a newly diagnosed AD patient.
