@@ -389,14 +389,27 @@ DO NOT RUN THIS Part 6.2 CODE! This was to be part of my original method (WHICH 
 
 
 If you want to see some simple examples of the mapping in leaflet, here you go. 
-```{r Coordinate examples }
+```{r Part 8, coordinate mapping examples }
+
+## example 1
+## run this for an example of map size?, also need room for widgets on side
+df <- data.frame(lat = runif(20, min = 39.25, max = 39.35),
+                 lng = runif(20, min = -76.65, max = -76.55))
+df %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers()
 
 
-##example 1
-geocode("Columbus, OH")
+
+## example 2
+geocode("Columbus, OH") %>% 
+  leaflet() %>% 
+  addTiles() %>%
+  addMarkers()
 
 
-##example 2
+## example 4
 geocode(c("Bronx, NY", "Staten Island, NY", "New York, NY")) %>% 
   leaflet() %>% 
   addTiles() %>%
