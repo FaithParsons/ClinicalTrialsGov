@@ -72,8 +72,9 @@ data =
 
 
 
-## Exploratory analysis [Volha will combine three figures]  
+## Exploratory analysis [Volha will combine three figures and an intercative data table]   
 
+[Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those studies with available starting and ending dates to visualize the landscape of Alzheimers Disease clinical trials over time.  
 
 ```{r data_preprocessing_figure1}
 gantt_data = 
@@ -100,7 +101,7 @@ gantt_data =
   arrange(date_start)
 ```
 
-
+Interactive lineplot was created for those studies with available age elligibility creteria, where a line represents age elligibility for a particular study against the number of subjects enrolled in a study.   
 ```{r data_preprocessing_figure2}
 data_for_plot = 
   data %>% 
@@ -218,6 +219,7 @@ AD_newer[is.na(AD_newer)] <- "Not available"
 
 
 # Results [Volha and all]  
+Gantt chart (**Figure 1**) and Age Ellegibility plot (**Figure 2**) were created for currently recruiting interventional phase 3 trials.   
 
 Figure 1:  Gantt chart  
 ```{r figure1, results='asis', tidy=FALSE, eval = FALSE}
@@ -233,7 +235,10 @@ plot(timeline)
 ```
 
 
-Figure 2: Interactive plot with lines for eligible age for different clinical trail phases    
+Figure 2: Interactive plot with lines for eligible age for different clinical trail phases   
+
+Alzheimers Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well with the hope to prevent Alzheimers before the major damage to the brain is done in the later stages of Alzheimers Disease. 
+
 ```{r}
 p = data_for_line_plot %>%
   na.omit() %>% 
