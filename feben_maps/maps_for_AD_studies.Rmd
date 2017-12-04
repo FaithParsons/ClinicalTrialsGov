@@ -100,7 +100,7 @@ AD_search_results <- read_csv("../data/SearchResultsTable.csv") %>%  clean_names
 AD_search_results_split_locations <- AD_search_results %>%
   cSplit("locations", sep = '|')
 
-## 
+## finding addresses in United States
 clean_loc = function(location) {
   
   result <- location
@@ -225,10 +225,85 @@ The way I got the maps to work before was by filtering out by state, and making 
 
 ```{r Part 6 MAKING MAPS}
 
-## getting latitude and longitude for geo_place
+## turn column into a vector
+## write a function that, using indices to go ten at a time, will 
+## grab long and lat from internet and paste into new columns
+
+## problem: you will get some NAs
+
+#AD_summaries <- AD_newer %>% 
+  #group_by(state_code, recruitment, interventions, cleaned_age, gender, phase, ) %>% 
+  #count()
+
+
+
+# AD_newer[["geo_place"]]
+
+# geocode(AD_newer[["geo_place"]])
+
+# loop through 10 at a time
+
+dim(AD_newer)
+
+accumulated_geocodes <- data.frame(lon = double(), lat = double())
+
+start_at_row <- 1
+
+for (i in seq(start_at_row, length(AD_newer[[1]]), by = 10)) {
+  j <- i + 9
+  print(AD_newer$geo_place[(i:j)])
+  
+  ten_locations <- AD_newer$geo_place[(i:j)]
+  ten_geocodes <- geocode(ten_locations)
+  
+  accumulated_geocodes = bind_rows(accumulated_geocodes, ten_geocodes)
+}
+View(accumulated_geocodes)
+dim(accumulated_geocodes)
+
+write.csv(accumulated_geocodes, file = "accumulated_geocodes_1-2418.csv")
+
+## paste accumulated_geocodes as 2 new columns in the giant table
+
+```
+
+```{r}
+# starting at 2419
+accumulated_geocodes <- data.frame(lon = double(), lat = double())
+
+start_at_row <- 2419
+
+for (i in seq(start_at_row, length(AD_newer[[1]]), by = 10)) {
+  j <- i + 9
+  print(AD_newer$geo_place[(i:j)])
+  
+  ten_locations <- AD_newer$geo_place[(i:j)]
+  ten_geocodes <- geocode(ten_locations)
+  
+  accumulated_geocodes = bind_rows(accumulated_geocodes, ten_geocodes)
+}
+View(accumulated_geocodes) ## run it up to here
+
+dim(accumulated_geocodes)
+
+write.csv(accumulated_geocodes, file = "accumulated_geocodes_2419.csv")
+
+
+```
+
+
+
+
+
+
+
+OH BOY
+
+```{r help}
+
 
 ##example
-geocode("New York , NY")
+geocode("Columbs, OH")
 
 ##previous example code I had used to make maps
 # us_data_tristate <- us_data %>% 
