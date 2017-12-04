@@ -106,7 +106,28 @@ data_for_line_plot =
 
 
 # Results [Volha and all]  
+
+Figure 1: Interactive plot with lines for eligible age for different clinical trail phases:  
+```{r}
+p = data_for_line_plot %>%
+  na.omit() %>% 
+  #filter(study_type == "Interventional") %>%
+  #filter(study_type == "Observational") %>%
+  ggplot(aes(x = years, y = n, color = phases, group = nct_number)) +
+  geom_path() +
+  facet_wrap(~study_type) +
+  labs(x = "eligible age",
+       y = "enrollment",
+       caption = "Figure 1") +
+  theme_bw()
+
+ggplotly(p)
+```
+
+
+
 Shiny dashboard simplifies Alzheimers Disease landscape research for an inexperienced user and as such provides benefit for a family of a newly diagnosed Alzheimers Disease patient.  
+
 
 
 
