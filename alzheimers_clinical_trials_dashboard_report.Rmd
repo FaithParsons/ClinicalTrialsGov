@@ -18,6 +18,15 @@ knitr::opts_chunk$set(fig.width = 6, fig.asp = .6, out.width = "90%")
 options(knitr.table.format = "html") 
 ```
 
+```{r libraries, echo=FALSE}
+library(tidyverse)
+library(dplyr)
+library(janitor)
+library(plotly)
+library(stringr)
+library(plotly)
+```
+
 
 # Introduction 
 Alzheimers Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
@@ -26,7 +35,9 @@ A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial
 
 # Data and methods   
 
-## File names [Imanani]  
+
+
+## File names [Imaani]  
 
 [### Loading data]  
 
@@ -37,11 +48,49 @@ A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial
 
 ## Summary statistics [Faith/Volha?]  
 
+```{r load_data}
+data = 
+  read_csv("Data/SearchResultsTable.csv") %>%
+  clean_names() 
+```
+
 [Mean, sample size etc.]  
 
 
 
 ## Exploratory analysis [Volha will combine three figures]  
+
+```{r data_preprocessing}
+data_for_plot = 
+  data %>% 
+  select(rank, nct_number, phases, study_type, enrollment, nct_number, age) %>% 
+  mutate(age_start   = str_sub(age,  1,  3) ) %>%
+  mutate(age_start = replace(age_start, age_start == "Chi", 0)) %>%
+  mutate(age_start = replace(age_start, age_start == "up ", 0)) %>%
+  separate(age_start, c("age_start", "remove"), " ") %>%
+  mutate(age_start = as.numeric(age_start)) %>%
+  mutate(n = as.numeric(enrollment)) %>%
+    mutate(age_end = str_sub(age, 13, 14)) %>%
+  # replace "...Years and older   (Adult, Senior)" with age_end==100
+  mutate(age_end = replace(age_end, age_end == " o", 100)) %>%
+  #replace "Child, Adult, Senior" with age_end == 100
+  mutate(age_end = replace(age_end, age_end == ", ", 100)) %>%
+  #replace "up to 100 Years   (Child, Adult, Senior)" with age_end==100
+  mutate(age_end = replace(age_end, age_end == "ar", 100)) %>%
+  # replace "...Years and older   (Child, Adult, Senior)" for those with 
+  # starting one digit age with age_end == 100
+  mutate(age_end = replace(age_end, age_end == "ol", 100)) %>%
+  # replace "up to ..Years   (Child, Adult, Senior)" where ... is 2 digit
+  # with age_end == 100
+  mutate(age_end1 = str_sub(age, 7, 8)) %>%
+  mutate(age_end = replace(age_end, age_end == "rs", age_end1[age_end == "rs"])) %>%
+  # convert age_end to numeric
+  mutate(age_end = as.numeric(age_end)) %>%
+  select(-c(remove, age_end1)) %>%
+  # reorder 
+  mutate(nct_number = forcats::fct_reorder(nct_number, age_start))
+```
+
 
 ## Formal analysis [Faith?]  
 
