@@ -20,11 +20,38 @@ options(knitr.table.format = "html")
 
 
 # Introduction 
-Alzheimer`s Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
+Alzheimers Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
+A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial information while sourcing data from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families, impacted by the illness and seeking a quick visual reference guide on Alzheimers Disease clinical trials past and ongoing research.  
 
 
-# Data and methods  
+# Data and methods   
+
+## File names [Imanani]  
+
+[### Loading data]  
+
+[### Reorganizing into usable form]   
+
+[### Any general-preprocessing steps?]    
 
 
-# Results
-We think that shiny dashboard could simplify AD landscape research for an inexperienced user and as such will provide benefit for a family of a newly diagnosed AD patient.
+## Summary statistics [Faith/Volha?]  
+
+[Mean, sample size etc.]  
+
+
+
+## Exploratory analysis [Volha will combine three figures]  
+
+## Formal analysis [Faith?]  
+
+
+
+# Results [Volha and all]  
+Shiny dashboard simplifies Alzheimers Disease landscape research for an inexperienced user and as such provides benefit for a family of a newly diagnosed Alzheimers Disease patient.  
+
+
+
+# Discussion  
+
+
