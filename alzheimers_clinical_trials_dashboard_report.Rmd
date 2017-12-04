@@ -1,0 +1,20 @@
+---
+title: "Final project summary"
+author: "Feben Asefaha, Imaani Easthausen, Faith Parsons, Volha Tryputsen"
+date: "December 4, 2017"
+output: 
+  html_document:
+    theme: cosmo
+    highlight: haddock
+    toc: true
+    toc_float:
+      collapse: true
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(fig.width = 6, fig.asp = .6, out.width = "90%")
+options(knitr.table.format = "html") 
+```
+
