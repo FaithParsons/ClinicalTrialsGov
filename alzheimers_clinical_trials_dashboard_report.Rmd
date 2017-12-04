@@ -33,6 +33,7 @@ library(ggmap)
 library(leaflet)
 library(splitstackshape)
 library(purrr)
+library(DT)
 ```
 
 ```{r options}
@@ -73,7 +74,7 @@ data =
 
 ## Exploratory analysis [Volha will combine three figures]  
 
-Alzheimers Disease is a wide
+
 ```{r data_preprocessing_figure1}
 gantt_data = 
   data %>%
@@ -211,6 +212,7 @@ AD_newer[is.na(AD_newer)] <- "Not available"
 ```
 
 
+
 ## Formal analysis [Faith?]  
 
 
@@ -218,7 +220,7 @@ AD_newer[is.na(AD_newer)] <- "Not available"
 # Results [Volha and all]  
 
 Figure 1:  Gantt chart  
-```{r figure1, results='asis', tidy=FALSE}
+```{r figure1, results='asis', tidy=FALSE, eval = FALSE}
 timeline = 
   gvisTimeline(data = gantt_data,
                rowlabel = "nct_number",
@@ -249,6 +251,13 @@ ggplotly(p)
 Figure 3:  
 ```{r figure3}
 
+```
+
+
+```{r interactive_data_table}
+DT::datatable(data, class = 'compact',
+              rownames = FALSE,
+              caption = 'Table 1')
 ```
 
 
