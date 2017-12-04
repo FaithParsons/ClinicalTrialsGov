@@ -89,6 +89,15 @@ data_for_plot =
   select(-c(remove, age_end1)) %>%
   # reorder 
   mutate(nct_number = forcats::fct_reorder(nct_number, age_start))
+
+
+# Prepare data for line plot - convert into long format and group by nct_number:   
+
+data_for_line_plot = 
+  data_for_plot %>%
+  gather(key = "eligible_age", value = "years", age_start, age_end) %>%
+  group_by(nct_number) %>%
+  arrange(years)
 ```
 
 

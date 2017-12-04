@@ -147,7 +147,7 @@ data_for_line_plot %>%
 ```
 
 
-Static plot with lines for eligible age:  
+Interactive plot with lines for eligible age:  
 ```{r}
 p = data_for_line_plot %>%
   na.omit() %>% 
