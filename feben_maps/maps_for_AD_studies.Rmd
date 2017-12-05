@@ -147,7 +147,7 @@ AD_edit_unique <- AD_edit %>%
   unique() 
   
 
-View(AD_edit_unique)
+
 
 ##Data set from this set is AD_edit_unique
 
@@ -413,6 +413,8 @@ View(study_coordinates)
 ## join them by location
 AD_final <- inner_join(AD_newest, study_coordinates) %>% 
   unique()
+
+write.csv(AD_final, file = "final_data_for_leaflet.csv")
 
 
 View(AD_final)
