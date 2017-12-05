@@ -125,6 +125,7 @@ $(document).ready(function () {
 <div id="process-data-for-gantt-chart" class="section level4">
 <h4>Process data for Gantt Chart</h4>
 <pre class="r"><code>library(googleVis)</code></pre>
+<pre><code>## Warning: package &#39;googleVis&#39; was built under R version 3.4.2</code></pre>
 <pre><code>## Creating a generic function for &#39;toJSON&#39; from package &#39;jsonlite&#39; in package &#39;googleVis&#39;</code></pre>
 <pre><code>## 
 ## Welcome to googleVis version 0.6.2
@@ -172,9 +173,9 @@ results = read_csv(&quot;Data/SearchResultsTable.csv&quot;) %&gt;%
   # Declare interactivity filters here
   filter(study_type == &quot;Interventional&quot;  &amp; str_detect(phases, &quot;Phase 3&quot;) &amp;  recruitment == &quot;Recruiting&quot;) %&gt;%
   #Sort by date
-  arrange(date_start)
-
-timeline = gvisTimeline(data = gantt_data,
+  arrange(date_start)</code></pre>
+<pre><code>## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.2</code></pre>
+<pre class="r"><code>timeline = gvisTimeline(data = gantt_data,
                         rowlabel = &quot;nct_number&quot;,
                         barlabel = &quot;label&quot;,
                         start = &quot;date_start&quot;,
@@ -182,12 +183,12 @@ timeline = gvisTimeline(data = gantt_data,
                         options = list(height = 600, width = 800, timeline= &quot;{ singleColor: &#39;blue&#39; }&quot;))
 plot(timeline)</code></pre>
 <!-- Timeline generated in R 3.4.1 by googleVis 0.6.2 package -->
-<!-- Mon Dec  4 16:11:54 2017 -->
+<!-- Mon Dec 04 22:24:20 2017 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataTimelineIDd6363eb873e3 () {
+function gvisDataTimelineID3190653e1120 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -435,15 +436,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartTimelineIDd6363eb873e3() {
-var data = gvisDataTimelineIDd6363eb873e3();
+function drawChartTimelineID3190653e1120() {
+var data = gvisDataTimelineID3190653e1120();
 var options = {};
 options["width"] = 800;
 options["height"] = 600;
 options["timeline"] = { singleColor: 'blue' };
 
     var chart = new google.visualization.Timeline(
-    document.getElementById('TimelineIDd6363eb873e3')
+    document.getElementById('TimelineID3190653e1120')
     );
     chart.draw(data,options);
     
@@ -467,9 +468,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartTimelineIDd6363eb873e3);
+callbacks.push(drawChartTimelineID3190653e1120);
 })();
-function displayChartTimelineIDd6363eb873e3() {
+function displayChartTimelineID3190653e1120() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -492,9 +493,9 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTimelineIDd6363eb873e3"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTimelineID3190653e1120"></script>
 <!-- divChart -->
-<div id="TimelineIDd6363eb873e3" style="width: 800; height: 600;">
+<div id="TimelineID3190653e1120" style="width: 800; height: 600;">
 
 </div>
 </div>
