@@ -4,6 +4,7 @@ author: "Feben Asefaha, Imaani Easthausen, Faith Parsons, Volha Tryputsen"
 date: "December 4, 2017"
 output: 
   html_document:
+    self_contained: no
     theme: cosmo
     highlight: haddock
     toc: true
@@ -11,6 +12,12 @@ output:
       collapse: true
       smooth_scroll: false
 ---
+
+```{r setOptions}
+library(googleVis)
+op <- options(gvis.plot.tag='chart')
+
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -25,7 +32,7 @@ library(janitor)
 library(plotly)
 library(stringr)
 library(plotly)
-library(googleVis)
+
 library(readr)
 library(timevis)
 library(XML)
@@ -34,9 +41,12 @@ library(leaflet)
 library(splitstackshape)
 library(purrr)
 library(DT)
+
+suppressPackageStartupMessages(library(googleVis)) 
+
 ```
 
-```{r options}
+```{r options, warning = FALSE}
 op <- options(gvis.plot.tag='chart')
 source("functions.R")
 ```
@@ -66,10 +76,43 @@ A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial
 data = 
   read_csv("Data/SearchResultsTable.csv") %>%
   clean_names() 
+
+# Create dataset for descriptives for clinical trials in the US
+us_studies = data %>%
+  # Filter only studies that have sites in the United States
+  filter(str_detect(locations, "United States"))  %>%
+         # Count number of locations, interventions, and funders
+  mutate(num_locs = as.numeric(str_count(locations, "\\|")) + 1,
+         num_intervs = as.numeric(str_count(interventions, "\\|")) + 1,
+         num_funders = as.numeric(str_count(funded_bys, "\\|")) + 1,
+         # Dummy for Funded by - "Industry"
+         fundby_industry = ifelse(str_detect(funded_bys, "Industry") == TRUE, 1, 0),
+         # dummy for Funded by - "NIH"
+         fundby_nih = ifelse(str_detect(funded_bys, "NIH") == TRUE, 1, 0),
+         # dummy for FUnded by - "U.S. Fed"
+         fundby_usfed = ifelse(str_detect(funded_bys, "U.S. Fed") == TRUE, 1, 0),
+         # dummy for Funded by - "Other")
+         fundby_other = ifelse(str_detect(funded_bys, "Other") == TRUE, 1, 0),
+         # Intervention Types -- Dummy Variables
+         interv_drug =  ifelse(str_detect(interventions, "Drug:") == TRUE, 1, 0), 
+         interv_behav = ifelse(str_detect(interventions, "Behavioral:") == TRUE, 1, 0),
+         interv_biol  = ifelse(str_detect(interventions, "Biological:") == TRUE, 1, 0), 
+         interv_diag  = ifelse(str_detect(interventions, "Diagnostic Test:") == TRUE, 1, 0) ,
+         interv_device = ifelse(str_detect(interventions, "Device:") == TRUE, 1, 0),
+         interv_rad   = ifelse(str_detect(interventions, "Radiation:") == TRUE, 1, 0),
+         interv_diet  = ifelse(str_detect(interventions, "Dietary Supplement:") == TRUE, 1, 0),
+         interv_gene  = ifelse(str_detect(interventions, "Genetic:") == TRUE, 1, 0),
+         interv_proc  = ifelse(str_detect(interventions, "Procedure:") == TRUE, 1, 0),
+         interv_other = ifelse(str_detect(interventions, "Other:") == TRUE, 1, 0))
+
+# This data contains the variable on number of US Sites 
+num_ussites = readRDS("Data/num_ussites.rds")
+
 ```
 
-[Mean, sample size etc.]  
+The main datasetcontained  **`r format(nrow(data), nsmall = 1, big.mark = ",")` records** corresponding to all studies on Alzheimer's Disease registered at the [ClinicalTrials.gov website](http://clinicaltrials.gov) with study start dates from `r data %>% pull(start_date) %>% min()` to `r data %>% pull(start_date) %>% max()`. We restricted our analysis dataset to the **`r nrow(us_studies)`** studies with study sites in the United States. The earliest study on record began on `r us_studies %>% pull(start_date)%>% min()`.
 
+The number of study sites within the United States ranged from `r min(num_ussites$num_ussites)` to `r max(num_ussites$num_ussites)`. 
 
 
 ## Exploratory analysis [Volha will combine three figures and an intercative data table]   
@@ -219,10 +262,11 @@ AD_newer[is.na(AD_newer)] <- "Not available"
 
 
 # Results [Volha and all]  
-Gantt chart (**Figure 1**) and Age Ellegibility plot (**Figure 2**) were created for currently recruiting interventional phase 3 trials.   
+Gantt chart (**Figure 1**) and Age Eligibility plot (**Figure 2**) were created for currently recruiting interventional phase 3 trials.   
 
 Figure 1:  Gantt chart  
-```{r figure1, results='asis', tidy=FALSE, eval = FALSE}
+
+```{r figure1, results='asis', tidy=FALSE}
 timeline = 
   gvisTimeline(data = gantt_data,
                rowlabel = "nct_number",
