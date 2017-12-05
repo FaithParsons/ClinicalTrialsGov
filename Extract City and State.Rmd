@@ -9,6 +9,10 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(readr)
 library(janitor)
+library(RCurl)
+library(RJSONIO)
+library(datasets)
+library(stringr)
 
 results = read_csv("Data/SearchResultsTable.csv") %>%
   clean_names()  
@@ -90,5 +94,60 @@ saveRDS(num_ussites, file="Data/num_ussites.rds")
 
 #ftable(loc_city_state$city) %>% as.tibble() %>% View()
 ```
+
+```{r geocode function}
+
+# This is a function someone wrote that doesn't require google's API
+# Source: https://stackoverflow.com/questions/3257441/geocoding-in-r-with-google-maps
+
+
+construct.geocode.url <- function(address, return.call = "json", sensor = "false") {
+  root <- "http://maps.google.com/maps/api/geocode/"
+  u <- paste(root, return.call, "?address=", address, "&sensor=", sensor, sep = "")
+  return(URLencode(u))
+}
+
+gGeoCode <- function(address,verbose=FALSE) {
+  if(verbose) cat(address,"\n")
+  u <- construct.geocode.url(address)
+  doc <- getURL(u)
+  x <- fromJSON(doc,simplify = FALSE)
+  if(x$status=="OK") {
+    lat <- x$results[[1]]$geometry$location$lat
+    lng <- x$results[[1]]$geometry$location$lng
+    #return(c(lat, lng))
+    return(cbind(lat, lng))
+  } else {
+    return(c(NA,NA))
+  }
+}
+
+x <- gGeoCode("Philadelphia, PA") 
+
+```
+
+```{r geocode locations}
+
+# Read the RDS file
+locs = readRDS("Data/loc_city_state") %>%
+  mutate(state = str_trim(state))
+
+
+# Create state name and abbrev. lookup
+state_list <- list()
+state_list[['name']] = c(state.name,"District of Columbia")
+state_list[['abb']] = c(state.abb,"DC")
+
+state_lookup <- setNames(state_list$abb, state_list$name)
+##filter out any entry without state because can't map it  
+state_coded <- locs %>% 
+  rename(state_name = state) %>%
+  filter(!is.na(state_name)) %>%
+  mutate(state_code = state_lookup[state_name],
+         location = paste(city, state_code, sep = ", ")) 
+
+
+```
+
 
 
