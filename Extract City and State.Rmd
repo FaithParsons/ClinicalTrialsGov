@@ -7,6 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
+library(dplyr)
 library(readr)
 library(janitor)
 library(RCurl)
@@ -116,14 +117,15 @@ gGeoCode <- function(address,verbose=FALSE) {
     lat <- x$results[[1]]$geometry$location$lat
     lng <- x$results[[1]]$geometry$location$lng
     #return(c(lat, lng))
-    return(cbind(lat, lng))
+    #return(cbind(lat, lng, address))
+    geocoded = cbind(lat, lng, address) %>% as.tibble()
   } else {
     return(c(NA,NA))
   }
 }
 
-x <- gGeoCode("Philadelphia, PA") 
-
+x = gGeoCode("New York, NY")
+str(x)
 ```
 
 ```{r geocode locations}
@@ -144,9 +146,29 @@ state_coded <- locs %>%
   rename(state_name = state) %>%
   filter(!is.na(state_name)) %>%
   mutate(state_code = state_lookup[state_name],
-         location = paste(city, state_code, sep = ", ")) 
+         location = paste(city, state_code, sep = ", "), 
+         location = str_trim(location))
+
+locations = state_coded %>%
+  select(location) %>%
+  unique() %>%
+  pull(location)
+
+#GEocode all locations
+
+loctest = locations[1:2] 
+
+test = map(locations, gGeoCode)
+geocoded = bind_rows(test) %>%
+  rename(location = address)
 
 
+
+geocoded_studies = left_join(state_coded, geocoded, by = "location", match = "all") 
+
+# Save permanently
+
+saveRDS(geocoded_studies, "Data/geocoded_studies.rds")
 ```
 
 
