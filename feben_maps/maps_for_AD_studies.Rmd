@@ -292,11 +292,13 @@ I realized it would be smarter to grab the unique "city_state" names and then ap
 We can't do live calls because some states have an abundunce of studies (like Florida has hundreds) so it would take way too long for a user to grab those live, and many NA coordinates would be returned.
 
 
+Update: After using Faith's rds, I am commenting out this code
 ```{r Part 7 getting unique geocodes}
 
 ## OR BETTER IDEA! get geocodes for all unique places and make a different CSV where I have the coordinates and then do a join between the CSV that has the coordinates and the regular data table YASSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 
-# View(AD_newer)
+#View(AD_newer)
+  
 # 
 # names(AD_newer)
 # 
@@ -309,29 +311,33 @@ We can't do live calls because some states have an abundunce of studies (like Fl
 
 #print(unique_city_state)
 
+#-------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------------#
 
 ## getting unique coordinates 
-geocode_table <- data.frame(city_state = character(), lon = double(), lat = double())
 
-start_at_row <- 1
+# geocode_table <- data.frame(city_state = character(), lon = double(), lat = double())
+# 
+# start_at_row <- 1
+# 
+# for (i in seq(start_at_row, length(unique_city_state), by = 10)) {
+#   j <- i + 9
+#   print(unique_city_state[(i:j)])
+#   
+#   ten_locations <- unique_city_state[(i:j)]
+#   ten_geocodes <- geocode(ten_locations)
+#   geocode_table_chunk <- bind_cols(ten_locations, ten_geocodes)
+#   
+#   geocode_table = bind_rows(geocode_table, geocode_table_chunk)
+# }
+# 
+# View(geocode_table)
+# dim(geocode_table)
+# 
+# write.csv(geocode_table, file = "geocode_table.csv")
 
-for (i in seq(start_at_row, length(unique_city_state), by = 10)) {
-  j <- i + 9
-  print(unique_city_state[(i:j)])
-  
-  ten_locations <- unique_city_state[(i:j)]
-  ten_geocodes <- geocode(ten_locations)
-  geocode_table_chunk <- bind_cols(ten_locations, ten_geocodes)
-  
-  geocode_table = bind_rows(geocode_table, geocode_table_chunk)
-}
-
-View(geocode_table)
-dim(geocode_table)
-
-write.csv(geocode_table, file = "geocode_table.csv")
-
-
+#-------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------------#
 
 ## Then have to do a join with everything in A and match them to the lat and long produced in B!!!!
 
@@ -385,11 +391,44 @@ DO NOT RUN THIS Part 6.2 CODE! This was to be part of my original method (WHICH 
 ```
 
 
+Integrating Faith's rds to add lat and longs to dataset!
+```{r Part 8, getting the lat and long rds}
+
+## rename the "geo_place" column to "location""
+AD_newest <- AD_newer %>% 
+  rename(location = geo_place) 
+
+  #View(AD_newest)
+  
+## get the rds that has all locations and their associated lat and long coordinates
+study_coordinates <- readRDS("../Data/geocoded_studies.rds") %>% 
+  select(location, lat, lng) %>% 
+  mutate(location = gsub(", ([A-Z])", " , \\1", location))
+
+ 
+
+View(study_coordinates)
+
+
+## join them by location
+AD_final <- inner_join(AD_newest, study_coordinates) %>% 
+  unique()
+
+
+View(AD_final)
+
+dim(AD_newest)
+dim(AD_final)
+
+```
+
+
+
 
 
 
 If you want to see some simple examples of the mapping in leaflet, here you go. 
-```{r Part 8, coordinate mapping examples }
+```{r Part 9, coordinate mapping examples }
 
 ## example 1
 ## run this for an example of map size?, also need room for widgets on side
