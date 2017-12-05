@@ -1,0 +1,37 @@
+---
+title: "leaflet maps"
+author: "Feben Asefaha"
+date: "12/5/2017"
+output: html_document
+---
+
+```{r setup, data and libraries}
+
+#loading packages
+library(tidyverse)
+library(dplyr)
+library(janitor)
+library(haven)
+library(stringr)
+library(knitr)
+library(plotly)
+library(ggplot2)
+library(viridis)
+library(flexdashboard)
+library(readr)
+library(readxl)
+library(ggmap)
+library(leaflet)
+library(splitstackshape)
+library(purrr)
+
+
+AD_final <- read_csv("./final_data_for_leaflet.csv") %>% 
+  select(-X1)
+
+View(AD_final)
+
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
