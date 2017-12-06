@@ -58,16 +58,17 @@ A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial
 
 
 # Data and methods   
+The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously completed, terminated, or other enrollment status factors. The data used in analyses are available in the `data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
 
+Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for how the 
 
 
 ## File names [Imaani]  
+The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously completed, terminated, or other enrollment status factors. The data used in analyses are available in the `Data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
 
-[### Loading data]  
+Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for extracting these variables are available in the file `Extracting_data_across_all_xml_files.Rmd` also on the github page. An additional dataset called `alzheimers_data` containing all variables associated with each study identified during the "alzheimer" search. 
 
-[### Reorganizing into usable form]   
-
-[### Any general-preprocessing steps?]    
+The datasets `SearchResultsTable.csv` and `alzheimers_data` contain largely overlapping variables. The dataset `SearchResultsTable.csv` is generally more processed, particularly for natural language variables. However, `alzheimers_data` contains several variables not available in `SearchResultsTable.csv` that an interested future researcher may access. 
 
 
 ## Summary statistics [Faith/Volha?]  
@@ -322,5 +323,15 @@ Shiny dashboard simplifies Alzheimers Disease landscape research for an inexperi
 
 
 # Discussion  
+The Shiny dashboard created in this project creates a simple and user-friendly format for interested parties including physician and researchers with less statistical and the data savy patient to explore trends in Alzheimers-related clinical trials. 
+
+Possible future directions for this project include updating the Shiny dashboard so that it interacts in real time with the clinicaltrials.gov website. This would allow the data in the dashboard to continue to provide the most up to date information to the user, and would prevent the dashboard from becoming obsolete over time. 
+
+Other possible future directions include icorporating additional variables so that the user can gain a more complete picture of the avialable data. Another area of possible expansion might include developing a platform for the user to perform simple statistical tests on the data from within the project website. 
+
+
+
+
+
 
 
