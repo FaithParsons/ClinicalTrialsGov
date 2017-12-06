@@ -27,11 +27,47 @@ library(purrr)
 
 
 AD_final <- read_csv("./final_data_for_leaflet.csv") %>% 
-  select(-X1)
+  select(-X1) %>% 
+  rename(latitude = lat,
+         longitude = lng)
 
-View(AD_final)
+#View(AD_final)
 
 
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
+
+```{r maps}
+
+##ok so if you have a df with columns for lat and lng, pipe it into leaflet
+set.seed(2016-04-25) ## why do you have to set seed here?
+df <- data.frame(lat = runif(20, min = 39.2, max = 39.3),
+                 lng = runif(20, min = -76.6, max = -76.5))
+df %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers()
+
+
+## pipe my data frame?
+
+AD_final %>% 
+  filter(recruitment == "Recruiting") %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(clusterOptions = markerClusterOptions())
+  
+
+
+
+
+```
+
+
+
+
+
+
 

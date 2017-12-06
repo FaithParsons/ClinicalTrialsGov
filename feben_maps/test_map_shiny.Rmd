@@ -1,0 +1,125 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: row
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+
+#loading packages
+library(flexdashboard)
+library(tidyverse)
+library(dplyr)
+library(knitr)
+library(viridis)
+library(flexdashboard)
+library(readr)
+library(leaflet)
+library(shiny)
+
+
+
+AD_final <- read_csv("./final_data_for_leaflet.csv") %>% 
+  select(-X1) %>% 
+  rename(latitude = lat,
+         longitude = lng)
+
+View(AD_final)
+```
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+This leaflet `flexdashboard` with Shiny was made with data from ClinicalTrials.gov. 
+
+In order to see the geographic distribution of studies based on desired characteristics, use the drop-down menus.
+```{r }
+State = AD_final %>% distinct(state_name) %>% pull()
+
+# selectInput widget
+selectInput("State", label = h3("Select State"),
+            choices = State, selected = "New York")
+
+Age_Group = AD_final %>% distinct(cleaned_age) %>% pull()
+
+# selectInput widget
+selectInput("Age_Group", label = h3("Select Age Group"),
+            choices = Age_Group, selected = "Senior")
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Test Map
+
+```{r}
+
+
+renderLeaflet({
+  AD_final %>% 
+  filter(state_name == "New York",
+         cleaned_age == "Senior") %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(clusterOptions = markerClusterOptions())
+  
+    
+
+})
+
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
+```{r other options}
+
+# State = AD_final %>% distinct(state_name) %>% pull()
+# 
+# # selectInput widget
+# selectInput("State", label = h3("Select State"),
+#             choices = State, selected = "New York")
+# 
+# Study_Type = AD_final %>% distinct(study_type) %>% pull()
+# 
+# # selectInput widget
+# selectInput("Study_Type", label = h3("Select Study Type"),
+#             choices = Study_Type, selected = "Interventional")
+# 
+# Phase = AD_final %>% distinct(phase) %>% pull()
+# 
+# # selectInput widget
+# selectInput("Phase", label = h3("Select Phase"),
+#             choices = Phase, selected = "Phase 1")
+# 
+# Recruitment = AD_final %>% distinct(recruitment) %>% pull()
+# 
+# # selectInput widget
+# selectInput("Recruitment", label = h3("Select Recruitment Status"),
+#             choices = Recruitment, selected = "Recruiting")
+# 
+# 
+# Interventions = AD_final %>% distinct(interventions) %>% pull()
+# 
+# # selectInput widget
+# selectInput("Interventions", label = h3("Select Intervention"),
+#             choices = Interventions, selected = "Drug")
+
+
+```
+
