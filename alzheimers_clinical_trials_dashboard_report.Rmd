@@ -217,7 +217,7 @@ us_studies %>%
     theme_bw() +
     labs(x = "Study start (year)", y = "No. of studies", 
          title = "No. of new Alzheimer's Disease studies per year by study type",
-         caption = "Figure 2"
+         caption = "Figure 2",
          color = "Study type") +
     scale_x_continuous(breaks = seq(1980, 2017, 5)) +
     theme(legend.position = "bottom")
@@ -225,13 +225,13 @@ us_studies %>%
 ```
 
 
-## Exploratory analysis [Volha will combine three figures and an interactive data table]   
-
-[Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those studies with available starting and ending dates to visualize the landscape of Alzheimers Disease clinical trials over time.  
+## Exploratory analysis  
+[Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those US studies with available starting and ending dates to visualize the landscape of Alzheimers Disease clinical trials over time.  
 
 ```{r data_preprocessing_figure1}
 gantt_data = 
   data %>%
+  filter(str_detect(locations, "United States"))  %>%
   mutate( 
     mm_start   = str_sub(start_date,  1,  3), # Extract month
     yy_start   = str_sub(start_date, -4, -1), # Extract 4-digit year
