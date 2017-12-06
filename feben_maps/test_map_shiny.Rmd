@@ -39,7 +39,7 @@ State = AD_final %>% distinct(state_name) %>% pull()
 
 # selectInput widget
 selectInput("State", label = h3("Select State"),
-            choices = State, selected = "New York")
+            choices = State, selected = "Florida")
 
 Age_Group = AD_final %>% distinct(cleaned_age) %>% pull()
 
@@ -49,45 +49,36 @@ selectInput("Age_Group", label = h3("Select Age Group"),
 ```
 
 
-Column {data-width=650}
+Column {data-width=1000}
 -----------------------------------------------------------------------
 
 ### Test Map
 
-```{r}
+```{r Mapping!!!!!!!!}
 
+## popup links to take you to the relevant clinical trials page
+AD_final = AD_final %>%
+  mutate(url = paste("<a href='https://clinicaltrials.gov/ct2/show/", nct_number, "'>", nct_number, "</a>", sep = ""))
 
 renderLeaflet({
   AD_final %>% 
-  filter(state_name == "New York",
+  filter(state_name == "Florida",
          cleaned_age == "Senior") %>% 
   leaflet() %>%
   addTiles() %>%
-  addMarkers(clusterOptions = markerClusterOptions())
-  
+  addMarkers(clusterOptions = markerClusterOptions(), popup = ~as.character(url))
     
-
 })
 
 
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
 
 ```{r}
 
 ```
 
-### Chart C
-
-```{r}
-
-```
-
-```{r other options}
+```{r other drop down options}
 
 # State = AD_final %>% distinct(state_name) %>% pull()
 # 
