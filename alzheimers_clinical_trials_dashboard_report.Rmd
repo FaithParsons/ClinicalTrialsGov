@@ -1,7 +1,7 @@
 ---
 title: "Exploration and visualization of Alzheimer's Disease clinical trials summary made easy with ACT (Alzheimer's Clinical Trials) Shiny Dashboard" 
 author: "Feben Asefaha, Imaani Easthausen, Faith Parsons, Volha Tryputsen"
-date: "December 4, 2017"
+date: "December 6, 2017"
 output: 
   html_document:
     self_contained: no
@@ -379,7 +379,10 @@ study_coordinates <-
   readRDS("Data/geocoded_studies.rds") %>% 
   #readRDS("../Data/geocoded_studies.rds") %>% 
 =======
-study_coordinates <- readRDS("./Data/geocoded_studies.rds") %>% 
+study_coordinates <-
+  # changing location, if working directory is ClinicalTrialsGov
+  readRDS("Data/geocoded_studies.rds") %>% 
+  #readRDS("./Data/geocoded_studies.rds") %>% 
 >>>>>>> 0d46411cf61652d2dd3949c188760f7885a65a82
   select(location, lat, lng) %>% 
   mutate(location = gsub(", ([A-Z])", " , \\1", location))
@@ -398,12 +401,10 @@ write.csv(AD_final, file = "final_data_for_leaflet.csv")
 ```
 
 
-## Formal analysis [Faith?]  
 
 
-
-# Results [Volha and all]  
-The Gantt chart (**Figure 1**) and Age Eligibility plot (**Figure 2**) were created to visualize, for currently recruiting interventional phase 3 trials, how long each trial is expected to run, and the age range of target participants.   
+# Results  
+The Gantt chart (**Figure 3**) and Age Eligibility plot (**Figure 4**) were created to visualize, for currently recruiting interventional phase 3 trials, how long each trial is expected to run, and the age range of target participants.   
 
 Figure 1:  Gantt chart  
 
