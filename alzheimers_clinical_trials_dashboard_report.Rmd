@@ -58,14 +58,8 @@ A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial
 
 # Data and methods   
 
-<<<<<<< HEAD
-Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for how the 
-
-
-## File names   
-=======
 ## Data Source and Preprocessing  
->>>>>>> 0d46411cf61652d2dd3949c188760f7885a65a82
+
 The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously completed, terminated, or other enrollment status factors. The data used in analyses are available in the `Data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
 
 Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for extracting these variables are available in the file `Extracting_data_across_all_xml_files.Rmd` also on the github page. An additional dataset called `alzheimers_data` containing all variables associated with each study identified during the "alzheimer" search. 
@@ -184,7 +178,6 @@ us_studies %>%
   tab_pivot() %>%
   htmlTable(caption = "Table 1. Descriptive statistics by study type")
 
-
 ```
 
 We also examined the number of new studies each year. **Figure 1** shows that there were peaks in the number of new studies in 2009 and 2016. If we look closely in **Figure 2**, we can see that the spike in 2009 is due to the large increase in Phase 1 and/or Phase 2 studies, which is indicative of a large number of new treatments being investigated. This happened because major pharmaceutical efforts were concentrated around finding a cure for Alzheimers Disease with promising drug candidates in pipeline. The spike in 2016, however, appears to be due to the combination of increased unclassified (in terms of study phase) trials, and a relatively high number of Phase 1/2 trials. 
@@ -201,8 +194,8 @@ us_studies %>%
     geom_line() +
     theme_bw() +
     labs(x = "Study start (year)", 
-         y = "No. of studies", 
-         title = "No. of new Alzheimer's Disease studies per year",
+         y = "Number of studies", 
+         title = "Number of new Alzheimer's Disease studies per year",
          caption = "Figure 1") +
     scale_x_continuous(breaks = seq(1980, 2017, 5))
 
@@ -215,8 +208,8 @@ us_studies %>%
     geom_point() +
     geom_line() +
     theme_bw() +
-    labs(x = "Study start (year)", y = "No. of studies", 
-         title = "No. of new Alzheimer's Disease studies per year by study type",
+    labs(x = "Study start (year)", y = "Number of studies", 
+         title = "Number of new Alzheimer's Disease studies per year by study type",
          caption = "Figure 2",
          color = "Study type") +
     scale_x_continuous(breaks = seq(1980, 2017, 5)) +
@@ -254,7 +247,7 @@ gantt_data =
   arrange(date_start)
 ```
 
-Interactive lineplot was created for those US studies with available age elligibility creteria, where a line represents age elligibility for a particular study against the number of subjects enrolled in a study.   
+Interactive lineplot was created for those US studies with available age elligibility creteria, where a line represents a study, x-coordinates of a line (or length) represent study age elligibility, and y-coordinated of a line correspond to the number of subjects enrolled in a study.   
 
 ```{r data_preprocessing_figure2}
 data_for_plot = 
@@ -299,7 +292,7 @@ data_for_line_plot =
   arrange(years)
 ```
 
-
+Interactive map was also created to allow users to visualize study locations based on user input specifications.   
 ```{r data_preprocessing_figure3}
 
 AD_search_results =
@@ -373,17 +366,11 @@ AD_newest <- AD_newer %>%
   rename(location = geo_place) 
   
 ## get the rds that Faith developed that has all locations and their associated lat and long coordinates
-<<<<<<< HEAD
-study_coordinates <- 
-  # changing location, if working directory is ClinicalTrialsGov
-  readRDS("Data/geocoded_studies.rds") %>% 
-  #readRDS("../Data/geocoded_studies.rds") %>% 
-=======
+
 study_coordinates <-
   # changing location, if working directory is ClinicalTrialsGov
   readRDS("Data/geocoded_studies.rds") %>% 
   #readRDS("./Data/geocoded_studies.rds") %>% 
->>>>>>> 0d46411cf61652d2dd3949c188760f7885a65a82
   select(location, lat, lng) %>% 
   mutate(location = gsub(", ([A-Z])", " , \\1", location))
 
@@ -439,7 +426,7 @@ p = data_for_line_plot %>%
 ggplotly(p)
 ```
 
-Figure 3: Interactive map that allows users to visualize study locations based on user input specifications. Unsurprisingly, the majority of recruiting studies for Alzheimer's Disease are geographically centered in Florida, a state known for a high proportion of elderly residents. Clicking on city markers will take the user to the ClinicalTrials.gov webpage for that particular study, allowing easy access to more information. 
+Figure 3: Unsurprisingly, the majority of recruiting studies for Alzheimer's Disease are geographically centered in Florida, a state known for a high proportion of elderly residents. Clicking on city markers will take the user to the ClinicalTrials.gov webpage for that particular study, allowing easy access to more information. 
 ```{r figure3, echo=FALSE}
 
 
@@ -480,9 +467,11 @@ Other possible future directions include icorporating additional variables so th
 # Appendix
 
 ```{r interactive_data_table}
-DT::datatable(data, class = 'compact',
+data %>%
+  filter(str_detect(locations, "United States"))  %>%
+  DT::datatable(., class = 'compact',
               rownames = FALSE,
-              caption = 'Table 1')
+              caption = 'Table 2')
 ```
 
 
