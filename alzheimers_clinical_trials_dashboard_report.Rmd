@@ -13,8 +13,8 @@ output:
       smooth_scroll: false
 ---
 
-```{r setOptions}
-library(googleVis)
+```{r setOptions, echo=FALSE, warning=FALSE}
+suppressPackageStartupMessages(library(googleVis))
 op <- options(gvis.plot.tag='chart')
 
 ```
@@ -32,7 +32,6 @@ library(janitor)
 library(plotly)
 library(stringr)
 library(plotly)
-
 library(readr)
 library(timevis)
 library(XML)
@@ -41,8 +40,8 @@ library(leaflet)
 library(splitstackshape)
 library(purrr)
 library(DT)
-
-suppressPackageStartupMessages(library(googleVis)) 
+library(expss)
+library(ggplot2)
 
 ```
 
@@ -73,10 +72,15 @@ The datasets `SearchResultsTable.csv` and `alzheimers_data` contain largely over
 
 ## Summary statistics [Faith/Volha?]  
 
-```{r load_data}
+
+```{r read data, include = FALSE}
+
 data = 
   read_csv("Data/SearchResultsTable.csv") %>%
   clean_names() 
+
+gantt_data = readRDS("Data/gantt_data.rds") %>%
+   mutate(date_start2 = format(date_start, format = "%B %d, %Y") )
 
 # Create dataset for descriptives for clinical trials in the US
 us_studies = data %>%
@@ -104,16 +108,116 @@ us_studies = data %>%
          interv_diet  = ifelse(str_detect(interventions, "Dietary Supplement:") == TRUE, 1, 0),
          interv_gene  = ifelse(str_detect(interventions, "Genetic:") == TRUE, 1, 0),
          interv_proc  = ifelse(str_detect(interventions, "Procedure:") == TRUE, 1, 0),
-         interv_other = ifelse(str_detect(interventions, "Other:") == TRUE, 1, 0))
+         interv_other = ifelse(str_detect(interventions, "Other:") == TRUE, 1, 0),
+         # Enrollment number as numeric
+         enrol_num = as.numeric(enrollment),
+         mm_start   = str_sub(start_date,  1,  3), # Extract month
+         yy_start   = str_sub(start_date, -4, -1), # Extract 4-digit year
+         date_start = as.Date(paste(yy_start, mm_start, "01", sep = "-"), "%Y-%b-%d"),
+         date_start2 = format(date_start, "%B %d, %Y"))
 
-# This data contains the variable on number of US Sites 
-num_ussites = readRDS("Data/num_ussites.rds")
+# Collapse study type and phase into one variable
+us_studies$type_phase = NA
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 1") == TRUE] <- "Phase 1/Phase 2"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 2") == TRUE] <- "Phase 1/Phase 2"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 3") == TRUE] <- "Phase 3/Phase 4"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 4") == TRUE] <- "Phase 3/Phase 4"
+us_studies$type_phase[is.na(us_studies$phases)] <- "Unknown Phase"
+us_studies$type_phase[us_studies$study_type == "Observational"] <- "Observational"
+
 
 ```
 
-The main datasetcontained  **`r format(nrow(data), nsmall = 1, big.mark = ",")` records** corresponding to all studies on Alzheimer's Disease registered at the [ClinicalTrials.gov website](http://clinicaltrials.gov) with study start dates from `r data %>% pull(start_date) %>% min()` to `r data %>% pull(start_date) %>% max()`. We restricted our analysis dataset to the **`r nrow(us_studies)`** studies with study sites in the United States. The earliest study on record began on `r us_studies %>% pull(start_date)%>% min()`.
 
-The number of study sites within the United States ranged from `r min(num_ussites$num_ussites)` to `r max(num_ussites$num_ussites)`. 
+The primary datafile (`SearchResultsTable.csv`) contained informaton on **`r format(nrow(data), nsmall = 1, big.mark = ",")` Alzheimer's disease studies** registered with [ClinicalTrials.gov](http://clinicaltrials.gov).  We restricted our analysis on the **`r nrow(us_studies)` studies with study sites in the United States**, and as of the November 9, 2017 data pull, the earliest clinical trial on Alzheimer's Disease started on  `r  us_studies %>% pull(date_start2) %>% min(na.rm=TRUE)` and the most recent on `r  us_studies %>% pull(date_start2) %>% max(na.rm=TRUE)`.
+
+We categorized the trials into 5 main categories based on study type and phase: 
+
+* Observational: if a study is of study type observational **(n = `r us_studies %>% filter(type_phase == "Observational") %>% nrow()`)**
+
+* Phase 1/2: if a study is interventional, and phase is classifed as early Phase 1, Phase 1, or combined Phase 1/Phase 2 **(n = `r us_studies %>% filter(type_phase == "Phase 1/Phase 2") %>% nrow()`)**
+
+* Phase 3/4: if a study is interventional, and phase is classified as Phase 3, Phase 4, or combined Phase 3/Phase 4 **(n = `r us_studies %>% filter(type_phase == "Phase 3/Phase 4") %>% nrow()`)**
+
+* Unknown Phase: if a study is interventional, and phase was not specified **(n = `r us_studies %>% filter(type_phase == "Unknown Phase") %>% nrow()`)**
+
+For each of the five categories, we examined the number of study sites, number of funders, and number of interventions (see Table 1 below). 
+
+
+```{r Descriptives table, echo = FALSE, eval=TRUE}
+
+# Add variable labels
+us_studies = apply_labels(us_studies,
+  type_phase = "Study Type",
+  num_locs = "No. Study Sites",
+  num_funders = "No. Funders",
+  num_intervs = "No. Interventions")
+
+# Create summary table
+us_studies %>%
+  tab_cells(num_locs) %>%
+  tab_cols(type_phase) %>%
+  tab_stat_mean() %>%
+  tab_stat_sd() %>%
+  tab_stat_median() %>%
+  tab_stat_min() %>%
+  tab_stat_max() %>%
+  
+  tab_cells( num_funders) %>%
+  tab_cols(type_phase) %>%
+  tab_stat_mean() %>%
+  tab_stat_sd() %>%
+  tab_stat_median() %>%
+  tab_stat_min() %>%
+  tab_stat_max() %>%
+  
+  tab_cells(num_intervs) %>%
+  tab_cols(type_phase) %>%
+  tab_stat_mean() %>%
+  tab_stat_sd() %>%
+  tab_stat_median() %>%
+  tab_stat_min() %>%
+  tab_stat_max() %>%
+  tab_pivot() %>%
+  htmlTable(caption = "Table 1. Descriptive statistics by study type")
+
+
+```
+
+We also examined the number of new studies each year. Figure X1 shows that there were peaks in the number of new studies in 2009 and 2016. If we look closely in Figure X2, we can see that the spike in 2009 is due to the large increase in Phase 1 and/or Phase 2 studies, which could be indicative of a large number of new treatments being investigated. The spike in 2016, however, appears to be due to the combination of increased unclassified (in terms of study phase) trials, and a relatively high number of Phase 1/2 trials. 
+
+```{r num_studies, echo=FALSE, warning=FALSE}
+
+us_studies %>%
+  mutate(year_start   = as.numeric(str_sub(start_date, -4, -1))) %>%
+  filter(!is.na(year_start) & year_start <= 2017) %>%
+  group_by(year_start) %>%
+  count() %>%
+  ggplot(aes(x = year_start, y = n)) + 
+    geom_point() +
+    geom_line() +
+    theme_bw() +
+    labs(x = "Study start (year)", 
+         y = "No. of studies", 
+         title = "FIgure X1. No. of new Alzheimer's Disease studies per year") +
+    scale_x_continuous(breaks = seq(1980, 2017, 5))
+
+us_studies %>%
+  mutate(year_start   = as.numeric(str_sub(start_date, -4, -1))) %>%
+  filter(!is.na(year_start) & year_start <= 2017) %>%
+  group_by(type_phase,year_start) %>%
+  count() %>%
+  ggplot(aes(x = year_start, y = n, color = type_phase)) + 
+    geom_point() +
+    geom_line() +
+    theme_bw() +
+    labs(x = "Study start (year)", y = "No. of studies", 
+         title = "Figure X2. No. of new Alzheimer's Disease studies per year by study type",
+         color = "Study type") +
+    scale_x_continuous(breaks = seq(1980, 2017, 5)) +
+    theme(legend.position = "bottom")
+
+```
 
 
 ## Exploratory analysis [Volha will combine three figures and an intercative data table]   
@@ -146,6 +250,7 @@ gantt_data =
 ```
 
 Interactive lineplot was created for those studies with available age elligibility creteria, where a line represents age elligibility for a particular study against the number of subjects enrolled in a study.   
+
 ```{r data_preprocessing_figure2}
 data_for_plot = 
   data %>% 
@@ -263,7 +368,7 @@ AD_newer[is.na(AD_newer)] <- "Not available"
 
 
 # Results [Volha and all]  
-Gantt chart (**Figure 1**) and Age Eligibility plot (**Figure 2**) were created for currently recruiting interventional phase 3 trials.   
+The Gantt chart (**Figure 1**) and Age Eligibility plot (**Figure 2**) were created to visualize, for currently recruiting interventional phase 3 trials, how long each trial is expected to run, and the age range of target participants.   
 
 Figure 1:  Gantt chart  
 
