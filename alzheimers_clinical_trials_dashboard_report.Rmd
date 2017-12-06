@@ -13,7 +13,7 @@ output:
       smooth_scroll: false
 ---
 
-```{r setOptions, echo=FALSE, warning=FALSE}
+```{r setOptions, echo=FALSE, warning=FALSE, include=FALSE}
 suppressPackageStartupMessages(library(googleVis))
 op <- options(gvis.plot.tag='chart')
 ```
@@ -44,7 +44,7 @@ library(ggplot2)
 library(googleVis)
 ```
 
-```{r options, warning = FALSE, message= FALSE}
+```{r options, warning = FALSE, message= FALSE, include=FALSE}
 op <- options(gvis.plot.tag='chart')
 source("functions.R")
 ```
