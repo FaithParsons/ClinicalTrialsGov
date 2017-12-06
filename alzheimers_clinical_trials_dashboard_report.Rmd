@@ -287,7 +287,6 @@ data_for_plot =
 
 # Prepare data for line plot - convert into long format and group by nct_number:   
 
-
 data_for_line_plot = 
   data_for_plot %>%
   filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
@@ -419,7 +418,7 @@ Figure 4: Eligible age and targeted enrollment for currently recruiting US inter
 ```{r figure4}
 p = data_for_line_plot %>%
   na.omit() %>% 
-  ggplot(aes(x = years, y = n, color = nct_number, group = nct_number)) +
+  ggplot(aes(x = years, y = n, color = nct_number)) +
   geom_path() +
   #facet_wrap(~study_type) +
   labs(x = "eligible age",
