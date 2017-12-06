@@ -11,11 +11,11 @@
 
 
 
-<title>Descriptive Statistics</title>
+<title>The Alzheimers Project</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -183,13 +183,7 @@ $(document).ready(function () {
   <a href="about.html">About</a>
 </li>
 <li>
-  <a href="mailto:&lt;you@youremail.com&gt;">
-    <span class="fa fa-envelope fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="http://github.com/&lt;YOUR_GH_NAME&gt;/">
+  <a href="https://github.com/FaithParsons/ClinicalTrialsGov">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -203,28 +197,13 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Descriptive Statistics</h1>
+<h1 class="title toc-ignore">The Alzheimers Project</h1>
 
 </div>
 
 
-<div id="study-characteristics-draft" class="section level3">
-<h3>Study Characteristics (DRAFT)</h3>
-<p>The original dataset contained <strong>1,771 records</strong> corresponding to all studies on Alzheimer’s Disease registered at the <a href="http://clinicaltrials.gov">ClinicalTrials.gov website</a> with study start dates from April 1, 2014 to September 6, 2017. We restricted our analysis dataset to the <strong>928</strong> studies with study sites in the United States.</p>
-<p>The number of study sites within the United States ranged from 1 to 219.</p>
-<p>The distribution of study phases is found in Figure1, and the distribution of the number of interventions are in Figure2.</p>
-<pre class="r"><code>us_studies %&gt;% 
-  group_by(phases) %&gt;%
-  summarize(n = n()) %&gt;%
-  ggplot(aes(x = phases, y = n)) +
-    geom_col() </code></pre>
-<p><img src="Descriptives_and_Stats_files/figure-html/ggplot%20phase%20and%20number%20of%20interventions-1.png" width="672" /></p>
-<pre class="r"><code>us_studies %&gt;%
-  ggplot(aes(x = num_intervs)) +
-    geom_histogram(bins = 5)</code></pre>
-<pre><code>## Warning: Removed 93 rows containing non-finite values (stat_bin).</code></pre>
-<p><img src="Descriptives_and_Stats_files/figure-html/ggplot%20phase%20and%20number%20of%20interventions-2.png" width="672" /></p>
-</div>
+<p>[breif intro]</p>
+<p>[screencast]</p>
 
 
 
