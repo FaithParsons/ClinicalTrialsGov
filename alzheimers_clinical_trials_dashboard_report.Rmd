@@ -57,12 +57,15 @@ A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial
 
 
 # Data and methods   
-The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously completed, terminated, or other enrollment status factors. The data used in analyses are available in the `data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
 
+<<<<<<< HEAD
 Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for how the 
 
 
 ## File names   
+=======
+## Data Source and Preprocessing  
+>>>>>>> 0d46411cf61652d2dd3949c188760f7885a65a82
 The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously completed, terminated, or other enrollment status factors. The data used in analyses are available in the `Data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
 
 Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for extracting these variables are available in the file `Extracting_data_across_all_xml_files.Rmd` also on the github page. An additional dataset called `alzheimers_data` containing all variables associated with each study identified during the "alzheimer" search. 
@@ -368,10 +371,14 @@ AD_newest <- AD_newer %>%
   rename(location = geo_place) 
   
 ## get the rds that Faith developed that has all locations and their associated lat and long coordinates
+<<<<<<< HEAD
 study_coordinates <- 
   # changing location, if working directory is ClinicalTrialsGov
   readRDS("Data/geocoded_studies.rds") %>% 
   #readRDS("../Data/geocoded_studies.rds") %>% 
+=======
+study_coordinates <- readRDS("./Data/geocoded_studies.rds") %>% 
+>>>>>>> 0d46411cf61652d2dd3949c188760f7885a65a82
   select(location, lat, lng) %>% 
   mutate(location = gsub(", ([A-Z])", " , \\1", location))
 
