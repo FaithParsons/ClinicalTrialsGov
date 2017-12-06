@@ -13,7 +13,7 @@ output:
       smooth_scroll: false
 ---
 
-```{r setOptions, echo=FALSE, warning=FALSE}
+```{r setOptions, echo=FALSE, warning=FALSE, include=FALSE}
 suppressPackageStartupMessages(library(googleVis))
 op <- options(gvis.plot.tag='chart')
 
@@ -25,7 +25,7 @@ knitr::opts_chunk$set(fig.width = 6, fig.asp = .6, out.width = "90%")
 options(knitr.table.format = "html") 
 ```
 
-```{r libraries, echo=FALSE}
+```{r libraries, echo=FALSE, include=FALSE}
 library(tidyverse)
 library(dplyr)
 library(janitor)
@@ -45,7 +45,7 @@ library(ggplot2)
 
 ```
 
-```{r options, warning = FALSE, message= FALSE}
+```{r options, warning = FALSE, message= FALSE, include=FALSE}
 op <- options(gvis.plot.tag='chart')
 source("functions.R")
 ```
