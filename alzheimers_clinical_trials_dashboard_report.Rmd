@@ -25,7 +25,7 @@ knitr::opts_chunk$set(fig.width = 6, fig.asp = .6, out.width = "90%")
 options(knitr.table.format = "html") 
 ```
 
-```{r libraries, echo=FALSE}
+```{r libraries, echo=FALSE, include=FALSE}
 library(tidyverse)
 library(dplyr)
 library(janitor)
