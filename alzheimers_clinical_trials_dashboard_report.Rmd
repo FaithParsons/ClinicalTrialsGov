@@ -225,7 +225,7 @@ us_studies %>%
 To visualize how long each trial is expected to run, [Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those currently recruiting interventional phase 3 trials in the US with available starting and ending dates.   
 
 
-```{r data_preprocessing_figure1}
+```{r data_preprocessing_figure3}
 gantt_data = 
   data %>%
   filter(str_detect(locations, "United States"))  %>%
@@ -253,7 +253,7 @@ gantt_data =
 
 Interactive lineplot was created for those currently recruiting interventional phase 3 trials in the US with available age elligibility creteria to visualize the age range of targeted participants. A line in a plot represents a study, x-coordinates of a line (or length) represent study age elligibility, and y-coordinate of a line corresponds to a number of subjects enrolled in a study.   
 
-```{r data_preprocessing_figure2}
+```{r data_preprocessing_figure4}
 data_for_plot = 
   data %>% 
   filter(str_detect(locations, "United States"))  %>%
@@ -298,7 +298,7 @@ data_for_line_plot =
 
 Interactive map was also created to allow users to visualize study locations based on user input specifications.   
 
-```{r data_preprocessing_figure3}
+```{r data_preprocessing_figure5}
 
 AD_search_results =
   data %>% 
