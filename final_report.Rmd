@@ -1,6 +1,6 @@
 ---
 title: "Exploration and visualization of Alzheimer's Disease clinical trials summary made easy with ACT (Alzheimer's Clinical Trials) Shiny Dashboard" 
-author: "Feben Asefaha, Imaani Easthausen, Faith Parsons, Volha Tryputsen"
+author: "Feben Asefaha(fta2112), Imaani Easthausen(ije2103), Faith Parsons(feb2110), Volha Tryputsen(vt2263)"
 date: "December 6, 2017"
 output: html_document
 ---
