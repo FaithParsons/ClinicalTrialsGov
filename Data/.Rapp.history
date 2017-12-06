@@ -1,0 +1,3 @@
+load("/Users/feven/Desktop/GitRepos/ClinicalTrialsGov/Data/num_ussites.rds")
+load("/Users/feven/Desktop/GitRepos/ClinicalTrialsGov/Data/geocoded_studies.rds")
+load("/Users/ImaaniEasthausen/Documents/Biostats MS/Data_Science/final_project/Data/geocoded_studies.rds")
