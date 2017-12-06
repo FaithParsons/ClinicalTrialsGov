@@ -187,7 +187,7 @@ us_studies %>%
 
 ```
 
-We also examined the number of new studies each year. Figure X1 shows that there were peaks in the number of new studies in 2009 and 2016. If we look closely in Figure X2, we can see that the spike in 2009 is due to the large increase in Phase 1 and/or Phase 2 studies, which could be indicative of a large number of new treatments being investigated. The spike in 2016, however, appears to be due to the combination of increased unclassified (in terms of study phase) trials, and a relatively high number of Phase 1/2 trials. 
+We also examined the number of new studies each year. **Figure 1** shows that there were peaks in the number of new studies in 2009 and 2016. If we look closely in **Figure 2**, we can see that the spike in 2009 is due to the large increase in Phase 1 and/or Phase 2 studies, which is indicative of a large number of new treatments being investigated. This happened because major pharmaceutical efforts were concentrated around finding a cure for Alzheimers Disease with promising drug candidates in pipeline. The spike in 2016, however, appears to be due to the combination of increased unclassified (in terms of study phase) trials, and a relatively high number of Phase 1/2 trials. 
 
 ```{r num_studies, echo=FALSE, warning=FALSE}
 
@@ -202,7 +202,8 @@ us_studies %>%
     theme_bw() +
     labs(x = "Study start (year)", 
          y = "No. of studies", 
-         title = "FIgure X1. No. of new Alzheimer's Disease studies per year") +
+         title = "No. of new Alzheimer's Disease studies per year",
+         caption = "Figure 1") +
     scale_x_continuous(breaks = seq(1980, 2017, 5))
 
 us_studies %>%
@@ -215,7 +216,8 @@ us_studies %>%
     geom_line() +
     theme_bw() +
     labs(x = "Study start (year)", y = "No. of studies", 
-         title = "Figure X2. No. of new Alzheimer's Disease studies per year by study type",
+         title = "No. of new Alzheimer's Disease studies per year by study type",
+         caption = "Figure 2"
          color = "Study type") +
     scale_x_continuous(breaks = seq(1980, 2017, 5)) +
     theme(legend.position = "bottom")
