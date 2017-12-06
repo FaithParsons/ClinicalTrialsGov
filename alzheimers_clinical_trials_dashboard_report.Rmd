@@ -409,7 +409,7 @@ plot(timeline)
 
 Figure 2: Interactive plot with lines for eligible age for different clinical trail phases   
 
-Alzheimers Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well with the hope to prevent Alzheimers before the major damage to the brain is done in the later stages of Alzheimers Disease. 
+Alzheimers Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well, with the hope to prevent Alzheimers before the major damage to the brain is done in later stages of the disease. 
 
 ```{r}
 p = data_for_line_plot %>%
@@ -447,22 +447,11 @@ AD_final %>%
 
 ```
 
-
-```{r interactive_data_table}
-DT::datatable(data, class = 'compact',
-              rownames = FALSE,
-              caption = 'Table 1')
-```
-
+An interactive data table was created (**Table 1**, Appendix) to allow access to aditional information.   
 
 ```{r}
 options(op)
 ```
-
-
-
-Shiny dashboard simplifies Alzheimers Disease landscape research for an inexperienced user and as such provides benefit for a family of a newly diagnosed Alzheimers Disease patient.  
-
 
 
 
@@ -474,6 +463,13 @@ Possible future directions for this project include updating the Shiny dashboard
 Other possible future directions include icorporating additional variables so that the user can gain a more complete picture of the avialable data. Another area of possible expansion might include developing a platform for the user to perform simple statistical tests on the data from within the project website. 
 
 
+# Appendix
+
+```{r interactive_data_table}
+DT::datatable(data, class = 'compact',
+              rownames = FALSE,
+              caption = 'Table 1')
+```
 
 
 
