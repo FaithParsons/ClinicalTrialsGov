@@ -247,7 +247,7 @@ gantt_data =
   arrange(date_start)
 ```
 
-Interactive lineplot was created for those currently recruiting interventional phase 3 trials in the US with available age elligibility creteria. A line in a plot represents a study, x-coordinates of a line (or length) represent study age elligibility, and y-coordinate of a line corresponds to a number of subjects enrolled in a study.   
+Interactive lineplot was created for those currently recruiting interventional phase 3 trials in the US with available age elligibility creteria to visualize the age range of targeted participants. A line in a plot represents a study, x-coordinates of a line (or length) represent study age elligibility, and y-coordinate of a line corresponds to a number of subjects enrolled in a study.   
 
 ```{r data_preprocessing_figure2}
 data_for_plot = 
@@ -393,7 +393,7 @@ write.csv(AD_final, file = "final_data_for_leaflet.csv")
 # Results  
 The Gantt chart (**Figure 3**) shows that there are currently 28 US phase 3 actively recruiting studies which span over 10 years (2014-2024) with [DIAN-TU](https://dian.wustl.edu) being the longest study (expected to be run for 11 years) and PDM Dementia is the shortest study (duration 11 months).  
 
-Figure 3:  Gantt chart  
+Figure 3:  Gantt chart for currently recruiting interventional phase 3 clinical trail   
 
 ```{r figure1, results='asis', tidy=FALSE}
 timeline = 
@@ -407,12 +407,10 @@ timeline =
 plot(timeline)
 ```
 
-Age Eligibility plot (**Figure 4**) for currently recruiting interventional phase 3 trials, how long each trial is expected to run, and the age range of target participants.  
 
+Figure 4: Eligible age and targeted enrollment for currently recruiting interventional phase 3 clinical trail   
 
-Figure 4: Interactive plot with lines for eligible age for different clinical trail phases   
-
-Alzheimers Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well, with the hope to prevent Alzheimers before the major damage to the brain is done in later stages of the disease. 
+Alzheimers Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well, with the hope to prevent Alzheimers before the major damage to the brain is done in later stages of the disease. This can be observed from age eligibility plot (**Figure 4**), whish shows that although the largest in terms of the numebr of participants studies target older population, there are several late development interventional studies which enroll as early as from birth.      
 
 ```{r}
 p = data_for_line_plot %>%
@@ -430,7 +428,6 @@ ggplotly(p)
 
 Figure 5: Unsurprisingly, the majority of recruiting studies for Alzheimer's Disease are geographically centered in Florida, a state known for a high proportion of elderly residents. Clicking on city markers will take the user to the ClinicalTrials.gov webpage for that particular study, allowing easy access to more information. 
 ```{r figure3, echo=FALSE}
-
 
 #retrieve code from new file, amend dataset to include interactivity
 AD_final <- read_csv("feben_maps/final_data_for_leaflet.csv") %>% 
