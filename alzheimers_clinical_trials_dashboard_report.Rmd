@@ -54,8 +54,8 @@ source("functions.R")
 
 ![Human Brain: Normal -> Mild Cognitively Impared - > Alzheimers Disease](three-stages-of-alzheimers-disease.jpg)  
 
-Alzheimers Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
-A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial information while sourcing data from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families, impacted by the illness and seeking a quick visual reference guide on Alzheimers Disease clinical trials past and present research.  
+Alzheimer`s Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
+A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial information while sourcing data from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families, impacted by the illness and seeking a quick visual reference guide on AD clinical trials past and present research.  
 
 
 # Data and methods   
@@ -182,7 +182,7 @@ us_studies %>%
 
 ```
 
-We also examined the number of new studies each year. **Figure 1** shows that there were peaks in the number of new studies in 2009 and 2016. If we look closely in **Figure 2**, we can see that the spike in 2009 is due to the large increase in Phase 1 and/or Phase 2 studies, which is indicative of a large number of new treatments being investigated. This happened because major pharmaceutical efforts were concentrated around finding a cure for Alzheimers Disease with promising drug candidates in pipeline. The spike in 2016, however, appears to be due to the combination of increased unclassified (in terms of study phase) trials, and a relatively high number of Phase 1/2 trials. 
+We also examined the number of new studies each year. **Figure 1** shows that there were peaks in the number of new studies in 2009 and 2016. If we look closely in **Figure 2**, we can see that the spike in 2009 is due to the large increase in Phase 1 and/or Phase 2 studies, which is indicative of a large number of new treatments being investigated. This happened because major pharmaceutical efforts were concentrated around finding a cure for Alzheimer`s Disease with promising drug candidates in pipeline. The spike in 2016, however, appears to be due to the combination of increased unclassified (in terms of study phase) trials, and a relatively high number of Phase 1/2 trials. 
 
 ```{r num_studies, echo=FALSE, warning=FALSE}
 
@@ -250,7 +250,7 @@ gantt_data =
   arrange(date_start)
 ```
 
-Interactive lineplot was created for those currently recruiting interventional phase 3 trials in the US with available age elligibility creteria to visualize the age range of targeted participants. A line in a plot represents a study, x-coordinates of a line (or length) represent study age elligibility, and y-coordinate of a line corresponds to a number of subjects enrolled in a study.   
+Interactive lineplot was created for those currently recruiting interventional phase 3 AD trials in the US with available age elligibility creteria to visualize the age range of targeted participants. A line in a plot represents a study, x-coordinates of a line (or length) represent study age elligibility, and y-coordinate of a line corresponds to a number of subjects enrolled in a study.   
 
 ```{r data_preprocessing_figure4}
 data_for_plot = 
@@ -394,7 +394,7 @@ write.csv(AD_final, file = "final_data_for_leaflet.csv")
 
 
 # Results  
-The Gantt chart (**Figure 3**) shows that there are currently 28 US phase 3 actively recruiting studies which span over 10 years (2014-2024) with [DIAN-TU](https://dian.wustl.edu) being the longest study (expected to be run for 11 years) and PDM Dementia is the shortest study (duration 11 months).  
+The Gantt chart (**Figure 3**) shows that there are currently 28 AD US phase 3 actively recruiting studies which span over 10 years (2014-2024) with [DIAN-TU](https://dian.wustl.edu) being the longest study (expected to be run for 11 years) and PDM Dementia is the shortest study (duration 11 months).  
 
 Figure 3:  Gantt chart for currently recruiting interventional phase 3 clinical trail    
 ```{r figure3, results='asis', tidy=FALSE}
@@ -410,7 +410,7 @@ plot(timeline)
 ```
 
 
-Alzheimers Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well, with the hope to prevent Alzheimers before the major damage to the brain is done in later stages of the disease. This can be observed from age eligibility plot (**Figure 4**), whish shows that although the largest in terms of the numebr of participants studies target older population, there are several late development interventional studies which enroll as early as from birth.      
+Alzheimer's Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well, with the hope to prevent Alzheimer`s before the major damage to the brain is done in later stages of the disease. This can be observed from age eligibility plot (**Figure 4**), whish shows that although the largest in terms of the numebr of participants studies target older population, there are several late development interventional studies which enroll as early as from birth.      
 
 Figure 4: Eligible age and targeted enrollment for currently recruiting US interventional phase 3 clinical trails    
 
@@ -461,11 +461,11 @@ options(op)
 
 
 # Discussion  
-The Shiny dashboard created in this project creates a simple and user-friendly format for interested parties including physician and researchers with less statistical and the data savy patient to explore trends in Alzheimers-related clinical trials. 
+The Shiny dashboard created in this project creates a simple and user-friendly format for interested parties including physician and researchers with less statistical and the data savy patient to explore trends in Alzheimer`s-related clinical trials. 
 
 Possible future directions for this project include updating the Shiny dashboard so that it interacts in real time with the clinicaltrials.gov website. This would allow the data in the dashboard to continue to provide the most up to date information to the user, and would prevent the dashboard from becoming obsolete over time. 
 
-Other possible future directions include icorporating additional variables so that the user can gain a more complete picture of the avialable data. Another area of possible expansion might include developing a platform for the user to perform simple statistical tests on the data from within the project website. 
+Other possible future directions include incorporating additional variables so that the user can gain a more complete picture of the avialable data. Another area of possible expansion might include developing a platform for the user to perform simple statistical tests on the data from within the project website. 
 
 
 # Appendix
