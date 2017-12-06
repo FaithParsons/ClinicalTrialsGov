@@ -221,6 +221,7 @@ us_studies %>%
 ## Exploratory analysis  
 To visualize how long each trial is expected to run, [Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those currently recruiting interventional phase 3 trials in the US with available starting and ending dates.   
 
+
 ```{r data_preprocessing_figure1}
 gantt_data = 
   data %>%
@@ -293,6 +294,7 @@ data_for_line_plot =
 ```
 
 Interactive map was also created to allow users to visualize study locations based on user input specifications.   
+
 ```{r data_preprocessing_figure3}
 
 AD_search_results =
@@ -393,9 +395,8 @@ write.csv(AD_final, file = "final_data_for_leaflet.csv")
 # Results  
 The Gantt chart (**Figure 3**) shows that there are currently 28 US phase 3 actively recruiting studies which span over 10 years (2014-2024) with [DIAN-TU](https://dian.wustl.edu) being the longest study (expected to be run for 11 years) and PDM Dementia is the shortest study (duration 11 months).  
 
-Figure 3:  Gantt chart for currently recruiting interventional phase 3 clinical trail   
-
-```{r figure1, results='asis', tidy=FALSE}
+Figure 3:  Gantt chart for currently recruiting interventional phase 3 clinical trail    
+```{r figure3, results='asis', tidy=FALSE}
 timeline = 
   gvisTimeline(data = gantt_data,
                rowlabel = "nct_number",
@@ -408,11 +409,11 @@ plot(timeline)
 ```
 
 
-Figure 4: Eligible age and targeted enrollment for currently recruiting interventional phase 3 clinical trail   
-
 Alzheimers Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well, with the hope to prevent Alzheimers before the major damage to the brain is done in later stages of the disease. This can be observed from age eligibility plot (**Figure 4**), whish shows that although the largest in terms of the numebr of participants studies target older population, there are several late development interventional studies which enroll as early as from birth.      
 
-```{r}
+Figure 4: Eligible age and targeted enrollment for currently recruiting US interventional phase 3 clinical trails    
+
+```{r figure4}
 p = data_for_line_plot %>%
   na.omit() %>% 
   ggplot(aes(x = years, y = n, color = nct_number, group = nct_number)) +
@@ -426,8 +427,11 @@ p = data_for_line_plot %>%
 ggplotly(p)
 ```
 
-Figure 5: Unsurprisingly, the majority of recruiting studies for Alzheimer's Disease are geographically centered in Florida, a state known for a high proportion of elderly residents. Clicking on city markers will take the user to the ClinicalTrials.gov webpage for that particular study, allowing easy access to more information. 
-```{r figure3, echo=FALSE}
+
+**Figure 5** is an interactive map of US AD clinical trials.  Unsurprisingly, the majority of recruiting studies for Alzheimer's Disease are geographically centered in Florida, a state known for a high proportion of elderly residents. Clicking on city markers will take the user to the ClinicalTrials.gov webpage for that particular study, allowing easy access to more information.  
+
+Figure 5: Interactive map of US Alzheimers Disease studies  
+```{r figure5, echo=FALSE}
 
 #retrieve code from new file, amend dataset to include interactivity
 AD_final <- read_csv("feben_maps/final_data_for_leaflet.csv") %>% 
@@ -447,7 +451,7 @@ AD_final %>%
 
 ```
 
-An interactive data table was created (**Table 1**, Appendix) to allow access to aditional information.   
+An interactive data table was created (**Table 2**, Appendix) to allow access to the dataset used in this analysis, if aditional information is needed.   
 
 ```{r}
 options(op)
