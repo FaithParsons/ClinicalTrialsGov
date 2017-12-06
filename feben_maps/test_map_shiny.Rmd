@@ -71,13 +71,12 @@ renderLeaflet({
 })
 
 
-```
-
-
-```{r}
 
 ```
 
+
+
+Here are some of the other options for the drop-down menus in Shiny!
 ```{r other drop down options}
 
 # State = AD_final %>% distinct(state_name) %>% pull()

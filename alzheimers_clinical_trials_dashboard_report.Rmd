@@ -220,7 +220,7 @@ us_studies %>%
 ```
 
 
-## Exploratory analysis [Volha will combine three figures and an intercative data table]   
+## Exploratory analysis [Volha will combine three figures and an interactive data table]   
 
 [Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those studies with available starting and ending dates to visualize the landscape of Alzheimers Disease clinical trials over time.  
 
@@ -295,6 +295,7 @@ data_for_line_plot =
 
 
 ```{r data_preprocessing_figure3}
+
 AD_search_results =
   data %>% 
   dplyr::select(nct_number, recruitment, interventions, gender, age,
@@ -311,8 +312,6 @@ for (i in 12:dim(AD_search_results_split_locations)[2]) {
   AD_search_results_split_locations[[i]] = map(AD_search_results_split_locations[[i]], clean_loc)
 }
 
-
-
 ## gathering locations and phases
 AD_edit <- AD_search_results_split_locations %>% 
   gather( key = place, value = location, locations_001:locations_348) %>% 
@@ -328,7 +327,6 @@ AD_edit_unique <- AD_edit %>%
   mutate(location = sub("(.+), United States", "\\1", location)) %>% 
   separate(location, into = c("city", "state"), sep = ", ") %>% 
   unique() 
-  
 
 ##Data set from this set is AD_edit_unique
 
@@ -350,17 +348,41 @@ AD_newer <- AD_new %>%
   filter(!is.na(state_name)) %>%
   mutate(state_code = state_lookup[state_name])
 
-
 ## merging city and state code
-
 AD_newer$geo_place <- paste(AD_newer$city, ",", AD_newer$state_code)
 
-## finding all empty cells and replace each one with a string
-
+## finding all empty cells and replace each one with an informative string
 AD_newer[is.na(AD_newer)] <- "Not available"
 
-```
 
+## Faith's RDS code? #############################################################
+
+
+
+###############################################
+
+
+## rename the "geo_place" column to "location""
+AD_newest <- AD_newer %>% 
+  rename(location = geo_place) 
+  
+## get the rds that Faith developed that has all locations and their associated lat and long coordinates
+study_coordinates <- readRDS("../Data/geocoded_studies.rds") %>% 
+  select(location, lat, lng) %>% 
+  mutate(location = gsub(", ([A-Z])", " , \\1", location))
+
+## join them by location
+AD_final <- inner_join(AD_newest, study_coordinates) %>% 
+  unique()
+
+#View(AD_final)
+
+write.csv(AD_final, file = "final_data_for_leaflet.csv")
+
+## Use this dataset to make maps!
+
+
+```
 
 
 ## Formal analysis [Faith?]  
@@ -403,8 +425,25 @@ p = data_for_line_plot %>%
 ggplotly(p)
 ```
 
-Figure 3:  
-```{r figure3}
+Figure 3: Interactive map that allows users to visualize study locations based on user input specifications. Unsurprisingly, the majority of recruiting studies for Alzheimer's Disease are geographically centered in Florida, a state known for a high proportion of elderly residents. Clicking on city markers will take the user to the ClinicalTrials.gov webpage for that particular study, allowing easy access to more information. 
+```{r figure3, echo=FALSE}
+
+
+#retrieve code from new file, amend dataset to include interactivity
+AD_final <- read_csv("feben_maps/final_data_for_leaflet.csv") %>% 
+  select(-X1) %>% 
+  rename(latitude = lat,
+         longitude = lng) %>% 
+  mutate(url = paste("<a href='https://clinicaltrials.gov/ct2/show/", nct_number, "'>", nct_number, "</a>", sep = ""))
+  
+
+AD_final %>% 
+  filter(study_type == "Interventional",
+         phase == "Phase 3",
+         recruitment == "Recruiting") %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(clusterOptions = markerClusterOptions(), popup = ~as.character(url))
 
 ```
 
