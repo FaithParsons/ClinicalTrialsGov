@@ -363,7 +363,7 @@ AD_newest <- AD_newer %>%
   rename(location = geo_place) 
   
 ## get the rds that Faith developed that has all locations and their associated lat and long coordinates
-study_coordinates <- readRDS("../Data/geocoded_studies.rds") %>% 
+study_coordinates <- readRDS("./Data/geocoded_studies.rds") %>% 
   select(location, lat, lng) %>% 
   mutate(location = gsub(", ([A-Z])", " , \\1", location))
 
