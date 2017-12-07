@@ -8,6 +8,11 @@ runtime: shiny
 
 
 
+```{r setOptions}
+suppressPackageStartupMessages(library(googleVis)) 
+op <- options(gvis.plot.tag='chart')
+
+```
 
 
 ```{r setup, include=FALSE}
@@ -31,9 +36,10 @@ library(expss)
 library(ggplot2)
 library(googleVis)
 
-op <- options(gvis.plot.tag='chart')
+#op <- options(gvis.plot.tag='chart')
 source("../functions.R")
 ```
+
 
 
 ```{r read data, include = FALSE}
@@ -220,13 +226,34 @@ ggplotly(p)
 ### Chart C
 
 ```{r figure3, results='asis', tidy=FALSE}
-timeline = 
-  gvisTimeline(data = gantt_data,
+#timeline = 
+#  gvisTimeline(data = gantt_data,
+#               rowlabel = "nct_number",
+#               barlabel = "label",
+#               start = "date_start",
+#               end = "date_end",
+#               options = list(height = 600, width = 800, 
+#                             timeline = "{ singleColor: 'blue' }"))
+#plot(timeline)
+
+# Solution from: https://stackoverflow.com/questions/39830891/how-to-render-googlevis-in-flexdashboard
+
+#create a ui interaction:
+uiOutput("dynamic")
+
+#render the ui:
+output$dynamic <- renderUI({ 
+   htmlOutput("GanttChart")
+})
+
+#here is your server activity:
+output$GanttChart <- renderGvis({    
+    gvisTimeline(data = gantt_data,
                rowlabel = "nct_number",
                barlabel = "label",
                start = "date_start",
                end = "date_end",
                options = list(height = 600, width = 800, 
-                             timeline = "{ singleColor: 'blue' }"))
-plot(timeline)
+                             timeline = "{ singleColor: 'blue' }"))       
+  })
 ```
