@@ -6,7 +6,7 @@ title: "The Alzheimers Project"
 
 
 
-[breif intro]
+[brief intro]
 
 [screencast]
 
