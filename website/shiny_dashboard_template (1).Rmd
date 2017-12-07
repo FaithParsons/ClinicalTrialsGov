@@ -1,0 +1,232 @@
+---
+title: "The Alzheimer Project"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: row
+runtime: shiny
+---
+
+
+
+
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+library(tidyverse)
+library(dplyr)
+library(janitor)
+library(plotly)
+library(stringr)
+library(plotly)
+library(readr)
+library(timevis)
+library(XML)
+library(ggmap)
+library(leaflet)
+library(splitstackshape)
+library(purrr)
+library(DT)
+library(expss)
+library(ggplot2)
+library(googleVis)
+
+op <- options(gvis.plot.tag='chart')
+source("../functions.R")
+```
+
+
+```{r read data, include = FALSE}
+
+data = 
+  read_csv("../Data/SearchResultsTable.csv") %>%
+  clean_names() 
+
+gantt_data = readRDS("../Data/gantt_data.rds") %>%
+   mutate(date_start2 = format(date_start, format = "%B %d, %Y") )
+
+# Create dataset for descriptives for clinical trials in the US
+us_studies = data %>%
+  # Filter only studies that have sites in the United States
+  filter(str_detect(locations, "United States"))  %>%
+         # Count number of locations, interventions, and funders
+  mutate(num_locs = as.numeric(str_count(locations, "\\|")) + 1,
+         num_intervs = as.numeric(str_count(interventions, "\\|")) + 1,
+         num_funders = as.numeric(str_count(funded_bys, "\\|")) + 1,
+         # Dummy for Funded by - "Industry"
+         fundby_industry = ifelse(str_detect(funded_bys, "Industry") == TRUE, 1, 0),
+         # dummy for Funded by - "NIH"
+         fundby_nih = ifelse(str_detect(funded_bys, "NIH") == TRUE, 1, 0),
+         # dummy for FUnded by - "U.S. Fed"
+         fundby_usfed = ifelse(str_detect(funded_bys, "U.S. Fed") == TRUE, 1, 0),
+         # dummy for Funded by - "Other")
+         fundby_other = ifelse(str_detect(funded_bys, "Other") == TRUE, 1, 0),
+         # Intervention Types -- Dummy Variables
+         interv_drug =  ifelse(str_detect(interventions, "Drug:") == TRUE, 1, 0), 
+         interv_behav = ifelse(str_detect(interventions, "Behavioral:") == TRUE, 1, 0),
+         interv_biol  = ifelse(str_detect(interventions, "Biological:") == TRUE, 1, 0), 
+         interv_diag  = ifelse(str_detect(interventions, "Diagnostic Test:") == TRUE, 1, 0) ,
+         interv_device = ifelse(str_detect(interventions, "Device:") == TRUE, 1, 0),
+         interv_rad   = ifelse(str_detect(interventions, "Radiation:") == TRUE, 1, 0),
+         interv_diet  = ifelse(str_detect(interventions, "Dietary Supplement:") == TRUE, 1, 0),
+         interv_gene  = ifelse(str_detect(interventions, "Genetic:") == TRUE, 1, 0),
+         interv_proc  = ifelse(str_detect(interventions, "Procedure:") == TRUE, 1, 0),
+         interv_other = ifelse(str_detect(interventions, "Other:") == TRUE, 1, 0),
+         # Enrollment number as numeric
+         enrol_num = as.numeric(enrollment),
+         mm_start   = str_sub(start_date,  1,  3), # Extract month
+         yy_start   = str_sub(start_date, -4, -1), # Extract 4-digit year
+         date_start = as.Date(paste(yy_start, mm_start, "01", sep = "-"), "%Y-%b-%d"),
+         date_start2 = format(date_start, "%B %d, %Y"))
+
+# Collapse study type and phase into one variable
+us_studies$type_phase = NA
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 1") == TRUE] <- "Phase 1/Phase 2"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 2") == TRUE] <- "Phase 1/Phase 2"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 3") == TRUE] <- "Phase 3/Phase 4"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 4") == TRUE] <- "Phase 3/Phase 4"
+us_studies$type_phase[is.na(us_studies$phases)] <- "Unknown Phase"
+us_studies$type_phase[us_studies$study_type == "Observational"] <- "Observational"
+
+
+```
+
+```{r data_preprocessing_figure3}
+gantt_data = 
+  data %>%
+  filter(str_detect(locations, "United States"))  %>%
+  mutate( 
+    mm_start   = str_sub(start_date,  1,  3), # Extract month
+    yy_start   = str_sub(start_date, -4, -1), # Extract 4-digit year
+    date_start = as.Date(paste(yy_start, mm_start, "01", sep = "-"), "%Y-%b-%d"),
+    mm_end     = str_sub(completion_date,  1,  3),
+    yy_end     = str_sub(completion_date, -4, -1),
+    date_end   = as.Date(paste(yy_end,   mm_end,   "01", sep = "-"), "%Y-%b-%d"),
+    n_locations = str_count(locations , "\\|"),
+    n_treatments = str_count(interventions, "\\|"),
+    label = ifelse(acronym == "null", title, acronym)
+    ) %>%
+  select(nct_number, title, acronym, date_start, date_end, n_locations, n_treatments,
+           phases, study_type, label, recruitment) %>%
+  # Exclude records with no start or end dates
+  filter(!is.na(date_start) & !is.na(date_end))%>% 
+  select(label, everything()) %>%
+  # Declare interactivity filters here
+  filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
+  #Sort by date
+  arrange(date_start)
+```
+
+
+
+```{r data_preprocessing_figure4}
+data_for_plot = 
+  data %>% 
+  filter(str_detect(locations, "United States"))  %>%
+  select(rank, nct_number, phases, study_type, enrollment, nct_number, age, recruitment) %>% 
+  mutate(age_start   = str_sub(age,  1,  3) ) %>%
+  mutate(age_start = replace(age_start, age_start == "Chi", 0)) %>%
+  mutate(age_start = replace(age_start, age_start == "up ", 0)) %>%
+  separate(age_start, c("age_start", "remove"), " ") %>%
+  mutate(age_start = as.numeric(age_start)) %>%
+  mutate(n = as.numeric(enrollment)) %>%
+    mutate(age_end = str_sub(age, 13, 14)) %>%
+  # replace "...Years and older   (Adult, Senior)" with age_end==100
+  mutate(age_end = replace(age_end, age_end == " o", 100)) %>%
+  #replace "Child, Adult, Senior" with age_end == 100
+  mutate(age_end = replace(age_end, age_end == ", ", 100)) %>%
+  #replace "up to 100 Years   (Child, Adult, Senior)" with age_end==100
+  mutate(age_end = replace(age_end, age_end == "ar", 100)) %>%
+  # replace "...Years and older   (Child, Adult, Senior)" for those with 
+  # starting one digit age with age_end == 100
+  mutate(age_end = replace(age_end, age_end == "ol", 100)) %>%
+  # replace "up to ..Years   (Child, Adult, Senior)" where ... is 2 digit
+  # with age_end == 100
+  mutate(age_end1 = str_sub(age, 7, 8)) %>%
+  mutate(age_end = replace(age_end, age_end == "rs", age_end1[age_end == "rs"])) %>%
+  # convert age_end to numeric
+  mutate(age_end = as.numeric(age_end)) %>%
+  select(-c(remove, age_end1)) %>%
+  # reorder 
+  mutate(nct_number = forcats::fct_reorder(nct_number, age_start))
+
+
+# Prepare data for line plot - convert into long format and group by nct_number:   
+
+data_for_line_plot = 
+  data_for_plot %>%
+  filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
+  gather(key = "eligible_age", value = "years", age_start, age_end) %>%
+  group_by(nct_number) %>%
+  arrange(years)
+```
+
+
+
+
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+
+
+
+Row
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r map_fig}
+
+#retrieve code from new file, amend dataset to include interactivity
+AD_final <- read_csv("../feben_maps/final_data_for_leaflet.csv") %>% 
+  select(-X1) %>% 
+  rename(latitude = lat,
+         longitude = lng) %>% 
+  mutate(url = paste("<a href='https://clinicaltrials.gov/ct2/show/", nct_number, "'>", nct_number, "</a>", sep = ""))
+  
+
+AD_final %>% 
+  filter(study_type == "Interventional",
+         phase == "Phase 3",
+         recruitment == "Recruiting") %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(clusterOptions = markerClusterOptions(), popup = ~as.character(url))
+
+
+```
+
+
+Row {.tabset .tabset-fade}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r figure4}
+p = data_for_line_plot %>%
+  na.omit() %>% 
+  ggplot(aes(x = years, y = n, color = nct_number)) +
+  geom_path() +
+  #facet_wrap(~study_type) +
+  labs(x = "eligible age",
+       y = "enrollment",
+       caption = "Figure 4") +
+  theme_bw()
+
+ggplotly(p)
+```
+
+### Chart C
+
+```{r figure3, results='asis', tidy=FALSE}
+timeline = 
+  gvisTimeline(data = gantt_data,
+               rowlabel = "nct_number",
+               barlabel = "label",
+               start = "date_start",
+               end = "date_end",
+               options = list(height = 600, width = 800, 
+                             timeline = "{ singleColor: 'blue' }"))
+plot(timeline)
+```

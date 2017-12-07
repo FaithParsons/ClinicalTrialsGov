@@ -2,6 +2,10 @@
 title: "The Alzheimers Project"
 ---
 
+![Human Brain: Normal -> Mild Cognitively Impared - > Alzheimers Disease](../three-stages-of-alzheimers-disease.jpg)  
+
+
+
 [breif intro]
 
 [screencast]
