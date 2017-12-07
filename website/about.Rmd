@@ -49,25 +49,25 @@ source("../functions.R")
 ```
 
 
-Alzheimers Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
-A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial information while sourcing data from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families, impacted by the illness and seeking a quick visual reference guide on Alzheimers Disease clinical trials past and present research.  
+Alzheimer's Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials targeting AD, is the next step families take to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has a user-friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through the vast amounts of tabulated information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
+A web-based visualization tool, which summarizes Alzheimer`s Disease study data sourced from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families impacted by the illness, and seeking a quick visual reference guide on Alzheimer's Disease research, past and present.  
 
 
-# Data and methods   
-The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously completed, terminated, or other enrollment status factors. The data used in analyses are available in the `data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
+# Data and Methods   
+The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously been completed, terminated, or other enrollment status factors. The data used in analyses are available in the `data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
 
 Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for how the 
 
 
-## File names [Imaani]  
-The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously completed, terminated, or other enrollment status factors. The data used in analyses are available in the `Data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
+## File Names [Imaani]  
+The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of enrollment status factors; whether the study was completed, terminated, or is actively recruiting participants, all were included. The data used in analyses are available in the `Data` file on the github page and the primary data file used in analysis is called `SearchResultsTable.csv`. 
 
-Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for extracting these variables are available in the file `Extracting_data_across_all_xml_files.Rmd` also on the github page. An additional dataset called `alzheimers_data` containing all variables associated with each study identified during the "alzheimer" search. 
+Additional variables of interest were obtained by downloading all the data from each webpage associated with all studies returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for extracting these variables are available in the file `Extracting_data_across_all_xml_files.Rmd` also on the github page. An additional dataset called `alzheimers_data` containing all variables associated with each study identified during the "alzheimer" search. 
 
 The datasets `SearchResultsTable.csv` and `alzheimers_data` contain largely overlapping variables. The dataset `SearchResultsTable.csv` is generally more processed, particularly for natural language variables. However, `alzheimers_data` contains several variables not available in `SearchResultsTable.csv` that an interested future researcher may access. 
 
 
-## Summary statistics [Faith/Volha?]  
+## Summary Statistics [Faith/Volha?]  
 
 ```{r load_data}
 data = 
@@ -107,14 +107,14 @@ num_ussites = readRDS("../Data/num_ussites.rds")
 
 ```
 
-The main datasetcontained  **`r format(nrow(data), nsmall = 1, big.mark = ",")` records** corresponding to all studies on Alzheimer's Disease registered at the [ClinicalTrials.gov website](http://clinicaltrials.gov) with study start dates from `r data %>% pull(start_date) %>% min()` to `r data %>% pull(start_date) %>% max()`. We restricted our analysis dataset to the **`r nrow(us_studies)`** studies with study sites in the United States. The earliest study on record began on `r us_studies %>% pull(start_date)%>% min()`.
+The main dataset contained  **`r format(nrow(data), nsmall = 1, big.mark = ",")` records** corresponding to all studies on Alzheimer's Disease registered at the [ClinicalTrials.gov website](http://clinicaltrials.gov) with study start dates from `r data %>% pull(start_date) %>% min()` to `r data %>% pull(start_date) %>% max()`. We restricted our analysis dataset to the **`r nrow(us_studies)`** studies with study sites in the United States. The earliest study on record began on `r us_studies %>% pull(start_date)%>% min()`.
 
 The number of study sites within the United States ranged from `r min(num_ussites$num_ussites)` to `r max(num_ussites$num_ussites)`. 
 
 
 ## Exploratory analysis [Volha will combine three figures and an intercative data table]   
 
-[Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those studies with available starting and ending dates to visualize the landscape of Alzheimers Disease clinical trials over time.  
+[Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those studies with available starting and ending dates, to visualize the landscape of Alzheimer's Disease clinical trials over time.  
 
 ```{r data_preprocessing_figure1}
 gantt_data = 
@@ -141,7 +141,7 @@ gantt_data =
   arrange(date_start)
 ```
 
-Interactive lineplot was created for those studies with available age elligibility creteria, where a line represents age elligibility for a particular study against the number of subjects enrolled in a study.   
+Interactive lineplot was created for those studies with available age eligibility criteria, where a line represents age eligibility for a particular study against the number of subjects enrolled in a study.   
 ```{r data_preprocessing_figure2}
 data_for_plot = 
   data %>% 
@@ -254,7 +254,7 @@ AD_newer[is.na(AD_newer)] <- "Not available"
 
 
 
-## Formal analysis [Faith?]  
+## Formal Analysis [Faith?]  
 
 
 
@@ -276,9 +276,9 @@ plot(timeline)
 ```
 
 
-Figure 2: Interactive plot with lines for eligible age for different clinical trail phases   
+Figure 2: Interactive plot with lines for eligible age for different clinical trial phases   
 
-Alzheimers Disease is the disease of an older population and clinical trials in the past were targeting older subjects. However, since many hundreds of clinical trials failed in finding a cure, research focuse has shifted to younger population as well with the hope to prevent Alzheimers before the major damage to the brain is done in the later stages of Alzheimers Disease. 
+Alzheimer's Disease is a disease of an older population, and clinical trials in the past were targeting these subjects. However, since many hundreds of clinical trials failed in finding a cure, research has shifted to include younger populations as well, with the hope of preventing Alzheimer's before the major damage to the brain is done in the later stages of the disease. 
 
 ```{r}
 p = data_for_line_plot %>%
@@ -313,17 +313,17 @@ options(op)
 
 
 
-Shiny dashboard simplifies Alzheimers Disease landscape research for an inexperienced user and as such provides benefit for a family of a newly diagnosed Alzheimers Disease patient.  
+The Shiny dashboard simplifies the landscape of Alzheimer's Disease research for an inexperienced user, and as such, provides benefit to a family of a newly diagnosed Alzheimer's Disease patient.  
 
 
 
 
 # Discussion  
-The Shiny dashboard created in this project creates a simple and user-friendly format for interested parties including physician and researchers with less statistical and the data savy patient to explore trends in Alzheimers-related clinical trials. 
+The Shiny dashboard created in this project creates a simple and user-friendly format for interested parties, including physicians and researchers with less statistical knowledge, as well as the data-savvy patient, to explore trends in Alzheimer's-related clinical trials. 
 
-Possible future directions for this project include updating the Shiny dashboard so that it interacts in real time with the clinicaltrials.gov website. This would allow the data in the dashboard to continue to provide the most up to date information to the user, and would prevent the dashboard from becoming obsolete over time. 
+Possible future directions for this project include updating the Shiny dashboard so that it interacts in real-time with the clinicaltrials.gov website. This would allow the data in the dashboard to continue to provide the most up-to-date information to the user, and would prevent the dashboard from becoming obsolete over time. Currently, a dashboard such as this would need to be maintained with daily updates of the datasets, but that can be changed if it were to be developed further. For example, rate-limiting from the GoogleMaps API prevents the user from making too many live calls for coordinate data, and can render the mapping feature ineffective, but this limiting does not exist in the paid version. 
 
-Other possible future directions include icorporating additional variables so that the user can gain a more complete picture of the avialable data. Another area of possible expansion might include developing a platform for the user to perform simple statistical tests on the data from within the project website. 
+Other possible future directions include incorporating additional variables so that the user can gain a more complete picture of the available data. Another area of possible expansion might include developing a platform for the user to perform simple statistical tests on the data from within the project website. 
 
 
 
