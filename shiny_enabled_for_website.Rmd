@@ -3,10 +3,9 @@ title: "The Alzheimer Project"
 output: 
   flexdashboard::flex_dashboard:
     orientation: row
+    source_code: embed
 runtime: shiny
 ---
-
-
 
 ```{r setOptions}
 suppressPackageStartupMessages(library(googleVis)) 
@@ -37,18 +36,19 @@ library(ggplot2)
 library(googleVis)
 
 #op <- options(gvis.plot.tag='chart')
-source("../functions.R")
+source("./functions.R")
 ```
+
 
 
 
 ```{r read data, include = FALSE}
 
 data = 
-  read_csv("../Data/SearchResultsTable.csv") %>%
+  read_csv("./Data/SearchResultsTable.csv") %>%
   clean_names() 
 
-gantt_data = readRDS("../Data/gantt_data.rds") %>%
+gantt_data = readRDS("./Data/gantt_data.rds") %>%
    mutate(date_start2 = format(date_start, format = "%B %d, %Y") )
 
 # Create dataset for descriptives for clinical trials in the US
@@ -97,6 +97,19 @@ us_studies$type_phase[us_studies$study_type == "Observational"] <- "Observationa
 
 ```
 
+```{r preprocessing_fig2}
+#retrieve code from new file, amend dataset to include interactivity
+AD_final <- read_csv("./feben_maps/final_data_for_leaflet.csv") %>% 
+  select(-X1) %>% 
+  rename(latitude = lat,
+         longitude = lng) %>% 
+  mutate(url = paste("<a href='https://clinicaltrials.gov/ct2/show/", nct_number, "'>", nct_number, "</a>", sep = ""))
+  
+
+```
+
+
+
 ```{r data_preprocessing_figure3}
 gantt_data = 
   data %>%
@@ -117,10 +130,13 @@ gantt_data =
   # Exclude records with no start or end dates
   filter(!is.na(date_start) & !is.na(date_end))%>% 
   select(label, everything()) %>%
-  # Declare interactivity filters here
-  filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
   #Sort by date
   arrange(date_start)
+
+
+
+
+
 ```
 
 
@@ -161,56 +177,88 @@ data_for_plot =
 
 data_for_line_plot = 
   data_for_plot %>%
-  filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
   gather(key = "eligible_age", value = "years", age_start, age_end) %>%
   group_by(nct_number) %>%
   arrange(years)
+
+
+# Merge data with AD_final 
+data_for_line_plot = right_join(data_for_line_plot, AD_final, by = c('nct_number', 'recruitment', 'study_type')) %>%
+  group_by(nct_number)
+
+
 ```
-
-
-
 
 
 Column {.sidebar}
 -----------------------------------------------------------------------
+```{r }
+
+# State
+
+State = state.name
+
+checkboxGroupInput("State", label = h3("Select State"), choices = State, selected = State)
+
+#selectInput("State", label = h3("Select State"),
+#            choices = State)
+
+# enrollment
+enrollment_status = c("Recruiting", "Not yet recruiting",  "Enrolling by invitation", "Active, not recruiting", "Suspended", "Terminated", "Completed")
+  
+selectInput("enrollment", label = h3("Select enrollment status"),
+            choices = enrollment_status)
+
+# phase
+phase = c("Early Phase 1", "Phase 1", "Phase 1|Phase 2", "Phase 2", "Phase 2|Phase 3", "Phase 3", "Phase 4")
+
+shiny::radioButtons("phase_choice", label = h3("Select study phase"),
+    choices = phase, select = "Phase 3")
+
+# study type
+type = data %>% distinct(study_type) %>% pull()
+  
+shiny::radioButtons('type', label = h3("Select study design"),
+            choices = type, select = "Interventional")
+```
 
 
-
-
-Row
+Row 
 -----------------------------------------------------------------------
 
 ### Chart A
 
 ```{r map_fig}
 
-#retrieve code from new file, amend dataset to include interactivity
-AD_final <- read_csv("../feben_maps/final_data_for_leaflet.csv") %>% 
-  select(-X1) %>% 
-  rename(latitude = lat,
-         longitude = lng) %>% 
-  mutate(url = paste("<a href='https://clinicaltrials.gov/ct2/show/", nct_number, "'>", nct_number, "</a>", sep = ""))
-  
 
-AD_final %>% 
-  filter(study_type == "Interventional",
-         phase == "Phase 3",
-         recruitment == "Recruiting") %>% 
+  renderLeaflet({
+  AD_final %>% 
+  filter(state_name == input$State, phase == input$phase_choice, recruitment == input$enrollment, study_type == input$type) %>% 
   leaflet() %>%
   addTiles() %>%
-  addMarkers(clusterOptions = markerClusterOptions(), popup = ~as.character(url))
-
-
+  addMarkers(clusterOptions = markerClusterOptions(), popup = ~as.character(url))})
+    
 ```
 
-
-Row {.tabset .tabset-fade}
+Row {.tabset .tabset-fade } 
 -----------------------------------------------------------------------
 
 ### Chart B
 
 ```{r figure4}
-p = data_for_line_plot %>%
+
+f = function(element, state_choice) {
+  if(element %in% state_choice) {
+    TRUE} else{
+    FALSE
+  }
+}
+
+renderPlotly({
+
+data_for_line_plot %>%
+  mutate(state_name = map(state_name, f, input$State)) %>%
+  filter(state_name == TRUE, phase == input$phase_choice, recruitment == input$enrollment, study_type == input$type) %>% 
   na.omit() %>% 
   ggplot(aes(x = years, y = n, color = nct_number)) +
   geom_path() +
@@ -220,7 +268,7 @@ p = data_for_line_plot %>%
        caption = "Figure 4") +
   theme_bw()
 
-ggplotly(p)
+})
 ```
 
 ### Chart C
@@ -246,9 +294,10 @@ output$dynamic <- renderUI({
    htmlOutput("GanttChart")
 })
 
+
 #here is your server activity:
 output$GanttChart <- renderGvis({    
-    gvisTimeline(data = gantt_data,
+    gvisTimeline(data = gantt_data ,
                rowlabel = "nct_number",
                barlabel = "label",
                start = "date_start",
