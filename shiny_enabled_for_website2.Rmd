@@ -48,14 +48,13 @@ data =
   read_csv("./Data/SearchResultsTable.csv") %>%
   clean_names() 
 
-# Function for selecting individual states
+
 f = function(element, state_choice) {
   if(element %in% state_choice) {
     TRUE} else{
     FALSE
   }
 }
-
 ```
 
 ```{r preprocessing_fig2}
@@ -189,8 +188,6 @@ Row
 ### Chart A
 
 ```{r map_fig}
-
-
 LeafletInput <- reactive({
   AD_final %>%
     mutate(state_name = map(state_name, f, input$State)) %>%
@@ -202,7 +199,7 @@ LeafletInput <- reactive({
   leaflet() %>%
   addTiles() %>%
   addMarkers(clusterOptions = markerClusterOptions(), popup = ~as.character(url))})
-        
+    
 ```
 
 Row {.tabset .tabset-fade } 
@@ -211,6 +208,13 @@ Row {.tabset .tabset-fade }
 ### Chart B
 
 ```{r figure4}
+
+f = function(element, state_choice) {
+  if(element %in% state_choice) {
+    TRUE} else{
+    FALSE
+  }
+}
 
 renderPlotly({
 

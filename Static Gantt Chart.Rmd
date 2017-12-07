@@ -63,13 +63,21 @@ gantt_data = results %>%
   #Sort by date
   arrange(date_start)
 
-timeline = gvisTimeline(data = gantt_data,
-                        rowlabel = "nct_number",
-                        barlabel = "label",
-                        start = "date_start",
-                        end = "date_end",
-                        options = list(height = 600, width = 800, timeline= "{ singleColor: 'blue' }"))
-plot(timeline)
+#timeline = gvisTimeline(data = gantt_data,
+#                        rowlabel = "nct_number",
+#                        barlabel = "label",
+#                        start = "date_start",
+#                        end = "date_end",
+#                        options = list(height = 600, width = 800, timeline= "{ singleColor: #'blue' }"))
+
+gantt_data %>%
+  gvisTimeline(rowlabel = "nct_number",
+               barlabel = "label",
+               start = "date_start",
+               end = "date_end",
+               options = list(height = 600, width = 800, timeline= "{ singleColor:'blue' }")) %>%
+  plot()
+#plot(timeline)
 
 ```
 
