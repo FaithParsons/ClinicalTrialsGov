@@ -153,16 +153,6 @@ data_for_line_plot = right_join(data_for_line_plot, AD_final, by = c('nct_number
 Column {.sidebar}
 -----------------------------------------------------------------------
 ```{r }
-
-# State
-
-State = state.name
-
-checkboxGroupInput("State", label = h3("Select State"), choices = State, selected = State)
-
-#selectInput("State", label = h3("Select State"),
-#            choices = State)
-
 # enrollment
 enrollment_status = c("Recruiting", "Not yet recruiting",  "Enrolling by invitation", "Active, not recruiting", "Suspended", "Terminated", "Completed")
   
@@ -170,7 +160,7 @@ selectInput("enrollment", label = h3("Select enrollment status"),
             choices = enrollment_status)
 
 # phase
-phase = c("Early Phase 1", "Phase 1", "Phase 1|Phase 2", "Phase 2", "Phase 2|Phase 3", "Phase 3", "Phase 4")
+phase = c( "Phase 1", "Phase 2", "Phase 3", "Phase 4")
 
 shiny::radioButtons("phase_choice", label = h3("Select study phase"),
     choices = phase, select = "Phase 3")
@@ -180,6 +170,13 @@ type = data %>% distinct(study_type) %>% pull()
   
 shiny::radioButtons('type', label = h3("Select study design"),
             choices = type, select = "Interventional")
+
+# State
+
+State = state.name
+
+checkboxGroupInput("State", label = h3("Select State"), choices = State, selected = State)
+
 ```
 
 
