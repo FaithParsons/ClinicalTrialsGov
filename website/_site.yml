@@ -9,6 +9,8 @@ navbar:
       href: https://ijeasthausen.shinyapps.io/shiny_enabled_for_website/
     - icon: fa-github fa-lg
       href: https://github.com/FaithParsons/ClinicalTrialsGov
+    - text: "Software"
+      href: software.html
 
 
 output:
