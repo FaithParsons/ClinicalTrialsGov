@@ -1,0 +1,15 @@
+---
+title: "Exploration and visualization of Alzheimer's Disease clinical trials summary made easy with ACT (Alzheimer's Clinical Trials) Shiny Dashboard" 
+author: "Feben Asefaha(fta2112), Imaani Easthausen(ije2103), Faith Parsons(fep2110), Volha Tryputsen(vt2263)"
+date: "December 7, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Our project website can be found [here](https://ijeasthausen.github.io/website/index.html).
+
+Our GitHub repo can be found [here](https://github.com/FaithParsons/ClinicalTrialsGov).
+
