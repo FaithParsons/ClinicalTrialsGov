@@ -6,3 +6,4 @@ date: "December 6, 2017"
 
 For further details and a complete discussion of all analyses and results please refer to the `alzheimers_clinical_trials_dashboard_report.html` file associated with the code in `alzheimers_clinical_trials_dashboard_report.Rmd`. These files can be accessed at our [GitHub page](https://github.com/FaithParsons/ClinicalTrialsGov). 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=9KN3wHJv8DA&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
