@@ -5,6 +5,8 @@ account: ijeasthausen
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 246069
-bundleId: 1122328
+bundleId: 1122481
 url: https://ijeasthausen.shinyapps.io/shiny_enabled_for_website/
-when: 1512698662.01478
+when: 1512706163.10507
+asMultiple: FALSE
+asStatic: FALSE
