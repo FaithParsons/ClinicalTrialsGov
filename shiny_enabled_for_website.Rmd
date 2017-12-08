@@ -226,7 +226,7 @@ checkboxGroupInput("State", label = h3("Select State"), choices = State, selecte
 Row 
 -----------------------------------------------------------------------
 
-### Chart A
+### Study Location(s)
 
 ```{r map_fig}
 
@@ -248,7 +248,7 @@ LeafletInput <- reactive({
 Row {.tabset .tabset-fade } 
 -----------------------------------------------------------------------
 
-### Chart B
+### Eligibility Age and Enrollment
 
 ```{r figure4}
 

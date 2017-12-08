@@ -57,7 +57,6 @@ source("../functions.R")
 Alzheimer's Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
 A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial information while sourcing data from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families, impacted by the illness and seeking a quick visual reference guide on AD clinical trials past and present research.   
 
-
 # Data and methods   
 ```{r read data, include = FALSE}
 
