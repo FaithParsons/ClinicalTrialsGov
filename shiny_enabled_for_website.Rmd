@@ -43,11 +43,6 @@ source("./functions.R")
 
 
 ```{r read data, include = FALSE}
-
-data = 
-  read_csv("./Data/SearchResultsTable.csv") %>%
-  clean_names() 
-
 # Function for selecting individual states
 f = function(element, state_choice) {
   if(element %in% state_choice) {
@@ -56,6 +51,56 @@ f = function(element, state_choice) {
   }
 }
 
+data = 
+  read_csv("./Data/SearchResultsTable.csv") %>%
+  clean_names() 
+
+
+# Create dataset for descriptives for clinical trials in the US
+us_studies = data %>%
+  # Filter only studies that have sites in the United States
+  filter(str_detect(locations, "United States"))  %>%
+         # Count number of locations, interventions, and funders
+  mutate(num_locs = as.numeric(str_count(locations, "\\|")) + 1,
+         num_intervs = as.numeric(str_count(interventions, "\\|")) + 1,
+         num_funders = as.numeric(str_count(funded_bys, "\\|")) + 1,
+         # Dummy for Funded by - "Industry"
+         fundby_industry = ifelse(str_detect(funded_bys, "Industry") == TRUE, 1, 0),
+         # dummy for Funded by - "NIH"
+         fundby_nih = ifelse(str_detect(funded_bys, "NIH") == TRUE, 1, 0),
+         # dummy for FUnded by - "U.S. Fed"
+         fundby_usfed = ifelse(str_detect(funded_bys, "U.S. Fed") == TRUE, 1, 0),
+         # dummy for Funded by - "Other")
+         fundby_other = ifelse(str_detect(funded_bys, "Other") == TRUE, 1, 0),
+         # Intervention Types -- Dummy Variables
+         interv_drug =  ifelse(str_detect(interventions, "Drug:") == TRUE, 1, 0), 
+         interv_behav = ifelse(str_detect(interventions, "Behavioral:") == TRUE, 1, 0),
+         interv_biol  = ifelse(str_detect(interventions, "Biological:") == TRUE, 1, 0), 
+         interv_diag  = ifelse(str_detect(interventions, "Diagnostic Test:") == TRUE, 1, 0) ,
+         interv_device = ifelse(str_detect(interventions, "Device:") == TRUE, 1, 0),
+         interv_rad   = ifelse(str_detect(interventions, "Radiation:") == TRUE, 1, 0),
+         interv_diet  = ifelse(str_detect(interventions, "Dietary Supplement:") == TRUE, 1, 0),
+         interv_gene  = ifelse(str_detect(interventions, "Genetic:") == TRUE, 1, 0),
+         interv_proc  = ifelse(str_detect(interventions, "Procedure:") == TRUE, 1, 0),
+         interv_other = ifelse(str_detect(interventions, "Other:") == TRUE, 1, 0),
+         # Enrollment number as numeric
+         enrol_num = as.numeric(enrollment),
+         mm_start   = str_sub(start_date,  1,  3), # Extract month
+         yy_start   = str_sub(start_date, -4, -1), # Extract 4-digit year
+         date_start = as.Date(paste(yy_start, mm_start, "01", sep = "-"), "%Y-%b-%d"),
+         date_start2 = format(date_start, "%B %d, %Y"))
+
+# Collapse study type and phase into one variable
+us_studies$type_phase = NA
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 1") == TRUE] <- "Phase 1/Phase 2"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 2") == TRUE] <- "Phase 1/Phase 2"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 3") == TRUE] <- "Phase 3/Phase 4"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 4") == TRUE] <- "Phase 3/Phase 4"
+us_studies$type_phase[is.na(us_studies$phases)] <- "Unknown Phase"
+us_studies$type_phase[us_studies$study_type == "Observational"] <- "Observational"
+
+add_type_phase_to_other_datasets = us_studies %>%
+  select(nct_number, type_phase)
 ```
 
 ```{r preprocessing_fig2}
@@ -65,7 +110,10 @@ AD_final <- read_csv("./feben_maps/final_data_for_leaflet.csv") %>%
   rename(latitude = lat,
          longitude = lng) %>% 
   mutate(url = paste("<a href='https://clinicaltrials.gov/ct2/show/", nct_number, "'>", nct_number, "</a>", sep = ""))
-  
+
+AD_final = right_join(AD_final, add_type_phase_to_other_datasets, by = 'nct_number')
+
+
 
 ```
 
@@ -143,8 +191,9 @@ data_for_line_plot =
 
 
 # Merge data with AD_final 
-data_for_line_plot = right_join(data_for_line_plot, AD_final, by = c('nct_number', 'recruitment', 'study_type')) %>%
+data_for_line_plot = right_join(data_for_line_plot, AD_final, by = c('nct_number', 'recruitment')) %>%
   group_by(nct_number)
+
 
 
 ```
@@ -153,30 +202,24 @@ data_for_line_plot = right_join(data_for_line_plot, AD_final, by = c('nct_number
 Column {.sidebar}
 -----------------------------------------------------------------------
 ```{r }
+#phase_type widget
+type_phase = c("Phase 1/Phase 2", "Phase 3/Phase 4", "Observational", "Unknown Phase")
+
+shiny::radioButtons("type_phase_choice", label = h3("Select study design"), choices = type_phase, select = "Phase 3/Phase 4")
+
 # enrollment
 enrollment_status = c("Recruiting", "Not yet recruiting",  "Enrolling by invitation", "Active, not recruiting", "Suspended", "Terminated", "Completed")
   
 selectInput("enrollment", label = h3("Select enrollment status"),
             choices = enrollment_status)
 
-# phase
-phase = c( "Phase 1", "Phase 2", "Phase 3", "Phase 4")
 
-shiny::radioButtons("phase_choice", label = h3("Select study phase"),
-    choices = phase, select = "Phase 3")
-
-# study type
-type = data %>% distinct(study_type) %>% pull()
-  
-shiny::radioButtons('type', label = h3("Select study design"),
-            choices = type, select = "Interventional")
 
 # State
 
 State = state.name
 
 checkboxGroupInput("State", label = h3("Select State"), choices = State, selected = State)
-
 ```
 
 
@@ -191,7 +234,7 @@ Row
 LeafletInput <- reactive({
   AD_final %>%
     mutate(state_name = map(state_name, f, input$State)) %>%
-  filter(state_name == TRUE, phase == input$phase_choice, recruitment == input$enrollment, study_type == input$type)
+  filter(state_name == TRUE,  recruitment == input$enrollment, type_phase == input$type_phase_choice)
 })
 
   renderLeaflet({
@@ -213,8 +256,8 @@ renderPlotly({
 
 data_for_line_plot %>%
   mutate(state_name = map(state_name, f, input$State)) %>%
-  filter(state_name == TRUE, phase == input$phase_choice, recruitment == input$enrollment, study_type == input$type) %>% 
-  na.omit() %>% 
+  filter(state_name == TRUE, recruitment == input$enrollment, type_phase == input$type_phase_choice) %>% 
+  #na.omit() %>% 
   ggplot(aes(x = years, y = n, color = nct_number)) +
   geom_path() +
   #facet_wrap(~study_type) +
@@ -239,7 +282,7 @@ f = function(element, state_choice) {
 datasetInput <- reactive({
   data_for_gantt %>%
   mutate(state_name = map(state_name, f, input$State)) %>%
-  filter(state_name == TRUE, phase == input$phase_choice, recruitment == input$enrollment, study_type == input$type) %>% 
+  filter(state_name == TRUE,  recruitment == input$enrollment, type_phase == input$type_phase_choice) %>% 
     # Exclude records with no start or end dates
   filter(!is.na(date_start) & !is.na(date_end))%>% 
   select(label, nct_number, date_start, date_end) %>%
@@ -268,4 +311,13 @@ output$GanttChart <- renderGvis({
                              timeline = "{ singleColor: 'blue' }"))       
   })
 
+```
+
+
+
+```{r include=FALSE}
+#code for deploying to shiny server
+
+#library(rsconnect)
+#rsconnect::deployApp('/Users/ImaaniEasthausen/Documents/Biostats MS/Data_Science/final_project/shiny_enabled_for_website.Rmd')
 ```

@@ -10,6 +10,9 @@ output:
       smooth_scroll: false
 ---
 
+
+
+
 ```{r setOptions, include=FALSE}
 library(googleVis)
 op <- options(gvis.plot.tag='chart')
@@ -38,6 +41,7 @@ library(leaflet)
 library(splitstackshape)
 library(purrr)
 library(DT)
+library(expss)
 
 suppressPackageStartupMessages(library(googleVis)) 
 
@@ -49,30 +53,20 @@ source("../functions.R")
 ```
 
 
-Alzheimer's Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials targeting AD, is the next step families take to assess possible treatment options. [Clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has a user-friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through the vast amounts of tabulated information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
-A web-based visualization tool, which summarizes Alzheimer`s Disease study data sourced from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families impacted by the illness, and seeking a quick visual reference guide on Alzheimer's Disease research, past and present.  
+
+Alzheimer's Disease (AD) is a progressive disease that destroys memory and other important mental functions. It is the [6th leading cause of death in the US](https://www.alz.org/facts/), and it [does not have a cure](https://www.alz.org/alzheimers_disease_treatments.asp). The latter fact strongly affects a family of a newly diagnosed with AD patient. Exploring the landscape of ongoing clinical trials, targeting AD, is the next step family takes to assess possible treatment options. [clinicaltrials.gov](https://clinicaltrials.gov) is a database of clinical studies conducted around the world and is a great place to start exploring experimental treatment possibilities. It has user friendly interface and provides extensive amount of clinical trials information. However, it could be overwhelming for someone without special training to dive through tabulated extensive information available at [clinicaltrials.gov](https://clinicaltrials.gov). 
+A web-based visualization tool, which summaries Alzheimer`s Disease clinal trial information while sourcing data from [clinicaltrials.gov](https://clinicaltrials.gov), could be a useful tool for those families, impacted by the illness and seeking a quick visual reference guide on AD clinical trials past and present research.   
 
 
-# Data and Methods   
-The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously been completed, terminated, or other enrollment status factors. The data used in analyses are available in the `data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
+# Data and methods   
+```{r read data, include = FALSE}
 
-Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for how the 
-
-
-## File Names [Imaani]  
-The data were obtained by downloading all results associated with a search for "alzheimer" on the website clinicaltrials.gov. Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of enrollment status factors; whether the study was completed, terminated, or is actively recruiting participants, all were included. The data used in analyses are available in the `Data` file on the github page and the primary data file used in analysis is called `SearchResultsTable.csv`. 
-
-Additional variables of interest were obtained by downloading all the data from each webpage associated with all studies returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for extracting these variables are available in the file `Extracting_data_across_all_xml_files.Rmd` also on the github page. An additional dataset called `alzheimers_data` containing all variables associated with each study identified during the "alzheimer" search. 
-
-The datasets `SearchResultsTable.csv` and `alzheimers_data` contain largely overlapping variables. The dataset `SearchResultsTable.csv` is generally more processed, particularly for natural language variables. However, `alzheimers_data` contains several variables not available in `SearchResultsTable.csv` that an interested future researcher may access. 
-
-
-## Summary Statistics [Faith/Volha?]  
-
-```{r load_data}
 data = 
   read_csv("../Data/SearchResultsTable.csv") %>%
   clean_names() 
+
+gantt_data = readRDS("../Data/gantt_data.rds") %>%
+   mutate(date_start2 = format(date_start, format = "%B %d, %Y") )
 
 # Create dataset for descriptives for clinical trials in the US
 us_studies = data %>%
@@ -100,230 +94,159 @@ us_studies = data %>%
          interv_diet  = ifelse(str_detect(interventions, "Dietary Supplement:") == TRUE, 1, 0),
          interv_gene  = ifelse(str_detect(interventions, "Genetic:") == TRUE, 1, 0),
          interv_proc  = ifelse(str_detect(interventions, "Procedure:") == TRUE, 1, 0),
-         interv_other = ifelse(str_detect(interventions, "Other:") == TRUE, 1, 0))
+         interv_other = ifelse(str_detect(interventions, "Other:") == TRUE, 1, 0),
+         # Enrollment number as numeric
+         enrol_num = as.numeric(enrollment),
+         mm_start   = str_sub(start_date,  1,  3), # Extract month
+         yy_start   = str_sub(start_date, -4, -1), # Extract 4-digit year
+         date_start = as.Date(paste(yy_start, mm_start, "01", sep = "-"), "%Y-%b-%d"),
+         date_start2 = format(date_start, "%B %d, %Y"))
 
-# This data contains the variable on number of US Sites 
-num_ussites = readRDS("../Data/num_ussites.rds")
+# Collapse study type and phase into one variable
+us_studies$type_phase = NA
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 1") == TRUE] <- "Phase 1/Phase 2"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 2") == TRUE] <- "Phase 1/Phase 2"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 3") == TRUE] <- "Phase 3/Phase 4"
+us_studies$type_phase[str_detect(us_studies$phases, "Phase 4") == TRUE] <- "Phase 3/Phase 4"
+us_studies$type_phase[is.na(us_studies$phases)] <- "Unknown Phase"
+us_studies$type_phase[us_studies$study_type == "Observational"] <- "Observational"
+
 
 ```
 
-The main dataset contained  **`r format(nrow(data), nsmall = 1, big.mark = ",")` records** corresponding to all studies on Alzheimer's Disease registered at the [ClinicalTrials.gov website](http://clinicaltrials.gov) with study start dates from `r data %>% pull(start_date) %>% min()` to `r data %>% pull(start_date) %>% max()`. We restricted our analysis dataset to the **`r nrow(us_studies)`** studies with study sites in the United States. The earliest study on record began on `r us_studies %>% pull(start_date)%>% min()`.
-
-The number of study sites within the United States ranged from `r min(num_ussites$num_ussites)` to `r max(num_ussites$num_ussites)`. 
 
 
-## Exploratory analysis [Volha will combine three figures and an intercative data table]   
+The data were obtained by downloading all results associated with a search for "alzheimer" on the website [clinicaltrials.gov](https://clinicaltrials.gov). Data were accessed on 11/09/2017. All studies associated with the search term were included regardless of whether the study had previously completed, terminated, or other enrollment status factors. The data used in analyses are available in the `Data` file on the github page and the primary datafile used in analysis is called `SearchResultsTable.csv`. 
 
-[Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart) was created for those studies with available starting and ending dates, to visualize the landscape of Alzheimer's Disease clinical trials over time.  
+Additional variables of interest were obtained by downloading all the data from each webpage associated with all studys returned in the original "alzheimer" search. These data were also accessed on 11/09/2017. Source code for extracting these variables are available in the file `Extracting_data_across_all_xml_files.Rmd` also on the github page. An additional dataset called `alzheimers_data` containing all variables associated with each study identified during the "alzheimer" search. 
 
-```{r data_preprocessing_figure1}
-gantt_data = 
-  data %>%
-  mutate( 
-    mm_start   = str_sub(start_date,  1,  3), # Extract month
-    yy_start   = str_sub(start_date, -4, -1), # Extract 4-digit year
-    date_start = as.Date(paste(yy_start, mm_start, "01", sep = "-"), "%Y-%b-%d"),
-    mm_end     = str_sub(completion_date,  1,  3),
-    yy_end     = str_sub(completion_date, -4, -1),
-    date_end   = as.Date(paste(yy_end,   mm_end,   "01", sep = "-"), "%Y-%b-%d"),
-    n_locations = str_count(locations , "\\|"),
-    n_treatments = str_count(interventions, "\\|"),
-    label = ifelse(acronym == "null", title, acronym)
-    ) %>%
-  select(nct_number, title, acronym, date_start, date_end, n_locations, n_treatments,
-           phases, study_type, label, recruitment) %>%
-  # Exclude records with no start or end dates
-  filter(!is.na(date_start) & !is.na(date_end))%>% 
-  select(label, everything()) %>%
-  # Declare interactivity filters here
-  filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
-  #Sort by date
-  arrange(date_start)
-```
+The datasets `SearchResultsTable.csv` and `alzheimers_data` contain largely overlapping variables. The dataset `SearchResultsTable.csv` is generally more processed, particularly for natural language variables. However, `alzheimers_data` contains several variables not available in `SearchResultsTable.csv` that an interested future researcher may access. 
 
-Interactive lineplot was created for those studies with available age eligibility criteria, where a line represents age eligibility for a particular study against the number of subjects enrolled in a study.   
-```{r data_preprocessing_figure2}
-data_for_plot = 
-  data %>% 
-  select(rank, nct_number, phases, study_type, enrollment, nct_number, age, recruitment) %>% 
-  mutate(age_start   = str_sub(age,  1,  3) ) %>%
-  mutate(age_start = replace(age_start, age_start == "Chi", 0)) %>%
-  mutate(age_start = replace(age_start, age_start == "up ", 0)) %>%
-  separate(age_start, c("age_start", "remove"), " ") %>%
-  mutate(age_start = as.numeric(age_start)) %>%
-  mutate(n = as.numeric(enrollment)) %>%
-    mutate(age_end = str_sub(age, 13, 14)) %>%
-  # replace "...Years and older   (Adult, Senior)" with age_end==100
-  mutate(age_end = replace(age_end, age_end == " o", 100)) %>%
-  #replace "Child, Adult, Senior" with age_end == 100
-  mutate(age_end = replace(age_end, age_end == ", ", 100)) %>%
-  #replace "up to 100 Years   (Child, Adult, Senior)" with age_end==100
-  mutate(age_end = replace(age_end, age_end == "ar", 100)) %>%
-  # replace "...Years and older   (Child, Adult, Senior)" for those with 
-  # starting one digit age with age_end == 100
-  mutate(age_end = replace(age_end, age_end == "ol", 100)) %>%
-  # replace "up to ..Years   (Child, Adult, Senior)" where ... is 2 digit
-  # with age_end == 100
-  mutate(age_end1 = str_sub(age, 7, 8)) %>%
-  mutate(age_end = replace(age_end, age_end == "rs", age_end1[age_end == "rs"])) %>%
-  # convert age_end to numeric
-  mutate(age_end = as.numeric(age_end)) %>%
-  select(-c(remove, age_end1)) %>%
-  # reorder 
-  mutate(nct_number = forcats::fct_reorder(nct_number, age_start))
+The primary datafile (`SearchResultsTable.csv`) contained informaton on **`r format(nrow(data), nsmall = 1, big.mark = ",")` Alzheimer's disease studies** registered with [ClinicalTrials.gov](http://clinicaltrials.gov).  We restricted our analysis on the **`r nrow(us_studies)` studies with study sites in the United States**, and as of the November 9, 2017 data pull, the earliest clinical trial on Alzheimer's Disease started on  `r  us_studies %>% pull(date_start2) %>% min(na.rm=TRUE)` and the most recent on `r  us_studies %>% pull(date_start2) %>% max(na.rm=TRUE)`.
+
+We categorized the trials into 5 main categories based on study type and phase: 
+
+* Observational: if a study is of study type observational **(n = `r us_studies %>% filter(type_phase == "Observational") %>% nrow()`)**
+
+* Phase 1/2: if a study is interventional, and phase is classifed as early Phase 1, Phase 1, or combined Phase 1/Phase 2 **(n = `r us_studies %>% filter(type_phase == "Phase 1/Phase 2") %>% nrow()`)**
+
+* Phase 3/4: if a study is interventional, and phase is classified as Phase 3, Phase 4, or combined Phase 3/Phase 4 **(n = `r us_studies %>% filter(type_phase == "Phase 3/Phase 4") %>% nrow()`)**
+
+* Unknown Phase: if a study is interventional, and phase was not specified **(n = `r us_studies %>% filter(type_phase == "Unknown Phase") %>% nrow()`)**
 
 
-# Prepare data for line plot - convert into long format and group by nct_number:   
+# Data Insights 
 
+Below we present some summary characteristcs of the data with respect to trends in the number of study sites, the number of study funders, and the number of interventions across studies. 
 
-data_for_line_plot = 
-  data_for_plot %>%
-  filter(study_type == "Interventional"  & str_detect(phases, "Phase 3") &  recruitment == "Recruiting") %>%
-  gather(key = "eligible_age", value = "years", age_start, age_end) %>%
-  group_by(nct_number) %>%
-  arrange(years)
-```
+```{r Descriptives table, echo = FALSE, eval=TRUE}
 
+# Add variable labels
+us_studies = expss::apply_labels(us_studies,
+  type_phase = "Study Type",
+  num_locs = "No. Study Sites",
+  num_funders = "No. Funders",
+  num_intervs = "No. Interventions")
 
-```{r data_preprocessing_figure3}
-AD_search_results =
-  data %>% 
-  dplyr::select(nct_number, recruitment, interventions, gender, age,
-         phases, enrollment, study_type, locations) %>% 
-  filter(str_detect(locations, "United States")) %>%
-  separate(phases, into = c("phase_a", "phase_b", "phase_c", "phase_d"), sep = "\\|")  
-
-## separate multiple locations into individual columns
-AD_search_results_split_locations = 
-  AD_search_results %>%
-  cSplit("locations", sep = '|')
-
-for (i in 12:dim(AD_search_results_split_locations)[2]) {
-  AD_search_results_split_locations[[i]] = map(AD_search_results_split_locations[[i]], clean_loc)
-}
-
-
-
-## gathering locations and phases
-AD_edit <- AD_search_results_split_locations %>% 
-  gather( key = place, value = location, locations_001:locations_348) %>% 
-  select(-place) %>% 
-  gather( key = remove, value = phase, phase_a:phase_d) %>% 
-  select(-remove)
-
-## simplifying interventions, removing additional country indicator 
-## city and state columns
-AD_edit_unique <- AD_edit %>% 
-  separate(interventions, into = c("interventions", "remove"), sep = ':') %>% 
-  select(-remove) %>%
-  mutate(location = sub("(.+), United States", "\\1", location)) %>% 
-  separate(location, into = c("city", "state"), sep = ", ") %>% 
-  unique() 
+# Create summary table
+us_studies %>%
+  tab_cells(num_locs) %>%
+  tab_cols(type_phase) %>%
+  tab_stat_mean() %>%
+  tab_stat_sd() %>%
+  tab_stat_median() %>%
+  tab_stat_min() %>%
+  tab_stat_max() %>%
   
+  tab_cells( num_funders) %>%
+  tab_cols(type_phase) %>%
+  tab_stat_mean() %>%
+  tab_stat_sd() %>%
+  tab_stat_median() %>%
+  tab_stat_min() %>%
+  tab_stat_max() %>%
+  
+  tab_cells(num_intervs) %>%
+  tab_cols(type_phase) %>%
+  tab_stat_mean() %>%
+  tab_stat_sd() %>%
+  tab_stat_median() %>%
+  tab_stat_min() %>%
+  tab_stat_max() %>%
+  tab_pivot() %>%
+  htmlTable(caption = "Table 1. Descriptive statistics by study type")
 
-##Data set from this set is AD_edit_unique
+```
 
-AD_new <- AD_edit_unique %>% 
-  mutate(age = sub("^([^()]+)$", "(\\1)", age)) %>% 
-  mutate(cleaned_age = str_extract(age, "\\(.+\\)")) %>%
-  mutate(cleaned_age = sub("\\((.+)\\)", "\\1", cleaned_age)) %>% 
-   select(-age, -enrollment) 
+We also examined the number of new studies each year. **Figure 1** shows that there were peaks in the number of new studies in 2009 and 2016. If we look closely in **Figure 2**, we can see that the spike in 2009 is due to the large increase in Phase 1 and/or Phase 2 studies, which is indicative of a large number of new treatments being investigated. This happened because major pharmaceutical efforts were concentrated around finding a cure for Alzheimer`s Disease with promising drug candidates in pipeline. The spike in 2016, however, appears to be due to the combination of increased unclassified (in terms of study phase) trials, and a relatively high number of Phase 1/2 trials. 
 
-state_list <- list()
-state_list[['name']] = c(state.name,"District of Columbia")
-state_list[['abb']] = c(state.abb,"DC")
+```{r num_studies, echo=FALSE, warning=FALSE}
 
-state_lookup <- setNames(state_list$abb, state_list$name)
+us_studies %>%
+  mutate(year_start   = as.numeric(str_sub(start_date, -4, -1))) %>%
+  filter(!is.na(year_start) & year_start <= 2017) %>%
+  group_by(year_start) %>%
+  count() %>%
+  ggplot(aes(x = year_start, y = n)) + 
+    geom_point() +
+    geom_line() +
+    theme_bw() +
+    labs(x = "Study start (year)", 
+         y = "Number of studies", 
+         title = "Number of new Alzheimer's Disease studies per year",
+         caption = "Figure 1") +
+    scale_x_continuous(breaks = seq(1980, 2017, 5))
 
-##filter out any entry without state because can't map it  
-AD_newer <- AD_new %>% 
-  rename(state_name = state) %>%
-  filter(!is.na(state_name)) %>%
-  mutate(state_code = state_lookup[state_name])
-
-
-## merging city and state code
-
-AD_newer$geo_place <- paste(AD_newer$city, ",", AD_newer$state_code)
-
-## finding all empty cells and replace each one with a string
-
-AD_newer[is.na(AD_newer)] <- "Not available"
+us_studies %>%
+  mutate(year_start   = as.numeric(str_sub(start_date, -4, -1))) %>%
+  filter(!is.na(year_start) & year_start <= 2017) %>%
+  group_by(type_phase,year_start) %>%
+  count() %>%
+  ggplot(aes(x = year_start, y = n, color = type_phase)) + 
+    geom_point() +
+    geom_line() +
+    theme_bw() +
+    labs(x = "Study start (year)", y = "Number of studies", 
+         title = "Number of new Alzheimer's Disease studies per year by study type",
+         caption = "Figure 2",
+         color = "Study type") +
+    scale_x_continuous(breaks = seq(1980, 2017, 5)) +
+    theme(legend.position = "bottom")
 
 ```
 
 
 
-## Formal Analysis [Faith?]  
+## Exploratory analysis  
+In the exploratory data interface, we present three interactive plots that will allow the user to subset and explore the data. We offer an interactive Gantt chart that allows the user to visualize trends in study length and interactive line plots were created the help the user visualize trends in age ranges of targeted participants. 
+
+Finally, we provide an interactive map that allows users to get a sense for how study locations are distributed across the US.
+
+The Shiny dashboard created in this project creates a simple and user-friendly format for interested parties including physician and researchers with less statistical and the data savy patient to explore trends in Alzheimer`s-related clinical trials. We encourage the user to explore these interactive plots and also to download the source data from our github page and continue deriving insights into trends in Alzheimber's studies!
+
+Below we provide the full dataset used for this project, so that users can further examine the data associated with paraticular studies without having to download the full dataset from github. 
+
+
+# Future Directions  
+
+
+Possible future directions for this project include updating the Shiny dashboard so that it interacts in real time with the clinicaltrials.gov website. This would allow the data in the dashboard to continue to provide the most up to date information to the user, and would prevent the dashboard from becoming obsolete over time. 
+
+Other possible future directions include incorporating additional variables so that the user can gain a more complete picture of the avialable data. Another area of possible expansion might include developing a platform for the user to perform simple statistical tests on the data from within the project website. 
 
 
 
-# Results [Volha and all]  
-Gantt chart (**Figure 1**) and Age Eligibility plot (**Figure 2**) were created for currently recruiting interventional phase 3 trials.   
-
-Figure 1:  Gantt chart  
-
-```{r figure1, results='asis', tidy=FALSE}
-timeline = 
-  gvisTimeline(data = gantt_data,
-               rowlabel = "nct_number",
-               barlabel = "label",
-               start = "date_start",
-               end = "date_end",
-               options = list(height = 600, width = 800, 
-                             timeline = "{ singleColor: 'blue' }"))
-plot(timeline)
-```
 
 
-Figure 2: Interactive plot with lines for eligible age for different clinical trial phases   
-
-Alzheimer's Disease is a disease of an older population, and clinical trials in the past were targeting these subjects. However, since many hundreds of clinical trials failed in finding a cure, research has shifted to include younger populations as well, with the hope of preventing Alzheimer's before the major damage to the brain is done in the later stages of the disease. 
-
-```{r}
-p = data_for_line_plot %>%
-  na.omit() %>% 
-  ggplot(aes(x = years, y = n, color = nct_number, group = nct_number)) +
-  geom_path() +
-  #facet_wrap(~study_type) +
-  labs(x = "eligible age",
-       y = "enrollment",
-       caption = "Figure 2") +
-  theme_bw()
-
-ggplotly(p)
-```
-
-Figure 3:  
-```{r figure3}
-
-```
-
+# The Data
 
 ```{r interactive_data_table}
-DT::datatable(data, class = 'compact',
+data %>%
+  filter(str_detect(locations, "United States"))  %>%
+  DT::datatable(., class = 'compact',
               rownames = FALSE,
-              caption = 'Table 1')
+              caption = 'Table 2')
 ```
-
-
-```{r}
-options(op)
-```
-
-
-
-The Shiny dashboard simplifies the landscape of Alzheimer's Disease research for an inexperienced user, and as such, provides benefit to a family of a newly diagnosed Alzheimer's Disease patient.  
-
-
-
-
-# Discussion  
-The Shiny dashboard created in this project creates a simple and user-friendly format for interested parties, including physicians and researchers with less statistical knowledge, as well as the data-savvy patient, to explore trends in Alzheimer's-related clinical trials. 
-
-Possible future directions for this project include updating the Shiny dashboard so that it interacts in real-time with the clinicaltrials.gov website. This would allow the data in the dashboard to continue to provide the most up-to-date information to the user, and would prevent the dashboard from becoming obsolete over time. Currently, a dashboard such as this would need to be maintained with daily updates of the datasets, but that can be changed if it were to be developed further. For example, rate-limiting from the GoogleMaps API prevents the user from making too many live calls for coordinate data, and can render the mapping feature ineffective, but this limiting does not exist in the paid version. 
-
-Other possible future directions include incorporating additional variables so that the user can gain a more complete picture of the available data. Another area of possible expansion might include developing a platform for the user to perform simple statistical tests on the data from within the project website. 
 
 
 
